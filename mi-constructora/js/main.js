@@ -1,0 +1,143 @@
+/* =========================================================
+   DYSCON S.A. - JavaScript
+   ========================================================= */
+
+// ---------- 1. Menú hamburguesa en móviles (el de antes) ----------
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.getElementById('nav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const abierto = nav.classList.toggle('abierto');
+    toggle.setAttribute('aria-expanded', abierto);
+  });
+
+  // Cerrar el menú al tocar un link
+  nav.querySelectorAll('a').forEach(link =>
+    link.addEventListener('click', () => {
+      nav.classList.remove('abierto');
+      toggle.setAttribute('aria-expanded', 'false');
+    })
+  );
+}
+
+// ---------- 2. Sombra del header al bajar ----------
+const header = document.getElementById('header');
+if (header) {
+  const sombra = () => header.classList.toggle('con-sombra', window.scrollY > 10);
+  window.addEventListener('scroll', sombra, { passive: true });
+  sombra();
+}
+
+// ---------- 3. Slider del hero ----------
+const slides = document.querySelectorAll('.slide');
+const dotsBox = document.querySelector('.hero-dots');
+
+if (slides.length > 1 && dotsBox) {
+  let actual = 0;
+  let timer;
+
+  // Crear un punto por cada diapositiva
+  slides.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.setAttribute('aria-label', `Ir a la diapositiva ${i + 1}`);
+    b.addEventListener('click', () => { ir(i); reiniciar(); });
+    dotsBox.appendChild(b);
+  });
+  const dots = dotsBox.querySelectorAll('button');
+
+  function ir(n) {
+    actual = (n + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('activa', i === actual));
+    dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
+  }
+
+  function iniciar() { timer = setInterval(() => ir(actual + 1), 6000); }
+  function reiniciar() { clearInterval(timer); iniciar(); }
+
+  document.querySelector('.hero-prev').addEventListener('click', () => { ir(actual - 1); reiniciar(); });
+  document.querySelector('.hero-next').addEventListener('click', () => { ir(actual + 1); reiniciar(); });
+
+  // Pausar cuando el mouse está sobre el hero
+  const hero = document.querySelector('.hero');
+  hero.addEventListener('mouseenter', () => clearInterval(timer));
+  hero.addEventListener('mouseleave', iniciar);
+
+  ir(0);
+  iniciar();
+}
+
+// ---------- 4. Animación de aparición al hacer scroll (la de antes) ----------
+const observer = new IntersectionObserver((entradas) => {
+  entradas.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => {
+  el.classList.add('oculto');
+  observer.observe(el);
+});
+
+// ---------- 5. Resaltar en el menú la sección que se está viendo ----------
+const linksMenu = document.querySelectorAll('.nav a[href^="#"]');
+const secciones = [...linksMenu]
+  .map(l => document.querySelector(l.getAttribute('href')))
+  .filter(Boolean);
+
+if (secciones.length) {
+  const espia = new IntersectionObserver((entradas) => {
+    entradas.forEach(e => {
+      if (e.isIntersecting) {
+        linksMenu.forEach(l =>
+          l.classList.toggle('activo', l.getAttribute('href') === '#' + e.target.id)
+        );
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  secciones.forEach(s => espia.observe(s));
+}
+
+// ---------- 6. Formulario de contacto (para contacto.html) ----------
+const form = document.getElementById('form-contacto');
+const msg = document.getElementById('form-msg');
+
+if (form && msg) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const datos = Object.fromEntries(new FormData(form));
+
+    if (datos.mensaje.trim().length < 10) {
+      msg.textContent = 'El mensaje es muy corto.';
+      msg.style.color = 'crimson';
+      return;
+    }
+
+    // Acá después conectás un servicio real (Formspree, EmailJS, etc.)
+    msg.textContent = '¡Gracias! Te contactaremos pronto.';
+    msg.style.color = 'green';
+    form.reset();
+  });
+}
+
+// ---------- 7. Año automático en el footer ----------
+const anio = document.getElementById('anio');
+if (anio) anio.textContent = new Date().getFullYear();
+
+// ---------- 8. Filtros de obras y desarrollos ----------
+const botonesFiltro = document.querySelectorAll('.filtro');
+const tarjetas = document.querySelectorAll('[data-estado]');
+
+if (botonesFiltro.length) {
+  botonesFiltro.forEach(btn => btn.addEventListener('click', () => {
+    botonesFiltro.forEach(b => b.classList.toggle('activo', b === btn));
+    const filtro = btn.dataset.filtro;
+    tarjetas.forEach(t =>
+      t.classList.toggle('filtrada', filtro !== 'todos' && t.dataset.estado !== filtro)
+    );
+  }));
+}

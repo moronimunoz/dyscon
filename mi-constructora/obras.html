@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obras | DyScon S.A.</title>
+  <meta name="description" content="Obras de DyScon S.A.: proyectos propios y realizados en colaboración con otras empresas.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ÍCONOS (solo los que usa esta página) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.500-6-11a6 6 0 0112 0c0 5.500-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.500 6.500v.01"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.500v.01M12 17v-6M12 13c0-3 5-3 5 0v4"/></symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="index.html" class="logo" aria-label="DyScon S.A. - Inicio">
+      <img src="img/logo.png" alt="DyScon S.A.">
+    </a>
+
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="obras.html" class="activo">Obras</a>
+      <a href="desarrollos.html">Desarrollos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="nav-contacto">Contacto</a>
+    </nav>
+
+    <a href="contacto.html" class="btn btn--oscuro header-cta">
+      Contacto <svg class="icon"><use href="#i-flecha"/></svg>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <section class="page-hero">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Obras</p>
+        <h1>Obras</h1>
+        <p>Proyectos que ejecutamos por cuenta propia y obras realizadas en colaboración con otras empresas constructoras.</p>
+      </div>
+    </section>
+
+    <!-- LISTADO CON FILTROS -->
+    <section class="obras">
+      <div class="contenedor">
+
+        <div class="filtros" role="group" aria-label="Filtrar por tipo de obra">
+          <button class="filtro activo" data-filtro="todos">Todas</button>
+          <button class="filtro" data-filtro="propia">Propias</button>
+          <button class="filtro" data-filtro="colaboracion">En colaboración</button>
+        </div>
+
+        <div class="grid">
+
+          <!--
+            Copiá y pegá un bloque <article> por cada obra.
+            - data-estado="propia"  → obra propia
+            - data-estado="colaboracion" → obra en colaboración (agregá también el <span class="tag-colab">)
+            Los tipos de abajo son de ejemplo: cambialos por los reales.
+          -->
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/monumento.jpg" alt="Monumento Nacional a la Bandera" loading="lazy">
+                <span class="tag">Patrimonio</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Monumento Nacional<br>a la Bandera</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/rdz_1635.jpg" alt="Obra en Rodriguez 1635" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Proyecto: RDZ 1635</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/tablada.jpg" alt="Nombre de la obra" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>14 Viviendas en Tablaba</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Carcaraña · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/piñeiro.jpg" alt="Unidad Penitenciaria N° 8 y 15" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Unidad Penitenciaria<br>N° 8 y 15</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Piñeiro · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/plaza-san-cristobal.png" alt="Monumento Nacional a la Bandera" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Plaza San Cristobal</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> CABA · Buenos Aires <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/parque_regional_sur.jpg" alt="Nombre de la obra" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Parque Regional Sur</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/hospital.jpeg" alt="Hospital SAMCo Eva Perón" loading="lazy">
+                <span class="tag">Salud</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Hospital SAMCo<br>Eva Perón</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Funes · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/eetp485.jpg" alt="Ampliacion Secundaria E.E.T.P. N° 485" loading="lazy">
+                <span class="tag">Educacio</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Ampliacion Secundaria E.E.T.P. N° 485</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Villa Gobernador Galvez · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/Jardin_237/jardin_num_237.jpg" alt="Escuela Secundaria N.° 608 La Esperanza" loading="lazy">
+                <span class="tag">Educación</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Escuela Secundaria N.° 608 - La Esperanza</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Villa Gobernador Gálvez · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="colaboracion">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/plaza-san-martin.jpg" alt="Plaza San Martín" loading="lazy">
+                <span class="tag">Espacio público</span>
+                <span class="tag-colab">En colaboración</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Plaza San Martín</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="obra-card reveal" data-estado="propia">
+            <a href="#">
+              <div class="obra-img">
+                <img src="img/obras/barrio_mortelari_1.jpg" alt="Mejoramiento integral del barrio Mortelari I" loading="lazy">
+                <span class="tag">Comunidad</span>
+              </div>
+              <div class="obra-cuerpo">
+                <h3>Mejoramiento integral del barrio Mortelari I</h3>
+                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Villa Gobernador Gálvez · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO A CONTACTAR -->
+    <section class="cta-banda">
+      <div class="contenedor">
+        <h2>¿Tenés un proyecto en mente?</h2>
+        <p>Contanos qué necesitás y te asesoramos.</p>
+        <a href="contacto.html" class="btn btn--teal">Contactanos <svg class="icon"><use href="#i-flecha"/></svg></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="whatsapp" href="https://wa.me/549341XXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-fila">
+      <div class="footer-marca">
+        <img src="img/logo.png" alt="">
+        <div>
+          <strong>DYSCON S.A.</strong>
+          <span>Construyendo futuro</span>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="obras.html">Obras</a>
+        <a href="desarrollos.html">Desarrollos</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="footer-datos">
+        <span><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe · Argentina</span>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-pie">
+      <p>© <span id="anio">2026</span> DYSCON S.A. Todos los derechos reservados.</p>
+      <p>Construcción | Infraestructura | Arquitectura | Restauración</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
