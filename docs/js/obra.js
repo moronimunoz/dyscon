@@ -29,7 +29,8 @@
     `<button type="button" data-src="img/obras/${f}" aria-label="Ampliar foto ${i + 1}"><img src="img/obras/${f}" alt="${o.nombre} - foto ${i + 1}" loading="lazy"></button>`
   ).join('');
 
-  const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&output=embed`;
+  // El número es el zoom: 14 muestra el barrio, 16 la cuadra y 18 casi el edificio
+  const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&z=16&output=embed`;
 
   main.innerHTML = `
     <section class="page-hero">

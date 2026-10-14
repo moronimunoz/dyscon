@@ -7,6 +7,7 @@
    - Para agregar la fila "Objetivos y datos", sumá a la obra:
        datos: ['Superficie: ...', 'Plazo: ...']
    - Para ubicar mejor el mapa, sumá: mapa: 'Calle 123, Ciudad, Provincia'
+       o coordenadas: mapa: '-32.9468, -60.6393',
    ========================================================= */
 const OBRAS = [
   {
@@ -39,23 +40,23 @@ const OBRAS = [
     fotos: ['espana.jpg']
   },
   {
-    id: 'pami-ituzaingo', nombre: 'Pami I - Bicentenario Ituzaingó', categoria: 'Salud',
+    id: 'pami-ituzaingo', nombre: 'Hospital del Bicentenario PAMI Ituzaingó', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Cnel. Brandsen 2898, B1714LAH Ituzaingó, Provincia de Buenos Aires',
     descripcion: [],
     fotos: ['pami.jpg']
   },
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
+    mapa: 'X98V+JHG Villa Gdor. Galvez, Santa Fe',
     descripcion: [],
-    fotos: ['parque_industrial_vgg.jpeg']
+    fotos: ['parque_industrial.jpeg','parque_industrial_1.jpg','parque_industrial_2.jpg','parque_industrial_3.jpg']
   },
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     tipo: 'colaboracion', con: '', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['tecnoteca.jpg']
   },
@@ -70,28 +71,28 @@ const OBRAS = [
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: '-32.9817997363948, -60.62924684936593',
     descripcion: [],
     fotos: ['tablada.jpg']
   },
   {
     id: 'unidad-penitenciaria', nombre: 'Unidad Penitenciaria N° 8 y 15', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'Piñeiro · Santa Fe',
+    mapa: 'W633+3G Piñero, Santa Fe',
     descripcion: [],
-    fotos: ['pineiro.jpeg']
+    fotos: ['pineiro.jpg','up8.jpeg']
   },
   {
     id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'CABA · Buenos Aires',
+    mapa: 'Constitución 2498, C1254AAN C1254AAN, Cdad. Autónoma de Buenos Aires',
     descripcion: [],
     fotos: ['plaza-san-cristobal.jpg']
   },
   {
     id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Láinez 1-48, S2000 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['parque_regional_sur.jpg']
   },
@@ -105,28 +106,28 @@ const OBRAS = [
   {
     id: 'hospital-samco', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Funes · Santa Fe',
+    mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
     descripcion: [],
     fotos: ['hospital.jpg']
   },
   {
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
+    mapa: 'X9JQ+CP2 Villa Gdor. Galvez, Santa Fe',
     descripcion: [],
     fotos: ['eetp485.jpg']
   },
   {
     id: 'escuela-608', nombre: 'Escuela Secundaria N.° 608 - La Esperanza', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
+    mapa: 'Pje. Uboldi 630, S2124 Villa Gdor. Galvez, Santa Fe',
     descripcion: [],
     fotos: ['escuela_jardin/jardin_237.jpg']
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
     tipo: 'colaboracion', con: '', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: '3942+G4 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['plaza-san-martin.jpg']
   },
