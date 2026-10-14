@@ -99,7 +99,7 @@ const OBRAS = [
   {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['monumento.jpg']
   },
