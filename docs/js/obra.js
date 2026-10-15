@@ -25,8 +25,9 @@
     ? `<p>Obra en colaboración${o.con ? ' con ' + o.con : ''}.</p>`
     : '<p>Obra propia.</p>';
 
+  const base = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
   const fotos = (o.fotos || []).map((f, i) =>
-    `<button type="button" data-src="img/obras/${f}" aria-label="Ampliar foto ${i + 1}"><img src="img/obras/${f}" alt="${o.nombre} - foto ${i + 1}" loading="lazy"></button>`
+    `<button type="button" data-src="${base}${f}" aria-label="Ampliar foto ${i + 1}"><img src="${base}${f}" alt="${o.nombre} - foto ${i + 1}" loading="lazy"></button>`
   ).join('');
 
   // El número es el zoom: 14 muestra el barrio, 16 la cuadra y 18 casi el edificio

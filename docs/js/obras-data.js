@@ -11,11 +11,12 @@
    ========================================================= */
 const OBRAS = [
   {
-    id: 'casa-m', nombre: 'Proyecto: Casa M', categoria: 'Comunidad',
+    id: 'casa-m', nombre: 'CUBO_PUERTO ESPAÑA', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Arturo Illia 1690, S2000 Rosario, Santa Fe',
     descripcion: [],
-    fotos: ['casa_m.jpg']
+    carpeta:'casa_m',
+    fotos: ['00.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg']
   },
   {
     id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Comunidad',
@@ -51,7 +52,8 @@ const OBRAS = [
     tipo: 'propia', estado: 'obra', cliente: '',
     mapa: 'X98V+JHG Villa Gdor. Galvez, Santa Fe',
     descripcion: [],
-    fotos: ['parque_industrial.jpeg','parque_industrial_1.jpg','parque_industrial_2.jpg','parque_industrial_3.jpg']
+    carpeta:'parque_industrial',
+    fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
   },
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
@@ -122,7 +124,8 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', cliente: '',
     mapa: 'Pje. Uboldi 630, S2124 Villa Gdor. Galvez, Santa Fe',
     descripcion: [],
-    fotos: ['escuela_jardin/jardin_237.jpg']
+    carpeta:'jardin_608',
+    fotos: ['01.jpg','00.jpg']
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
