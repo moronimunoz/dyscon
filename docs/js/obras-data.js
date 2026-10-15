@@ -139,7 +139,7 @@ const OBRAS = [
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
-    tipo: 'colaboracion', con: '', estado: 'terminado', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
     mapa: '3942+G4 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['plaza-san-martin.jpg']
