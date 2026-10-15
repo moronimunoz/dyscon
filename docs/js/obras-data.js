@@ -25,7 +25,8 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     descripcion: [],
-    fotos: ['ricchieri.jpg']
+    carpeta:'ricchieri',
+    fotos: ['00.jpeg','01.jpeg','02.jpeg','03.jpeg']
   },
   {
     id: 'escuela-ricardone', nombre: 'Escuela Secundaria Ricardone', categoria: 'Educación',
@@ -47,7 +48,9 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', cliente: '',
     mapa: 'Cnel. Brandsen 2898, B1714LAH Ituzaingó, Provincia de Buenos Aires',
     descripcion: [],
-    fotos: ['pami.jpg']
+    carpeta:'pami',
+    portada: 'pami/01.jpeg',
+    fotos: ['00.jpg','01.jpeg','02.jpg','03.jpeg','04.jpeg']
   },
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
