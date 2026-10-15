@@ -4,9 +4,11 @@
    - estado: 'inicio' | 'obra' | 'terminado'
    - tipo:   'propia' | 'colaboracion'  (con: empresa con la que se colaboró)
    - fotos:  nombres dentro de img/obras/ (la primera es la principal)
+   - Descripción: En general dentro de los "[]" es como un <p> en html permitiendo
+       poner equitiquetas para decorar el texto.
    - Para agregar la fila "Objetivos y datos", sumá a la obra:
        datos: ['Superficie: ...', 'Plazo: ...']
-   - Para ubicar mejor el mapa, sumá: mapa: 'Calle 123, Ciudad, Provincia'
+   - Para ubicar mejor el mapa, sumá: mapa: 'Calle 123, Ciudad, Provincia's
        o coordenadas: mapa: '-32.9468, -60.6393',
    - portada: 'casa_m/panoramica.jpg', (le da fondo a la portada oscura en
        la pagina de una obra)
@@ -62,10 +64,13 @@ const OBRAS = [
   },
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
-    tipo: 'colaboracion', con: '', estado: 'terminado', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
-    descripcion: [],
-    fotos: ['tecnoteca.jpg']
+    descripcion: ['<strong>Tecnoteca, Escuela de Tecnología y Oficios Digitale</strong><br>El propósito de Tecnotecta es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con 4.000 mts2 distribuidos en dos plantas que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
+    portada:'tecnoteca/03.jpg',
+    carpeta:'tecnoteca',
+    video:'c6oSxMGdOtA&t=1s',
+    fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {
     id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Comunidad',

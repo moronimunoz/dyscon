@@ -71,59 +71,7 @@
           <button class="filtro" data-filtro="eventos">Eventos</button>
         </div>
 
-        <div class="grid">
-
-          <!--
-            Copiá y pegá un bloque <article> por cada novedad. Poné las más nuevas primero.
-            - data-estado: obras | institucional | eventos  (tiene que coincidir con el botón de filtro)
-            - <span class="tag">: el nombre de la categoría que se ve sobre la foto
-            - <time datetime="AAAA-MM-DD">: la fecha en formato máquina, y el texto visible dentro
-            Las novedades de abajo son de ejemplo: cambialas por las reales.
-          -->
-
-          <!-- Novedad de ejemplo 1 -->
-          <article class="obra-card reveal" data-estado="obras">
-            <a href="#">
-              <div class="obra-img">
-                <img src="img/novedades/novedad-1.jpg" alt="Avance de obra" loading="lazy">
-                <span class="tag">Obras</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Avance de obra: título de la novedad</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-calendario"/></svg> <time datetime="2026-10-08">8 de octubre de 2026</time> <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-          <!-- Novedad de ejemplo 2 -->
-          <article class="obra-card reveal" data-estado="institucional">
-            <a href="#">
-              <div class="obra-img">
-                <img src="img/novedades/novedad-2.jpg" alt="Novedad institucional" loading="lazy">
-                <span class="tag">Institucional</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Novedad institucional: título</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-calendario"/></svg> <time datetime="2026-09-20">20 de septiembre de 2026</time> <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-          <!-- Novedad de ejemplo 3 -->
-          <article class="obra-card reveal" data-estado="eventos">
-            <a href="#">
-              <div class="obra-img">
-                <img src="img/novedades/novedad-3.jpg" alt="Evento" loading="lazy">
-                <span class="tag">Eventos</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Evento: título de la novedad</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-calendario"/></svg> <time datetime="2026-08-14">14 de agosto de 2026</time> <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-        </div>
+        <div class="grid" id="lista-novedades"></div>
       </div>
     </section>
 
@@ -173,6 +121,8 @@
     </div>
   </footer>
 
+  <script src="js/novedades-data.js"></script>
+  <script src="js/novedades-lista.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

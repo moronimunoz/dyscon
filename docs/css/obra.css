@@ -73,3 +73,6 @@
 }
 .page-hero--img .migas { color: #d3e3e8; }
 .page-hero--img h1 { text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
+
+/* Para que los textos largos en obras sean lejibles */
+.ficha-fila p { max-width: 70ch; line-height: 1.7; }
