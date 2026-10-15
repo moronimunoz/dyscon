@@ -8,6 +8,8 @@
        datos: ['Superficie: ...', 'Plazo: ...']
    - Para ubicar mejor el mapa, sumá: mapa: 'Calle 123, Ciudad, Provincia'
        o coordenadas: mapa: '-32.9468, -60.6393',
+   - portada: 'casa_m/panoramica.jpg', (le da fondo a la portada oscura en
+       la pagina de una obra)
    ========================================================= */
 const OBRAS = [
   {

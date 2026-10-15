@@ -39,7 +39,7 @@
         <p class="migas"><a href="index.html">Inicio</a> / <a href="obras.html">Obras</a> / ${o.nombre}</p>
         <div class="chips"><span class="chip">${o.categoria}</span>${o.tipo === 'colaboracion' ? '<span class="chip">En colaboración</span>' : ''}</div>
         <h1>${o.nombre}</h1>
-        <p>${o.ubicacion}</p>
+        ${o.ubicacion ? `<p>${o.ubicacion}</p>` : ''}
       </div>
     </section>
     <section class="contenedor ficha">
@@ -49,9 +49,18 @@
       ${fila('Descripción', o.descripcion && o.descripcion.map(p => `<p>${p}</p>`).join(''))}
       ${fila('Objetivos y datos', o.datos && `<ul class="ficha-datos">${o.datos.map(d => `<li>${d}</li>`).join('')}</ul>`)}
       ${fila('Galería de fotos', fotos && `<div class="galeria">${fotos}</div>`)}
-      ${fila('Ubicación', `<div class="mapa"><iframe src="${mapa}" title="Mapa: ${o.nombre}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`)}
+      ${fila('Ubicación', (o.mapa || o.ubicacion) && `<div class="mapa"><iframe src="${mapa}" title="Mapa: ${o.nombre}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`)}
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
+
+  // Foto de fondo en la franja del título (portada, o si no la primera foto de la galería)
+  const hero = main.querySelector('.page-hero');
+  const primera = main.querySelector('.galeria button');
+  const portada = o.portada ? `img/obras/${o.portada}` : (primera && primera.dataset.src);
+  if (hero && portada) {
+    hero.classList.add('page-hero--img');
+    hero.insertAdjacentHTML('afterbegin', `<div class="hero-fondo" style="background-image:url('${portada}')"></div>`);
+  }
 
   // Visor de fotos ampliadas
   const visor = document.getElementById('visor');
