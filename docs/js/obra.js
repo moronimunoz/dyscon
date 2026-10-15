@@ -54,6 +54,7 @@
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
 
+    // El orden de las elementos se definen dentro de este section de arriba
   // Foto de fondo en la franja del título (portada, o si no la primera foto de la galería)
   const hero = main.querySelector('.page-hero');
   const primera = main.querySelector('.galeria button');
