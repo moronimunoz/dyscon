@@ -49,8 +49,8 @@
       ${fila('Descripción', o.descripcion && o.descripcion.map(p => `<p>${p}</p>`).join(''))}
       ${fila('Objetivos y datos', o.datos && `<ul class="ficha-datos">${o.datos.map(d => `<li>${d}</li>`).join('')}</ul>`)}
       ${fila('Galería de fotos', fotos && `<div class="galeria">${fotos}</div>`)}
+      ${fila('Video', o.video && `<div class="video"><iframe src="https://www.youtube.com/embed/${o.video}" title="Video: ${o.nombre}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`)}
       ${fila('Ubicación', (o.mapa || o.ubicacion) && `<div class="mapa"><iframe src="${mapa}" title="Mapa: ${o.nombre}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`)}
-      ${n.video ? `<div class="video"><iframe src="https://www.youtube.com/embed/${n.video}" title="Video: ${n.titulo}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>` : ''}
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
 
