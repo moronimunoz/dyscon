@@ -43,7 +43,8 @@ const OBRAS = [
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'España 543, Rosario, Santa Fe',
     descripcion: [],
-    fotos: ['espana.jpg']
+    carpeta:'espana',
+    fotos: ['00.jpg','01.jpeg','02.jpeg','03.jpeg',]
   },
   {
     id: 'pami-ituzaingo', nombre: 'Hospital del Bicentenario PAMI Ituzaingó', categoria: 'Salud',
