@@ -44,7 +44,7 @@ const OBRAS = [
   },
   {
     id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Comunidad',
-    tipo: 'propia', estado: 'obra', cliente: '',
+    tipo: 'propia', estado: 'inicio', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'España 543, Rosario, Santa Fe',
     descripcion: [],
