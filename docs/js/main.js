@@ -55,9 +55,6 @@ if (slides.length > 1 && dotsBox) {
   function iniciar() { timer = setInterval(() => ir(actual + 1), 6000); }
   function reiniciar() { clearInterval(timer); iniciar(); }
 
-  document.querySelector('.hero-prev').addEventListener('click', () => { ir(actual - 1); reiniciar(); });
-  document.querySelector('.hero-next').addEventListener('click', () => { ir(actual + 1); reiniciar(); });
-
   // Pausar cuando el mouse está sobre el hero
   const hero = document.querySelector('.hero');
   hero.addEventListener('mouseenter', () => clearInterval(timer));
@@ -140,4 +137,29 @@ if (botonesFiltro.length) {
       t.classList.toggle('filtrada', filtro !== 'todos' && t.dataset.estado !== filtro)
     );
   }));
+}
+
+// ---------- 9. Portada: el texto se desvanece cuando la página lo va tapando ----------
+const heroSec = document.querySelector('.hero');
+const heroTxt = document.querySelector('.hero-contenido');
+
+if (heroSec && heroTxt) {
+  let esperando = false;
+
+  const desvanecer = () => {
+    // "tope" = donde queda frenado el texto (lo define el CSS: top de .hero-contenido)
+    const tope = parseFloat(getComputedStyle(heroTxt).top) || 0;
+    // "margen" = separación entre el botón y la franja (lo define el CSS: padding-bottom de .hero)
+    const margen = parseFloat(getComputedStyle(heroSec).paddingBottom) || 0;
+    const finPortada = heroSec.getBoundingClientRect().bottom;   // dónde termina la portada en pantalla
+    const opacidad = (finPortada - margen - tope) / (heroTxt.offsetHeight || 1);
+    heroTxt.style.opacity = Math.min(1, Math.max(0, opacidad));
+    esperando = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!esperando) { esperando = true; requestAnimationFrame(desvanecer); }
+  }, { passive: true });
+  window.addEventListener('resize', desvanecer);
+  desvanecer();
 }

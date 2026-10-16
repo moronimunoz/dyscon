@@ -409,3 +409,57 @@ button { font: inherit; cursor: pointer; }
 
 .video { position: relative; aspect-ratio: 16 / 9; margin: 2rem 0; border-radius: 6px; overflow: hidden; background: var(--teal-900); }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* =========================================================
+   INICIO: portada a pantalla completa + menú transparente
+   (va al FINAL del archivo: pisa las reglas anteriores de .hero y .slides)
+   ========================================================= */
+
+/* Portada a pantalla completa */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;                 /* en celulares descuenta la barra del navegador */
+  padding: var(--alto-header) 5% 0;   /* el contenido se centra por debajo del menú */
+  clip-path: inset(0);                /* recorta la imagen fija al tamaño de la portada */
+}
+
+/* La imagen NO se mueve al hacer scroll: la página sube por encima */
+.slides { position: fixed; inset: 0; }
+
+/* Sombra suave arriba para que se lea el menú sobre cualquier foto */
+.slides::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 180px; z-index: 1;
+  background: linear-gradient(180deg, rgba(9, 38, 49, .6), rgba(9, 38, 49, 0));
+}
+
+/* Listo para cuando pongas un video (ver más abajo) */
+.slides video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* Menú transparente arriba, blanco al bajar */
+.header--hero {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: transparent;
+  transition: background .3s, box-shadow .3s;
+}
+.header--hero.con-sombra { background: var(--blanco); box-shadow: 0 2px 12px rgba(15, 61, 78, .12); }
+.header--hero:not(.con-sombra) .menu-toggle { color: #fff; }
+
+@media (min-width: 1101px) {
+  .header--hero:not(.con-sombra) .nav a,
+  .header--hero:not(.con-sombra) .nav a.activo { color: #fff; }
+  .header--hero:not(.con-sombra) .nav a::after { background: #fff; }
+}
+
+/* Texto de la portada: lo frena el navegador al llegar al menú (sin JavaScript) */
+.hero { overflow: visible; }   /* con overflow:hidden el "sticky" no funciona; el recorte ya lo hace clip-path */
+.hero-contenido {
+  position: sticky;
+  top: calc(var(--alto-header) + 16px);   /* distancia al menú cuando se frena */
+}
+
+/* Separación entre el botón y la franja cuando el texto empieza a subir */
+.hero { padding: calc(var(--alto-header) + 20px) 5% 20px; }
+
+/* Puntitos del slider centrados abajo */
+.hero-controles { left: 0; right: 0; justify-content: center; }
+.hero-dots { margin-right: 0; }
