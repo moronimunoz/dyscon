@@ -419,3 +419,19 @@ button { font: inherit; cursor: pointer; }
   .oculto { opacity: 1; transform: none; }
   .en-curso { animation: none; }
 }
+
+/* Encabezado de página con foto de fondo (se usa con la clase page-hero--img) */
+.page-hero--img {
+  position: relative; overflow: hidden;
+  min-height: clamp(320px, 46vh, 460px);
+  display: flex; align-items: flex-end;
+  padding: 3.5rem 0;
+}
+.page-hero--img .contenedor { position: relative; z-index: 2; width: 100%; }
+.hero-fondo { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.hero-fondo::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(9, 38, 49, .9) 0%, rgba(9, 38, 49, .65) 55%, rgba(9, 38, 49, .4) 100%);
+}
+.page-hero--img .migas { color: #d3e3e8; }
+.page-hero--img h1 { text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }

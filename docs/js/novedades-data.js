@@ -26,7 +26,7 @@ const NOVEDADES = [
   },
   {
     id: 'novedad-institucional-ejemplo',
-    titulo: 'Novedad institucional: título (EJEMPLO)',
+    titulo: 'Nace <strong>Nodo</strong>, el parque industrial que apunta a captar empresas alimenticias',
     categoria: 'Institucional',
     fecha: '2026-03-21',
     portada: '2026_03_21_nodo/02.jpg',
