@@ -13,6 +13,19 @@
    - portada: 'casa_m/panoramica.jpg', (le da fondo a la portada oscura en
        la pagina de una obra)
    ========================================================= */
+
+/* =========================================================
+    DATOS DE LAS OBRAS POR CONFIRMAR
+  {
+  id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Comunidad',
+  tipo: 'propia', estado: 'terminado', cliente: '',
+  ubicacion: 'Rosario · Santa Fe',
+  descripcion: [],
+  carpeta:'ricchieri',
+  fotos: ['00.jpeg','01.jpeg','02.jpeg','03.jpeg']
+  },
+   ========================================================= */
+   
 const OBRAS = [
   {
     id: 'casa-m', nombre: 'CUBO_PUERTO ESPAÑA', categoria: 'Comunidad',
@@ -21,14 +34,6 @@ const OBRAS = [
     descripcion: [],
     carpeta:'casa_m',
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg']
-  },
-  {
-    id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Comunidad',
-    tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
-    descripcion: [],
-    carpeta:'ricchieri',
-    fotos: ['00.jpeg','01.jpeg','02.jpeg','03.jpeg']
   },
   {
     id: 'escuela-ricardone', nombre: 'Escuela Secundaria Ricardone', categoria: 'Educación',
