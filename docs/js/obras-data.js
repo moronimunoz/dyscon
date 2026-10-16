@@ -114,7 +114,9 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', cliente: '',
     mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
     descripcion: [],
-    fotos: ['monumento.jpg']
+    portada:'monumento/01.jpg',
+    carpeta:'monumento',
+    fotos: ['00.jpg','01.jpg','02.jpeg','03.jpg','04.jpg','05.jpg','06.jpg']
   },
   {
     id: 'hospital-samco', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
@@ -143,7 +145,9 @@ const OBRAS = [
     tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
     mapa: '3942+G4 Rosario, Santa Fe',
     descripcion: [],
-    fotos: ['plaza-san-martin.jpg']
+    carpeta:'plaza_san_martin',
+    portada:'plaza_san_martin/00.jpg',
+    fotos: ['04.webp','01.webp','02.webp','03.webp']
   },
   {
     id: 'barrio-mortelari-1', nombre: 'Mejoramiento integral del barrio Mortelari I', categoria: 'Comunidad',
