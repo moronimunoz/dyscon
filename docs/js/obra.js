@@ -31,7 +31,7 @@
   ).join('');
 
   // El número es el zoom: 14 muestra el barrio, 16 la cuadra y 18 casi el edificio
-  const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&z=16&output=embed`;
+  const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&z=14&output=embed`;
 
   main.innerHTML = `
     <section class="page-hero">
