@@ -62,7 +62,7 @@ const OBRAS = [
   },
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
-    tipo: 'propia', con: '<strong>Del SOl</strong> - Empresa Constructora',estado: 'obra', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora',estado: 'obra', cliente: '',
     mapa: 'X98V+JHG Villa Gdor. Galvez, Santa Fe',
     descripcion: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.'],
     carpeta:'parque_industrial',
