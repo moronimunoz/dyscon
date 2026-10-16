@@ -29,7 +29,7 @@
 const OBRAS = [
   {
     id: 'casa-m', nombre: 'CUBO_PUERTO ESPAÑA', categoria: 'Comunidad',
-    tipo: 'propia', estado: 'obra', cliente: '',
+    tipo: 'propia', estado: 'inicio', cliente: '',
     mapa: 'Arturo Illia 1690, S2000 Rosario, Santa Fe',
     descripcion: [],
     carpeta:'casa_m',
@@ -44,7 +44,7 @@ const OBRAS = [
   },
   {
     id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Comunidad',
-    tipo: 'propia', estado: 'inicio', cliente: '',
+    tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'España 543, Rosario, Santa Fe',
     descripcion: [],
