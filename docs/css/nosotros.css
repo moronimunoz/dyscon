@@ -101,3 +101,10 @@
   .cifras-lista { justify-content: center; }
   .cifras-lista li { width: 130px; height: 130px; }
 }
+
+/* Arreglo: la pista ocupa siempre la columna del medio, aunque se oculten las flechas */
+.carrusel-prev { grid-column: 1; }
+.carrusel-pista { grid-column: 2; min-width: 0; }
+.carrusel-next { grid-column: 3; }
+.carrusel--una { grid-template-columns: 1fr; }
+.carrusel--una .carrusel-pista { grid-column: 1; }

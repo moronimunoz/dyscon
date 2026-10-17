@@ -28,36 +28,41 @@
     }
   }
 
-  // ---------- 2. Carrusel de marcas: flechas, puntos y deslizar con el dedo ----------
+  // ---------- 2. Carrusel de marcas: avanza de a un logo, con flechas, puntos y deslizando ----------
   const carrusel = document.querySelector('.carrusel');
   if (carrusel) {
     const pista = carrusel.querySelector('.carrusel-pista');
     const puntos = document.querySelector('.carrusel-dots');
-    let paginas = 1;
+    const logos = pista.querySelectorAll('.marca');
+    if (!logos.length) return;
 
+    let posiciones = 1;                                          // cuántos "pasos" tiene el carrusel
+
+    const ancho = () => logos[0].getBoundingClientRect().width;  // ancho de un logo
+    const visibles = () => Math.max(1, Math.round(pista.clientWidth / ancho()));
     const max = () => pista.scrollWidth - pista.clientWidth;
-    const paginaActual = () =>
-      pista.scrollLeft >= max() - 2 ? paginas - 1 : Math.round(pista.scrollLeft / pista.clientWidth);
-    const ir = n => pista.scrollTo({ left: Math.min(n * pista.clientWidth, max()), behavior: 'smooth' });
+    const actual = () => Math.min(posiciones - 1, Math.round(pista.scrollLeft / ancho()));
+    const ir = n => pista.scrollTo({ left: Math.min(n * ancho(), max()), behavior: 'smooth' });
+
     const marcar = () => {
-      const a = paginaActual();
+      const a = actual();
       puntos.querySelectorAll('button').forEach((p, i) => p.classList.toggle('activo', i === a));
     };
 
-    // Un punto por "página" (cada página muestra tantos logos como entren)
+    // Un punto por posición: con 16 logos y 4 visibles hay 13 puntos
     const armar = () => {
-      paginas = Math.max(1, Math.ceil(pista.scrollWidth / pista.clientWidth - 0.05));
-      puntos.innerHTML = Array.from({ length: paginas }, (_, i) =>
-        `<button type="button" aria-label="Ir a la página ${i + 1}"></button>`).join('');
+      posiciones = Math.max(1, logos.length - visibles() + 1);
+      puntos.innerHTML = Array.from({ length: posiciones }, (_, i) =>
+        `<button type="button" aria-label="Ir al logo ${i + 1}"></button>`).join('');
       puntos.querySelectorAll('button').forEach((p, i) => p.addEventListener('click', () => ir(i)));
-      carrusel.classList.toggle('carrusel--una', paginas < 2);
+      carrusel.classList.toggle('carrusel--una', posiciones < 2);   // si todo entra, no hay controles
       marcar();
     };
 
     carrusel.querySelector('.carrusel-prev').addEventListener('click', () =>
-      ir(paginaActual() === 0 ? paginas - 1 : paginaActual() - 1));
+      ir(actual() === 0 ? posiciones - 1 : actual() - 1));
     carrusel.querySelector('.carrusel-next').addEventListener('click', () =>
-      ir(paginaActual() === paginas - 1 ? 0 : paginaActual() + 1));
+      ir(actual() === posiciones - 1 ? 0 : actual() + 1));
 
     pista.addEventListener('scroll', () => requestAnimationFrame(marcar), { passive: true });
     window.addEventListener('resize', armar);
