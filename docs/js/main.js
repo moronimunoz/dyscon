@@ -52,7 +52,8 @@ if (slides.length > 1 && dotsBox) {
     dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
   }
 
-  function iniciar() { timer = setInterval(() => ir(actual + 1), 6000); }
+  //iniciar: El 6000 son milisegundos (6 segundos).
+  function iniciar() { timer = setInterval(() => ir(actual + 1), 4000); }
   function reiniciar() { clearInterval(timer); iniciar(); }
 
   // Pausar cuando el mouse está sobre el hero
