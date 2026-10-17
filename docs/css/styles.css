@@ -4,6 +4,7 @@
 
 /* ---------- Variables (cambiás la paleta acá) ---------- */
 :root {
+  --grad-logo: linear-gradient(90deg, #46bbc1, #517c82);
   --teal-900: #0f3d4e;     /* fondos oscuros y footer */
   --teal-700: #17566b;     /* botones oscuros, títulos */
   --teal-500: #1f7186;     /* botón principal del hero */

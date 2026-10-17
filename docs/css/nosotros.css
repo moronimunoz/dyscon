@@ -8,7 +8,7 @@
 .descripcion-card { border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; background: #fff; }
 .descripcion-cab {
   padding: 1rem 1.5rem 1.1rem; text-align: center; color: #fff;
-  background: linear-gradient(90deg, #46bbc1, #517c82);     /* el degradado del logo */
+  background: var(--grad-logo);
 }
 .descripcion-cab h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.1; }
 .descripcion-cab p { font-weight: 600; }
