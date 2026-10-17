@@ -63,11 +63,7 @@
     hero.classList.add('page-hero--img');
     hero.insertAdjacentHTML('afterbegin', `<div class="hero-fondo" style="background-image:url('${portada}')"></div>`);
   }
-
-  // Visor de fotos ampliadas
-  const visor = document.getElementById('visor');
-  main.querySelectorAll('.galeria button').forEach(b =>
-    b.addEventListener('click', () => { visor.querySelector('img').src = b.dataset.src; visor.showModal(); })
-  );
-  visor.addEventListener('click', () => visor.close());
+  
+   //Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
+   iniciarVisor(main.querySelectorAll('.galeria button'));
 })();

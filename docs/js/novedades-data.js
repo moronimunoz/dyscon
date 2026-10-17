@@ -3,6 +3,7 @@
    Para agregar una: copiá un bloque, cambiá el id (sin espacios ni tildes) y completá.
    La lista de novedades.html se ordena sola por fecha (la más nueva primero).
    - categoria: 'Obras' | 'Institucional' | 'Eventos' (tiene que coincidir con un botón de filtro)
+   - id: lo que se vera en la URL. Ej. <a href="novedad.html?id=${n.id}"> (usar munisculas y _, espacios no)
    - fecha:     'AAAA-MM-DD'
    - portada:   foto principal, dentro de img/novedades/ (obligatoria: se ve en la tarjeta)
    - resumen:   opcional, una línea para buscadores
@@ -13,7 +14,7 @@
    ========================================================= */
 const NOVEDADES = [
   {
-    id: 'avance-obra-ejemplo',
+    id: 'inauguracion_de_tecnoteca',
     titulo: 'Inauguracion de Tecnoteca',
     categoria: 'Obras',
     fecha: '2025-09-25',
@@ -25,9 +26,9 @@ const NOVEDADES = [
     fotos: ['2026_09_20_tecnoteca/01.jpg','2026_09_20_tecnoteca/02.jpg','2026_09_20_tecnoteca/00.jpg']
   },
   {
-    id: 'novedad-institucional-ejemplo',
+    id: 'nace_nodo',
     titulo: 'Nace Nodo, el parque industrial que apunta a captar empresas alimenticias',
-    categoria: 'Institucional',
+    categoria: 'Eventos',
     fecha: '2026-03-21',
     portada: '2026_03_21_nodo/02.jpg',
     resumen: 'Nace Nodo, el parque industrial que apunta a captar empresas alimenticias',
@@ -35,9 +36,9 @@ const NOVEDADES = [
     fotos: ['2026_03_21_nodo/00.jpeg','2026_03_21_nodo/01.jpg','2026_03_21_nodo/02.jpg','2026_03_21_nodo/03.jpg']
   },
   {
-    id: 'evento-ejemplo',
+    id: 'reinauguracion_monumento',
     titulo: 'Reinauguracion del Monumento Nacional a la Bandera',
-    categoria: 'Eventos',
+    categoria: 'Obras',
     fecha: '2026-07-17',
     portada: '2026_07_17_monumento/02.jpeg',
     resumen: '',

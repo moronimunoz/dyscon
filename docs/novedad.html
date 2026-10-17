@@ -43,7 +43,16 @@
   <!-- Acá se dibuja la novedad (js/novedad.js) -->
   <main id="detalle"></main>
 
-  <dialog class="visor" id="visor"><img alt=""></dialog>
+  <dialog class="visor" id="visor">
+    <img alt="">
+    <div class="visor-controles">
+      <div class="visor-dots" aria-label="Fotos"></div>
+      <div class="visor-flechas">
+        <button type="button" class="visor-prev" aria-label="Foto anterior"><svg class="icon" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button type="button" class="visor-next" aria-label="Foto siguiente"><svg class="icon" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </dialog>
 
   <a class="whatsapp" href="https://wa.me/549341XXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
 
@@ -73,6 +82,7 @@
   </footer>
 
   <script src="js/novedades-data.js"></script>
+  <script src="js/visor.js"></script>
   <script src="js/novedad.js"></script>
   <script src="js/main.js"></script>
 </body>
