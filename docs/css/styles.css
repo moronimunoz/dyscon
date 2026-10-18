@@ -436,3 +436,8 @@ button { font: inherit; cursor: pointer; }
 }
 .page-hero--img .migas { color: #d3e3e8; }
 .page-hero--img h1 { text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
+
+@media (max-width: 760px) {
+  .slides { background: var(--teal-900) url('../img/hero/poster.jpg') center / cover no-repeat; }
+  .slides video { display: none; }
+}

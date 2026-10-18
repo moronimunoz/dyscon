@@ -184,3 +184,9 @@ if (heroSec && heroTxt) {
   window.addEventListener('resize', desvanecer);
   desvanecer();
 }
+
+// Video de portada: se pausa si el visitante pidió menos movimiento
+const videoPortada = document.querySelector('.slides video');
+if (videoPortada && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  videoPortada.pause();
+}
