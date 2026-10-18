@@ -28,7 +28,7 @@
    
 const OBRAS = [
   {
-    id: 'casa-m', nombre: 'CUBO_PUERTO ESPAÑA', categoria: 'Comunidad',
+    id: 'casa-m', nombre: 'Casa M', categoria: 'Comunidad',
     tipo: 'propia', estado: 'inicio', cliente: '',
     mapa: 'Arturo Illia 1690, S2000 Rosario, Santa Fe',
     descripcion: [],
