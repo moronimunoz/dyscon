@@ -107,11 +107,33 @@
 
     </section>
 
-    <!-- MAPA -->
-    <section class="mapa-contacto">
-      <div class="contenedor">
-        <h2 class="titulo">Cómo llegar</h2>
-        <iframe src="https://www.google.com/maps?q=Brown+2063,+Rosario,+Santa+Fe&z=16&output=embed" title="Mapa: oficina central de DyScon S.A." loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- FORMULARIO -->
+    <section class="contenedor formulario">
+      <h2 class="titulo">Escribinos</h2>
+      <div class="form-card reveal">
+        <!-- Foto: guardala como img/contacto/formulario.jpg -->
+        <div class="form-img" style="background-image:url('img/contacto/formulario.jpg')" role="img" aria-label="Detalle de una obra de DyScon"></div>
+
+        <!-- Para que envíe mails reales, pegá la dirección de Formspree en data-endpoint (ver main.js) -->
+        <form class="form-cuerpo" id="form-contacto" data-endpoint="">
+          <h3>Contanos sobre tu proyecto</h3>
+          <p>¿Tenés una consulta o querés presupuestar una obra? Completá el formulario y nuestro equipo se va a comunicar con vos.</p>
+
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Tu email" autocomplete="email" required>
+
+          <label for="mensaje">¿En qué podemos ayudarte?</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta" required></textarea>
+
+          <!-- Campo trampa anti-spam: los visitantes no lo ven, los robots sí lo completan -->
+          <input type="text" name="_gotcha" class="trampa" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <button type="submit" class="btn btn--teal">Enviar mensaje</button>
+          <p id="form-msg" class="form-msg" role="status"></p>
+        </form>
       </div>
     </section>
 

@@ -100,25 +100,45 @@ if (secciones.length) {
   secciones.forEach(s => espia.observe(s));
 }
 
-// ---------- 6. Formulario de contacto (para contacto.html) ----------
+// ---------- 6. Formulario de contacto (contacto.html) ----------
+// Para que envíe mails de verdad: pegá la dirección de Formspree en data-endpoint del <form>.
+// Si data-endpoint está vacío, se abre el programa de correo del visitante con el mensaje armado.
 const form = document.getElementById('form-contacto');
 const msg = document.getElementById('form-msg');
 
 if (form && msg) {
-  form.addEventListener('submit', (e) => {
+  const aviso = (texto, color) => { msg.textContent = texto; msg.style.color = color; };
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const datos = Object.fromEntries(new FormData(form));
 
-    if (datos.mensaje.trim().length < 10) {
-      msg.textContent = 'El mensaje es muy corto.';
-      msg.style.color = 'crimson';
+    if (datos._gotcha) return;                                   // campo trampa: solo lo completa un robot
+    if (datos.mensaje.trim().length < 10) { aviso('El mensaje es muy corto.', 'crimson'); return; }
+
+    const endpoint = form.dataset.endpoint;
+
+    if (!endpoint) {
+      const asunto = encodeURIComponent('Consulta desde la web - ' + datos.nombre);
+      const cuerpo = encodeURIComponent(`${datos.mensaje}\n\nNombre: ${datos.nombre}\nEmail: ${datos.email}`);
+      location.href = `mailto:dysconsa@dysconsa.com.ar?subject=${asunto}&body=${cuerpo}`;
+      aviso('Se abrió tu programa de correo para enviar el mensaje.', 'green');
       return;
     }
 
-    // Acá después conectás un servicio real (Formspree, EmailJS, etc.)
-    msg.textContent = '¡Gracias! Te contactaremos pronto.';
-    msg.style.color = 'green';
-    form.reset();
+    const boton = form.querySelector('button[type="submit"]');
+    boton.disabled = true;
+    aviso('Enviando…', 'inherit');
+    try {
+      const r = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      if (!r.ok) throw new Error('envio');
+      aviso('¡Gracias! Recibimos tu mensaje y te responderemos pronto.', 'green');
+      form.reset();
+    } catch (err) {
+      aviso('No pudimos enviar el mensaje. Probá de nuevo o escribinos a dysconsa@dysconsa.com.ar.', 'crimson');
+    } finally {
+      boton.disabled = false;
+    }
   });
 }
 

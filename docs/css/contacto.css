@@ -34,7 +34,41 @@
 .contacto-lista a { transition: color .2s; }
 .contacto-lista a:hover { color: var(--teal-500); }
 
-/* Mapa */
-.mapa-contacto { padding: 1rem 0 4rem; }
-.mapa-contacto .titulo { margin-bottom: 1.5rem; }
-.mapa-contacto iframe { width: 100%; height: 360px; border: 0; border-radius: 6px; }
+/* Formulario con foto (reutiliza el borde fino de las tarjetas) */
+.formulario { padding-bottom: 4rem; }
+.formulario .titulo { margin-bottom: 1.5rem; }
+
+.form-card {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; background: #fff;
+}
+.form-img { min-height: 380px; background: var(--teal-900) center / cover no-repeat; }
+
+.form-cuerpo { display: grid; gap: .5rem; align-content: start; padding: 2.2rem 2.4rem; }
+.form-cuerpo h3 { font-size: 1.6rem; font-weight: 700; line-height: 1.2; color: var(--teal-900); }
+.form-cuerpo > p:not(.form-msg) { margin-bottom: .6rem; font-size: .92rem; color: var(--gris); }
+.form-cuerpo label { margin-top: .6rem; font-size: .85rem; font-weight: 600; color: var(--tinta); }
+
+.form-cuerpo input:not(.trampa), .form-cuerpo textarea {
+  width: 100%; padding: .85rem 1rem;
+  border: 1px solid transparent; border-radius: 6px;
+  background: #eef2f4; font: inherit; font-size: .92rem; color: var(--tinta);
+  transition: border-color .2s, background .2s, box-shadow .2s;
+}
+.form-cuerpo input:not(.trampa):focus, .form-cuerpo textarea:focus {
+  outline: none; border-color: var(--teal-500); background: #fff;
+  box-shadow: 0 0 0 3px rgba(31, 113, 134, .15);
+}
+.form-cuerpo textarea { min-height: 130px; resize: vertical; }
+
+.form-cuerpo .btn { justify-content: center; width: 100%; margin-top: 1rem; cursor: pointer; }
+.form-cuerpo .btn:disabled { opacity: .6; cursor: wait; transform: none; }
+.form-msg { min-height: 1.4em; font-size: .9rem; }
+
+.trampa { position: absolute; left: -9999px; }        /* campo anti-spam oculto */
+
+@media (max-width: 760px) {
+  .form-card { grid-template-columns: 1fr; }
+  .form-img { min-height: 220px; }
+  .form-cuerpo { padding: 1.6rem 1.4rem; }
+}
