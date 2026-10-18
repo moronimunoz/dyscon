@@ -121,7 +121,7 @@ if (form && msg) {
     if (!endpoint) {
       const asunto = encodeURIComponent('Consulta desde la web - ' + datos.nombre);
       const cuerpo = encodeURIComponent(`${datos.mensaje}\n\nNombre: ${datos.nombre}\nEmail: ${datos.email}`);
-      location.href = `mailto:dysconsa@dysconsa.com.ar?subject=${asunto}&body=${cuerpo}`;
+      location.href = `mailto:moronimunoz123@gmail.com?subject=${asunto}&body=${cuerpo}`;
       aviso('Se abrió tu programa de correo para enviar el mensaje.', 'green');
       return;
     }
@@ -135,7 +135,7 @@ if (form && msg) {
       aviso('¡Gracias! Recibimos tu mensaje y te responderemos pronto.', 'green');
       form.reset();
     } catch (err) {
-      aviso('No pudimos enviar el mensaje. Probá de nuevo o escribinos a dysconsa@dysconsa.com.ar.', 'crimson');
+      aviso('No pudimos enviar el mensaje. Probá de nuevo o escribinos a moronimunoz123@gmail.com.', 'crimson');
     } finally {
       boton.disabled = false;
     }
