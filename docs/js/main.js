@@ -190,3 +190,10 @@ const videoPortada = document.querySelector('.slides video');
 if (videoPortada && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   videoPortada.pause();
 }
+
+//Evita que bots tomen el gmail para hacer Spam
+const usuario = "dysconsa";
+const dominio = "dysconsa.com.ar";
+const enlace = document.getElementById("email-contacto");
+enlace.href = "mailto:" + usuario + "@" + dominio;
+enlace.textContent = usuario + "@" + dominio;
