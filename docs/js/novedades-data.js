@@ -15,7 +15,7 @@
 const NOVEDADES = [
   {
     id: 'inauguracion_de_tecnoteca',
-    titulo: 'Inauguracion de Tecnoteca',
+    titulo: 'Inauguración de Tecnoteca',
     categoria: 'Eventos',
     fecha: '2025-09-25',
     portada: '2025_09_25_tecnoteca/03.jpg',
@@ -37,7 +37,7 @@ const NOVEDADES = [
   },
   {
     id: 'reinauguracion_monumento',
-    titulo: 'Reinauguracion del Monumento Nacional a la Bandera',
+    titulo: 'Reinauguración del Monumento Nacional a la Bandera',
     categoria: 'Eventos',
     fecha: '2026-06-17',
     portada: '2026_06_17_monumento/02.jpeg',

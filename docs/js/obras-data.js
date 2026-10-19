@@ -65,29 +65,31 @@ const OBRAS = [
   },
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
-    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora',estado: 'obra', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora',estado: 'obra', cliente: '',
     mapa: 'X98V+JHG Villa Gdor. Gálvez, Santa Fe',
-    descripcion: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.'],
+    descripcion: ['<strong>Nodo</strong> es un parque industrial privado impulsado por <strong>Grupo Nasini Inversiones</strong> y <strong>Mariano Schor</strong>, de <strong>Dyscon - Empresa Constructora</strong>, en el sur del Gran Rosario. Con las obras en marcha, busca atraer especialmente a empresas alimenticias que necesitan expandirse fuera del tejido urbano. Para ello, ofrece infraestructura especializada, como agua potable, red cloacal, gas y capacidad eléctrica industrial.'],
     carpeta:'parque_industrial',
     fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
   },
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
-    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora', estado: 'terminado', cliente: 'Municipalidad de Rosario.',
+    tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora', estado: 'terminado', cliente: 'Municipalidad de Rosario.',
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
-    descripcion: ['<strong>Tecnoteca, Escuela de Tecnología y Oficios Digitale</strong><br>El propósito de Tecnotecta es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con 4.000 mts2 distribuidos en dos plantas que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
+    descripcion: ['<strong>Tecnoteca, Escuela de Tecnología y Oficios Digitales</strong><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con 4.000 mts2 distribuidos en dos plantas que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
     carpeta:'tecnoteca',
     video:'c6oSxMGdOtA',
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {
-    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Comunidad',
+    id: 'rdz-1635', nombre: 'RDZ 1635 – Edificio residencial', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
-    descripcion: [],
-    fotos: ['rdz_1635.jpg']
+    portada:'rdz/00.jpg',
+    carpeta:'rdz',
+    descripcion: [' El <strong>RDZ 1635</strong> es un desarrollo inmobiliario residencial impulsado por <strong>DyScon S.A.</strong>, empresa constructora de Rosario, Santa Fe. Ubicado en calle Rodríguez al 1600, el proyecto se caracteriza por su arquitectura contemporánea y una propuesta de viviendas que combina comodidad, funcionalidad y espacios comunes.<br><br>El edificio cuenta con aproximadamente <strong>2.000 m² cubiertos</strong>, distribuidos en planta baja, subsuelo y seis plantas destinadas a viviendas. Su propuesta incluye <strong>semipisos de dos y tres dormitorios</strong>, con superficies aproximadas de 91 m² y 114 m², respectivamente, además de cocheras con sistema de montacoches.<br><br>Entre sus espacios comunes se destaca un <strong>salón de usos múltiples (SUM) con parrillero y área de expansión</strong>, pensado para reuniones y actividades sociales de los residentes.<br><br> Su ubicación ofrece cercanía a importantes sectores urbanos de Rosario, como <strong>avenida Pellegrini, bulevar Oroño y el Parque Independencia</strong>, lo que favorece el acceso a servicios, comercios, gastronomía y espacios recreativos.<br><br> El RDZ 1635 representa una propuesta residencial orientada a integrar <strong>diseño, funcionalidad y ubicación estratégica</strong> dentro del entorno urbano rosarino.<br><br><strong>Fuente:</strong> La Capital — DyScon S.A. presenta su nuevo edificio RDZ 1635<br><small>12 de octubre de 2025.</small>'],
+    fotos: ['00.jpg','01.jpg','02.jpg','03.jpg']
   },
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Comunidad',
@@ -152,7 +154,7 @@ const OBRAS = [
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
-    tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del Sol/strong> - Empresa Constructora', estado: 'terminado', cliente: '',
     mapa: '3942+G4 Rosario, Santa Fe',
     descripcion: [],
     carpeta:'plaza_san_martin',
