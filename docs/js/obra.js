@@ -13,6 +13,17 @@
 
   document.title = `${o.nombre} | DyScon S.A.`;
 
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    const limpiar = t => t.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    const resumen = o.resumen
+      ? limpiar(o.resumen)
+      : (o.descripcion && o.descripcion[0])
+        ? limpiar(o.descripcion[0])
+        : `${o.categoria}${o.ubicacion ? ' en ' + o.ubicacion : ''}. Obra de DyScon S.A.`;
+    metaDesc.setAttribute('content', `${o.nombre}: ${resumen}`.slice(0, 155));
+  }
+  
   // Una fila "título | contenido". Si no hay contenido, no se muestra.
   const fila = (titulo, html) => html ? `<div class="ficha-fila"><h2>${titulo}</h2><div>${html}</div></div>` : '';
 

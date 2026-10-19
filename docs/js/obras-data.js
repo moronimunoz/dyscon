@@ -12,6 +12,9 @@
        o coordenadas: mapa: '-32.9468, -60.6393',
    - portada: 'casa_m/panoramica.jpg', (le da fondo a la portada oscura en
        la pagina de una obra)
+   - Resumen: Sirve para que, cuando alguien ve tu resultado en Google, 
+      el texto de abajo sea claro y lo invite a entrar, en vez de uno genérico 
+      o uno que Google arme solo. Es un cambio de presentación, no de posicionamiento.
    ========================================================= */
 
 /* =========================================================
