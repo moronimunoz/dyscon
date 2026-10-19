@@ -128,7 +128,9 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
     descripcion: [],
-    fotos: ['hospital.jpg']
+    portada:'samco/00.jpg',
+    carpeta:'samco',
+    fotos: ['00.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg']
   },
   {
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
