@@ -191,9 +191,12 @@ if (videoPortada && window.matchMedia('(prefers-reduced-motion: reduce)').matche
   videoPortada.pause();
 }
 
-//Evita que bots tomen el gmail para hacer Spam
-const usuario = "dysconsa";
-const dominio = "dysconsa.com.ar";
-const enlace = document.getElementById("email-contacto");
-enlace.href = "mailto:" + usuario + "@" + dominio;
-enlace.textContent = usuario + "@" + dominio;
+// ---------- Email de contacto protegido contra spam ----------
+const enlaceEmail = document.getElementById('email-contacto');
+
+if (enlaceEmail) {
+  const usuario = 'dysconsa';
+  const dominio = 'dysconsa.com.ar';
+  enlaceEmail.href = 'mailto:' + usuario + '@' + dominio;
+  enlaceEmail.textContent = usuario + '@' + dominio;
+}
