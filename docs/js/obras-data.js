@@ -63,7 +63,7 @@ const OBRAS = [
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
     tipo: 'colaboracion', con: '<strong>Del SOl</strong> - Empresa Constructora',estado: 'obra', cliente: '',
-    mapa: 'X98V+JHG Villa Gdor. Galvez, Santa Fe',
+    mapa: 'X98V+JHG Villa Gdor. Gálvez, Santa Fe',
     descripcion: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.'],
     carpeta:'parque_industrial',
     fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
@@ -133,14 +133,14 @@ const OBRAS = [
   {
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Educación.',
-    mapa: 'X9JQ+CP2 Villa Gdor. Galvez, Santa Fe',
+    mapa: 'X9JQ+CP2 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     fotos: ['eetp485.jpg']
   },
   {
     id: 'escuela-608', nombre: 'Escuela Secundaria N.° 608 - La Esperanza', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: '',
-    mapa: 'Pje. Uboldi 630, S2124 Villa Gdor. Galvez, Santa Fe',
+    mapa: 'Pje. Uboldi 630, S2124 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     carpeta:'jardin_608',
     fotos: ['01.jpg','00.jpg']
