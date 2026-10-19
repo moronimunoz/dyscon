@@ -106,14 +106,14 @@ const OBRAS = [
     fotos: ['pineiro.jpg','up8.jpeg']
   },
   {
-    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Comunidad',
+    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio Público',
     tipo: 'propia', estado: 'obra', cliente: '',
     mapa: 'Constitución 2498, C1254AAN C1254AAN, Cdad. Autónoma de Buenos Aires',
     descripcion: [],
     fotos: ['plaza-san-cristobal.jpg']
   },
   {
-    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Comunidad',
+    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio Público',
     tipo: 'propia', estado: 'obra', cliente: '',
     mapa: 'Láinez 1-48, S2000 Rosario, Santa Fe',
     descripcion: [],
