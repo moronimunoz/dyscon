@@ -29,42 +29,6 @@ if (header) {
   sombra();
 }
 
-// ---------- 3. Slider del hero ----------
-const slides = document.querySelectorAll('.slide');
-const dotsBox = document.querySelector('.hero-dots');
-
-if (slides.length > 1 && dotsBox) {
-  let actual = 0;
-  let timer;
-
-  // Crear un punto por cada diapositiva
-  slides.forEach((_, i) => {
-    const b = document.createElement('button');
-    b.setAttribute('aria-label', `Ir a la diapositiva ${i + 1}`);
-    b.addEventListener('click', () => { ir(i); reiniciar(); });
-    dotsBox.appendChild(b);
-  });
-  const dots = dotsBox.querySelectorAll('button');
-
-  function ir(n) {
-    actual = (n + slides.length) % slides.length;
-    slides.forEach((s, i) => s.classList.toggle('activa', i === actual));
-    dots.forEach((d, i) => d.classList.toggle('activo', i === actual));
-  }
-
-  //iniciar: El 6000 son milisegundos (6 segundos).
-  function iniciar() { timer = setInterval(() => ir(actual + 1), 4000); }
-  function reiniciar() { clearInterval(timer); iniciar(); }
-
-  // Pausar cuando el mouse está sobre el hero
-  const hero = document.querySelector('.hero');
-  hero.addEventListener('mouseenter', () => clearInterval(timer));
-  hero.addEventListener('mouseleave', iniciar);
-
-  ir(0);
-  iniciar();
-}
-
 // ---------- 4. Animación de aparición al hacer scroll (la de antes) ----------
 const observer = new IntersectionObserver((entradas) => {
   entradas.forEach(e => {
@@ -185,10 +149,17 @@ if (heroSec && heroTxt) {
   desvanecer();
 }
 
-// Video de portada: se pausa si el visitante pidió menos movimiento
+// Video de portada: pausa el video cuando ya bajaste y no se ve la portada (ahorra batería y datos en celulares)
 const videoPortada = document.querySelector('.slides video');
-if (videoPortada && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  videoPortada.pause();
+if (videoPortada) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    videoPortada.pause();
+  } else if (heroSec) {
+    new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) videoPortada.play().catch(() => {});
+      else videoPortada.pause();
+    }).observe(heroSec);
+  }
 }
 
 // ---------- Email de contacto protegido contra spam ----------
