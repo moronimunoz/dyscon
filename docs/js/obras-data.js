@@ -41,6 +41,16 @@
   carpeta:'ricchieri',
   fotos: ['00.jpeg','01.jpeg','02.jpeg','03.jpeg']
   },
+    {
+    id: 'hospital-de-ninos-zona-norte', nombre: 'Hospital de Niños Zona Norte “Dr. Roberto M. Carra”', categoria: 'Salud',
+    tipo: 'propia', estado: 'terminado', cliente: '',
+    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Rosario, Santa Fe',
+    descripcion: ['<strong>Infraestructura sanitaria | Rosario, Santa Fe</strong><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
+    portada:'',
+    carpeta:'',
+    fotos: []
+  },
    ========================================================= */
    
 const OBRAS = [
@@ -103,7 +113,7 @@ const OBRAS = [
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {
-    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Comunidad',
+    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Vivienda',
     tipo: 'propia', estado: 'obra', cliente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
@@ -113,7 +123,7 @@ const OBRAS = [
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg']
   },
   {
-    id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Comunidad',
+    id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Viviendas',
     tipo: 'propia', estado: 'obra', cliente: 'DPVyU.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '-32.9817997363948, -60.62924684936593',
@@ -145,7 +155,7 @@ const OBRAS = [
     fotos: ['parque_regional_sur.jpg']
   },
   {
-    id: '69-viviendas', nombre: 'Bloque de 69 viviendas — República de la Sexta', categoria: 'Espacio público',
+    id: '69-viviendas', nombre: 'Bloque de 69 viviendas — República de la Sexta', categoria: 'Viviendas',
     tipo: 'propia', estado: 'terminado', cliente: 'el Gobierno de Santa Fe, la Municipalidad de Rosario y la Universidad Nacional de Rosario (UNR)',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Riobamba 242, S2000 Rosario, Santa Fe',
