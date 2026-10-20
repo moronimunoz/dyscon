@@ -9,8 +9,21 @@
    - resumen:   opcional, una línea para buscadores
    - texto:     lista de párrafos
    - fotos:     opcional, fotos extra dentro de img/novedades/subcarpeta(si es necesario)
-   - video(youtube): De una URL Ej. https://www.youtube.com/watch?v=c6oSxMGdOtA&t=1s
-       solo se usa lo que contiene 'v=[CODIGO_DE_16_CHART]&t=1s' en este caso seria 'c6oSxMGdOtA'.
+   - video disponible a usar:
+      video: 'Hg_EGB0ZTkc',                                   // YouTube, como hoy
+      video: 'novedades/nodo.mp4',                            // archivo propio, sin portada
+      video: { src: 'novedades/nodo.mp4', poster: '2026_03_21_nodo/video.jpg' },   // archivo con portada
+      video: ['Hg_EGB0ZTkc', { src: 'novedades/nodo.mp4', poster: '2026_03_21_nodo/video.jpg' }],  // varios
+      Dónde van los archivos:
+      El video: video/novedades/nodo.mp4. Se escribe sin el video/ inicial.
+      La portada: dentro de img/novedades/, por ejemplo img/novedades/2026_03_21_nodo/video.jpg.
+      En las obras, dentro de img/obras/.
+
+      codigo en powershell para captura jpg de un video:
+      ffmpeg -i nodo-web.mp4 -ss 00:00:05 -frames:v 1 -q:v 3 video.jpg
+
+      codigo en powershell para hacer un video menos pesado:
+      ffmpeg -i nodo.mov -c:v libx264 -crf 26 -preset slow -vf "scale=-2:720" -c:a aac -b:a 128k -movflags +faststart nodo-web.mp4
    ========================================================= */
 const NOVEDADES = [
   {
@@ -30,9 +43,10 @@ const NOVEDADES = [
     titulo: 'Nace Nodo, el parque industrial que apunta a captar empresas alimenticias',
     categoria: 'Eventos',
     fecha: '2026-03-21',
-    portada: '2026_03_21_nodo/02.jpg',
+    portada: '2026_03_21_nodo/poster.jpg',
     resumen: 'Nace Nodo, el parque industrial que apunta a captar empresas alimenticias',
     texto: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.<br><br>Enlace de Instagram (Presione aqui): <a href="https://www.instagram.com/econodoproductivo/" target="_blank" rel="noopener"><strong>Eco Nodo Productivo</strong></a>'],
+    video: { src: 'novedades/nodo.mp4', poster: '2026_03_21_nodo/poster.jpg' },   // archivo con portada
     fotos: ['2026_03_21_nodo/00.jpeg','2026_03_21_nodo/01.jpg','2026_03_21_nodo/02.jpg','2026_03_21_nodo/03.jpg']
   },
   {

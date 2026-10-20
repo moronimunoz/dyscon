@@ -49,6 +49,8 @@
   // El número es el zoom: 14 muestra el barrio, 16 la cuadra y 18 casi el edificio
   const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&z=16&output=embed`;
 
+  const videos = [].concat(o.video || []).map(v => crearVideo(v, o.nombre, 'img/obras/')).join('');
+
   main.innerHTML = `
     <section class="page-hero">
       <div class="contenedor">
@@ -65,7 +67,7 @@
       ${fila('Descripción', o.descripcion && o.descripcion.map(p => `<p>${p}</p>`).join(''))}
       ${fila('Objetivos y datos', o.datos && `<ul class="ficha-datos">${o.datos.map(d => `<li>${d}</li>`).join('')}</ul>`)}
       ${fila('Galería de fotos', fotos && `<div class="galeria">${fotos}</div>`)}
-      ${fila('Video', o.video && `<div class="video"><iframe src="https://www.youtube.com/embed/${o.video}" title="Video: ${o.nombre}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`)}
+      ${fila([].concat(o.video || []).length > 1 ? 'Videos' : 'Video', videos)}
       ${fila('Ubicación', (o.mapa || o.ubicacion) && `<div class="mapa"><iframe src="${mapa}" title="Mapa: ${o.nombre}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`)}
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;

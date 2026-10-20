@@ -4,6 +4,16 @@
    - estado: 'inicio' | 'obra' | 'terminado'
    - tipo:   'propia' | 'colaboracion'  (con: empresa con la que se colaboró)
    - fotos:  nombres dentro de img/obras/ (la primera es la principal)
+   -  video disponible a usar:
+      video: 'Hg_EGB0ZTkc',                                   // YouTube, como hoy
+      video: 'novedades/nodo.mp4',                            // archivo propio, sin portada
+      video: { src: 'novedades/nodo.mp4', poster: '2026_03_21_nodo/video.jpg' },   // archivo con portada
+      video: ['Hg_EGB0ZTkc', { src: 'novedades/nodo.mp4', poster: '2026_03_21_nodo/video.jpg' }],  // varios
+      Dónde van los archivos:
+      El video: video/novedades/nodo.mp4. Se escribe sin el video/ inicial.
+      La portada: dentro de img/novedades/, por ejemplo img/novedades/2026_03_21_nodo/video.jpg.
+      En las obras, dentro de img/obras/.
+
    - ubicacion: 'Ciudad · Provincia'. Se ve en la tarjeta del listado y en la ficha.
    - miniatura: opcional. Foto de la tarjeta del listado (si no se pone, usa la primera de 'fotos').
    - La tarjeta del listado (obras.html) se arma sola con js/obras-lista.js: ya no hay que
@@ -78,6 +88,7 @@ const OBRAS = [
     mapa: 'X98V+JHG Villa Gdor. Gálvez, Santa Fe',
     descripcion: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.'],
     carpeta:'parque_industrial',
+    video: { src: 'obras/nodo.mp4', poster: 'parque_industrial/poster.jpg' },   // archivo con portada
     fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
   },
   {
@@ -88,7 +99,7 @@ const OBRAS = [
     descripcion: ['<strong>Tecnoteca, Escuela de Tecnología y Oficios Digitales</strong><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con 4.000 mts2 distribuidos en dos plantas que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
     carpeta:'tecnoteca',
-    video:'c6oSxMGdOtA',
+    video: { src: 'obras/tecno.mp4', poster: 'tecnoteca/poster.jpg' },
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {

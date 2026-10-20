@@ -18,7 +18,7 @@
   canonical.rel = 'canonical';
   canonical.href = 'https://dysconsa.com.ar/novedad.html?id=' + n.id;
   document.head.appendChild(canonical);
-  
+
   if (n.resumen) document.querySelector('meta[name="description"]').setAttribute('content', n.resumen);
 
   const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -26,6 +26,9 @@
   const fotos = (n.fotos || []).map((f, i) =>
     `<button type="button" data-src="img/novedades/${f}" aria-label="Ampliar foto ${i + 1}"><img src="img/novedades/${f}" alt="${n.titulo} - foto ${i + 1}" loading="lazy"></button>`
   ).join('');
+
+  // Videos: uno o varios; de YouTube o archivos propios, con portada opcional (js/video.js)
+  const videos = [].concat(n.video || []).map(v => crearVideo(v, n.titulo, 'img/novedades/')).join('');
 
   main.innerHTML = `
     <section class="page-hero page-hero--img">
@@ -39,11 +42,11 @@
     </section>
     <section class="contenedor ficha nota">
       ${(n.texto || []).map(p => `<p>${p}</p>`).join('')}
-      ${n.video ? `<div class="video"><iframe src="https://www.youtube.com/embed/${n.video}" title="Video: ${n.titulo}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>` : ''}
+      ${videos}
       ${fotos ? `<div class="galeria">${fotos}</div>` : ''}
       <p class="ficha-volver"><a href="novedades.html" class="link-flecha">Volver a todas las novedades <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
 
-   //Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
-   iniciarVisor(main.querySelectorAll('.galeria button'));
+  // Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
+  iniciarVisor(main.querySelectorAll('.galeria button'));
 })();
