@@ -76,7 +76,7 @@
 /* Botón dentro de las tarjetas (proveedor / trabajo) */
 .tarjeta-cuerpo { flex: 1; display: flex; flex-direction: column; }
 .tarjeta-cuerpo p { margin-bottom: 1.4rem; }
-.tarjeta-cuerpo .btn { align-self: flex-start; margin-top: auto; }
+.tarjeta-cuerpo .btn { display: inline-flex; height: auto; align-self: center; margin-top: auto; }
 
 /* Desplegable de motivo (mismo aspecto que los campos de texto) */
 .form-cuerpo select {
