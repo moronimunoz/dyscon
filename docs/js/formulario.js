@@ -99,6 +99,13 @@
       return;
     }
 
+    // Turnstile (solo si el formulario tiene el widget): hace falta que haya terminado la verificación
+    const widget = form.querySelector('.cf-turnstile');
+    if (widget && !datos['cf-turnstile-response']) {
+      aviso('Esperá un segundo a que termine la verificación y probá de nuevo.', 'crimson');
+      return;
+    }
+
     // Con Formspree: el asunto del mail que reciben lleva el motivo entre corchetes
     const boton = form.querySelector('button[type="submit"]');
     const envio = new FormData(form);
@@ -116,6 +123,8 @@
       aviso('No pudimos enviar el mensaje. Probá de nuevo o escribinos a ' + CORREOS.consulta + '.', 'crimson');
     } finally {
       boton.disabled = false;
+      // El token de Turnstile sirve una sola vez: se pide uno nuevo para el próximo envío
+      if (widget && window.turnstile) window.turnstile.reset(widget);
     }
   });
 })();

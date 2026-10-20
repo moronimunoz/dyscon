@@ -183,7 +183,7 @@
 
           <!-- Campo trampa anti-spam: los visitantes no lo ven, los robots sí lo completan -->
           <input type="text" name="_gotcha" class="trampa" tabindex="-1" autocomplete="off" aria-hidden="true">
-
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFeVDfWm08bzI2Q-" data-language="es"></div>
           <button type="submit" class="btn btn--teal">Enviar mensaje</button>
           <p id="form-msg" class="form-msg" role="status"></p>
         </form>
@@ -219,6 +219,7 @@
     </div>
   </footer>
 
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script src="js/formulario.js"></script>
   <script src="js/main.js"></script>
 </body>
