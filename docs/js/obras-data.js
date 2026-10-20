@@ -155,7 +155,17 @@ const OBRAS = [
     fotos: ['00.jpg','01.jpg','02.jpeg','03.jpg','04.jpg','05.jpg','06.jpg']
   },
   {
-    id: 'hospital-samco', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
+    id: 'samco-pavon-arriba', nombre: 'Nuevo SAMco de Pavón Arriba', categoria: 'Salud',
+    tipo: 'propia', estado: 'terminado', cliente: '',
+    ubicacion: 'Pavón Arriba · Santa Fe',
+    mapa: 'M5QF+J3 Pavón Arriba, Santa Fe',
+    descripcion: [],
+    portada:'samco_pavon_arriba/02.jpg',
+    carpeta:'samco_pavon_arriba',
+    fotos: ['02.jpg','00.jpg','01.jpg','03.jpg']
+  },
+  {
+    id: 'samco-funes', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Funes · Santa Fe',
     mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
