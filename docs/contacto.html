@@ -75,6 +75,7 @@
             Si querés formar parte de una red de trabajo basada en la confianza 
             y el crecimiento mutuo, nos gustaría conocerte.
           </p>
+          <a href="#escribinos" class="btn btn--borde" data-motivo="proveedor">Quiero ser proveedor <svg class="icon"><use href="#i-flecha"/></svg></a>
         </div>
       </article>
 
@@ -94,6 +95,7 @@
             equipo que transforma ideas en obras concretas, 
             queremos conocerte.
           </p>
+          <a href="#escribinos" class="btn btn--borde" data-motivo="trabajo">Quiero postularme <svg class="icon"><use href="#i-flecha"/></svg></a>
         </div>
       </article>
 
@@ -115,10 +117,10 @@
               <svg class="icon"><use href="#i-telefono"/></svg>
               <a href="tel:+543414217667">(0341) 421-7667</a>
             </li>
-            <li>
+            <!-- <li>
               <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
               <a id="email-contacto" href="contacto.html">Escribinos por email</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </article>
@@ -126,22 +128,55 @@
     </section>
 
     <!-- FORMULARIO -->
-    <section class="contenedor formulario">
+    <section class="contenedor formulario" id="escribinos">
       <h2 class="titulo">Escribinos</h2>
       <div class="form-card reveal">
         <!-- Foto: guardala como img/contacto/formulario.jpg -->
         <div class="form-img" style="background-image:url('img/contacto/formulario.jpg')" role="img" aria-label="Detalle de una obra de DyScon"></div>
 
-        <!-- Para que envíe mails reales, pegá la dirección de Formspree en data-endpoint (ver main.js) -->
-        <form class="form-cuerpo" id="form-contacto" data-endpoint="">
+        <!-- Para que envíe mails reales, pegá la dirección de Formspree en data-endpoint (ver js/formulario.js) -->
+        <form class="form-cuerpo" id="form-contacto" data-endpoint="https://formspree.io/f/mbgdvkgq">
           <h3>Contanos sobre tu proyecto</h3>
-          <p>¿Tenés una consulta o querés presupuestar una obra? Completá el formulario y nuestro equipo se va a comunicar con vos.</p>
+          <p>¿Tenés una consulta, querés presupuestar una obra, ofrecer tus servicios o sumarte al equipo? Completá el formulario y nuestro equipo se va a comunicar con vos.</p>
+
+          <label for="motivo">Motivo del mensaje</label>
+          <select id="motivo" name="motivo" required>
+            <option value="consulta">Consulta o presupuesto de obra</option>
+            <option value="proveedor">Quiero ser proveedor</option>
+            <option value="trabajo">Quiero trabajar en DyScon</option>
+            <option value="otro">Otro motivo</option>
+          </select>
 
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
 
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Tu email" autocomplete="email" required>
+
+          <!-- Campos extra: se muestran solo según el motivo elegido (js/formulario.js) -->
+          <div class="campos-extra" data-motivos="proveedor" hidden>
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization" required disabled>
+
+            <label for="rubro">Rubro</label>
+            <input type="text" id="rubro" name="rubro" placeholder="Ej.: electricidad, hormigón, herrería" required disabled>
+
+            <label for="cuit">CUIT (opcional)</label>
+            <input type="text" id="cuit" name="cuit" inputmode="numeric" placeholder="20-12345678-9" disabled>
+          </div>
+
+          <div class="campos-extra" data-motivos="trabajo" hidden>
+            <label for="area">Puesto o área de interés</label>
+            <input type="text" id="area" name="area" placeholder="Ej.: arquitecta, oficial albañil, administración" required disabled>
+
+            <label for="cv">Link a tu CV (opcional)</label>
+            <input type="url" id="cv" name="cv" placeholder="LinkedIn, Google Drive, etc." disabled>
+          </div>
+
+          <div class="campos-extra" data-motivos="proveedor trabajo" hidden>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Con código de área" autocomplete="tel" disabled>
+          </div>
 
           <label for="mensaje">¿En qué podemos ayudarte?</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escribí tu consulta" required></textarea>
@@ -184,6 +219,7 @@
     </div>
   </footer>
 
+  <script src="js/formulario.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

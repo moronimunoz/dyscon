@@ -71,48 +71,6 @@ if (secciones.length) {
   secciones.forEach(s => espia.observe(s));
 }
 
-// ---------- 6. Formulario de contacto (contacto.html) ----------
-// Para que envíe mails de verdad: pegá la dirección de Formspree en data-endpoint del <form>.
-// Si data-endpoint está vacío, se abre el programa de correo del visitante con el mensaje armado.
-const form = document.getElementById('form-contacto');
-const msg = document.getElementById('form-msg');
-
-if (form && msg) {
-  const aviso = (texto, color) => { msg.textContent = texto; msg.style.color = color; };
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const datos = Object.fromEntries(new FormData(form));
-
-    if (datos._gotcha) return;                                   // campo trampa: solo lo completa un robot
-    if (datos.mensaje.trim().length < 10) { aviso('El mensaje es muy corto.', 'crimson'); return; }
-
-    const endpoint = form.dataset.endpoint;
-
-    if (!endpoint) {
-      const asunto = encodeURIComponent('Consulta desde la web - ' + datos.nombre);
-      const cuerpo = encodeURIComponent(`${datos.mensaje}\n\nNombre: ${datos.nombre}\nEmail: ${datos.email}`);
-      location.href = `mailto:moronimunoz123@gmail.com?subject=${asunto}&body=${cuerpo}`;
-      aviso('Se abrió tu programa de correo para enviar el mensaje.', 'green');
-      return;
-    }
-
-    const boton = form.querySelector('button[type="submit"]');
-    boton.disabled = true;
-    aviso('Enviando…', 'inherit');
-    try {
-      const r = await fetch(endpoint, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-      if (!r.ok) throw new Error('envio');
-      aviso('¡Gracias! Recibimos tu mensaje y te responderemos pronto.', 'green');
-      form.reset();
-    } catch (err) {
-      aviso('No pudimos enviar el mensaje. Probá de nuevo o escribinos a moronimunoz123@gmail.com.', 'crimson');
-    } finally {
-      boton.disabled = false;
-    }
-  });
-}
-
 // ---------- 7. Año automático en el footer ----------
 const anio = document.getElementById('anio');
 if (anio) anio.textContent = new Date().getFullYear();

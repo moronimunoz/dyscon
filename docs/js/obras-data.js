@@ -41,15 +41,15 @@
   carpeta:'ricchieri',
   fotos: ['00.jpeg','01.jpeg','02.jpeg','03.jpeg']
   },
-    {
-    id: 'hospital-de-ninos-zona-norte', nombre: 'Hospital de Niños Zona Norte “Dr. Roberto M. Carra”', categoria: 'Salud',
-    tipo: 'propia', estado: 'terminado', cliente: '',
-    ubicacion: 'Rosario · Santa Fe',
-    mapa: 'Rosario, Santa Fe',
-    descripcion: ['<strong>Infraestructura sanitaria | Rosario, Santa Fe</strong><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
-    portada:'',
-    carpeta:'',
-    fotos: []
+  {
+  id: 'hospital-de-ninos-zona-norte', nombre: 'Hospital de Niños Zona Norte “Dr. Roberto M. Carra”', categoria: 'Salud',
+  tipo: 'propia', estado: 'terminado', cliente: '',
+  ubicacion: 'Rosario · Santa Fe',
+  mapa: 'Rosario, Santa Fe',
+  descripcion: ['<strong>Infraestructura sanitaria | Rosario, Santa Fe</strong><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
+  portada:'',
+  carpeta:'',
+  fotos: ['00.jpeg','01.jpeg','02.jpeg']
   },
    ========================================================= */
    
@@ -72,7 +72,7 @@ const OBRAS = [
     fotos: ['ricardone.jpg']
   },
   {
-    id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Comunidad',
+    id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Vivienda',
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'España 543, Rosario, Santa Fe',
