@@ -105,7 +105,7 @@ button { font: inherit; cursor: pointer; }
 .nav a.activo { color: var(--teal-700); }
 .nav-contacto { display: none; }
 
-.menu-toggle { display: none; background: none; border: 0; font-size: 1.8rem; color: var(--tinta); }
+.menu-toggle { display: none; background: none; border: 0; font-size: 1.8rem; color: var(--tinta); width: 44px; height: 44px; line-height: 1; }
 
 /* Menú del inicio: transparente sobre la portada, blanco al bajar (main.js agrega "con-sombra") */
 .header--hero {
@@ -328,16 +328,6 @@ button { font: inherit; cursor: pointer; }
   font-size: .68rem; color: #9cbcc6;
 }
 
-/* ---------- WhatsApp flotante ---------- */
-.whatsapp {
-  position: fixed; right: 20px; bottom: 20px; z-index: 200;
-  background: #25d366; color: #fff; padding: .8rem 1.2rem;
-  border-radius: 50px; font-weight: 700; font-size: .9rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
-  transition: transform .2s;
-}
-.whatsapp:hover { transform: scale(1.06); }
-
 /* ---------- Formulario (para contacto.html) ---------- */
 .form { display: grid; gap: 1rem; max-width: 600px; }
 .form input, .form textarea { padding: .9rem; border: 1px solid #c9d5db; border-radius: 4px; font: inherit; }
@@ -423,7 +413,6 @@ button { font: inherit; cursor: pointer; }
   .sectores li { flex: 0 0 33.333%; }
   .footer-fila, .footer-pie { flex-direction: column; align-items: flex-start; }
   .hero-controles { bottom: 1rem; }
-  .footer { padding-bottom: 5rem; }
 }
 
 /* Respeta a quienes tienen desactivadas las animaciones en su sistema */

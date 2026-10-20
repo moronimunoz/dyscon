@@ -2,23 +2,30 @@
    DYSCON S.A. - JavaScript
    ========================================================= */
 
-// ---------- 1. Menú hamburguesa en móviles (el de antes) ----------
+// ---------- 1. Menú hamburguesa en móviles ----------
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.getElementById('nav');
 
 if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const abierto = nav.classList.toggle('abierto');
+  // Abre o cierra el menú y deja el botón en sintonía (☰ cerrado, ✕ abierto)
+  const estadoMenu = (abierto) => {
+    nav.classList.toggle('abierto', abierto);
     toggle.setAttribute('aria-expanded', abierto);
-  });
+    toggle.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+    toggle.textContent = abierto ? '✕' : '☰';
+  };
+
+  toggle.addEventListener('click', () => estadoMenu(!nav.classList.contains('abierto')));
 
   // Cerrar el menú al tocar un link
   nav.querySelectorAll('a').forEach(link =>
-    link.addEventListener('click', () => {
-      nav.classList.remove('abierto');
-      toggle.setAttribute('aria-expanded', 'false');
-    })
+    link.addEventListener('click', () => estadoMenu(false))
   );
+
+  // Cerrar con la tecla Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && nav.classList.contains('abierto')) estadoMenu(false);
+  });
 }
 
 // ---------- 2. Sombra del header al bajar ----------
