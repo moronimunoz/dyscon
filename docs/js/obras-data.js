@@ -145,6 +145,16 @@ const OBRAS = [
     fotos: ['parque_regional_sur.jpg']
   },
   {
+    id: '69-viviendas', nombre: 'Bloque de 69 viviendas — República de la Sexta, Rosario', categoria: 'Espacio público',
+    tipo: 'propia', estado: 'obra', cliente: 'el Gobierno de Santa Fe, la Municipalidad de Rosario y la Universidad Nacional de Rosario (UNR)',
+    ubicacion: 'República de la Sexta · Rosario · Santa Fe',
+    mapa: 'Riobamba 242, S2000 Rosario, Santa Fe',
+    descripcion: ['En el marco del proyecto de transformación urbana de la Ciudad Universitaria de Rosario, se desarrolló el conjunto habitacional de <strong>69 viviendas</strong> en el barrio República de la Sexta, en el sector de las calles Esmeralda, Riobamba y La Paz.<br><br>La intervención forma parte de un programa integral impulsado por el Gobierno de Santa Fe, la Municipalidad de Rosario y la Universidad Nacional de Rosario, orientado a mejorar las condiciones habitacionales y promover la integración urbana del sector.<br><br>El proyecto contempló viviendas de distintas tipologías, cocheras e infraestructura de servicios, incluyendo redes sanitarias, instalaciones eléctricas y obras de urbanización complementarias.<br><br>La obra constituye un aporte al desarrollo de vivienda pública y a la transformación de un sector estratégico de Rosario, fortaleciendo la integración entre el tejido residencial, los espacios públicos y el entorno universitario.'],
+    portada:'69-viviendas/02.jpg',
+    carpeta:'69-viviendas',
+    fotos: ['02.jpg','01.jpg','00.jpg']
+  },
+  {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
