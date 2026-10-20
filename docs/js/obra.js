@@ -12,6 +12,11 @@
   }
 
   document.title = `${o.nombre} | DyScon S.A.`;
+  
+  const canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = 'https://dysconsa.com.ar/obra.html?id=' + o.id;
+  document.head.appendChild(canonical);
 
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {

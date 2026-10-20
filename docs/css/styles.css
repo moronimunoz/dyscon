@@ -407,10 +407,23 @@ button { font: inherit; cursor: pointer; }
   .nosotros { grid-template-columns: 1fr; }
   .nosotros-img { min-height: 220px; }
   .nosotros-texto { padding: 2rem 5%; }
-  .linea-tiempo { flex-wrap: wrap; row-gap: 1rem; }
-  .sectores { flex-wrap: wrap; justify-content: flex-start; gap: 1.2rem 1.6rem; }
+    /* Línea de tiempo vertical en celular */
+  .linea-tiempo { flex-direction: column; gap: 0; padding-left: 1.6rem; }
+  .linea-tiempo::before { display: none; }                 /* se apaga la línea horizontal */
+  .linea-tiempo li { flex: none; padding: 0 0 1.4rem; font-size: .85rem; }
+  .linea-tiempo li:last-child { padding-bottom: 0; }
+  .linea-tiempo li::before { top: .35rem; left: -1.6rem; z-index: 1; }   /* el punto de cada año */
+  .linea-tiempo li:not(:last-child)::after {               /* tramo de línea hasta el siguiente punto */
+    content: ''; position: absolute; z-index: 0;
+    top: calc(.35rem + 4.5px); left: calc(-1.6rem + 3.5px);
+    width: 2px; height: 100%; background: #4a7f90;
+  }
+  .linea-tiempo b { margin-bottom: .15rem; font-size: 1.05rem; }
+  .sectores { flex-wrap: wrap; justify-content: center; gap: 1.8rem 0; }
+  .sectores li { flex: 0 0 33.333%; }
   .footer-fila, .footer-pie { flex-direction: column; align-items: flex-start; }
   .hero-controles { bottom: 1rem; }
+  .footer { padding-bottom: 5rem; }
 }
 
 /* Respeta a quienes tienen desactivadas las animaciones en su sistema */

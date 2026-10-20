@@ -4,6 +4,10 @@
    - estado: 'inicio' | 'obra' | 'terminado'
    - tipo:   'propia' | 'colaboracion'  (con: empresa con la que se colaboró)
    - fotos:  nombres dentro de img/obras/ (la primera es la principal)
+   - ubicacion: 'Ciudad · Provincia'. Se ve en la tarjeta del listado y en la ficha.
+   - miniatura: opcional. Foto de la tarjeta del listado (si no se pone, usa la primera de 'fotos').
+   - La tarjeta del listado (obras.html) se arma sola con js/obras-lista.js: ya no hay que
+     copiar bloques en obras.html. El punto verde aparece cuando estado es 'obra'.
    - Descripción: En general dentro de los "[]" es como un <p> en html permitiendo
        poner equitiquetas para decorar el texto.
    - Para agregar la fila "Objetivos y datos", sumá a la obra:
@@ -33,6 +37,8 @@ const OBRAS = [
   {
     id: 'casa-m', nombre: 'Casa M', categoria: 'Comunidad',
     tipo: 'propia', estado: 'inicio', cliente: '',
+    ubicacion: 'Rosario · Santa Fe',
+    miniatura: '01.jpg',
     mapa: 'Arturo Illia 1690, S2000 Rosario, Santa Fe',
     descripcion: [],
     carpeta:'casa_m',
@@ -57,6 +63,7 @@ const OBRAS = [
   {
     id: 'pami-ituzaingo', nombre: 'Hospital del Bicentenario PAMI Ituzaingó', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: 'PAMI.',
+    ubicacion: 'Ituzaingó · Buenos Aires',
     mapa: 'Cnel. Brandsen 2898, B1714LAH Ituzaingó, Provincia de Buenos Aires',
     descripcion: [],
     carpeta:'pami',
@@ -66,14 +73,17 @@ const OBRAS = [
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
     tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora',estado: 'obra', cliente: '',
+    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
+    miniatura: '01.jpg',
     mapa: 'X98V+JHG Villa Gdor. Gálvez, Santa Fe',
-    descripcion: ['<strong>Nodo</strong> es un parque industrial privado impulsado por <strong>Grupo Nasini Inversiones</strong> y <strong>Mariano Schor</strong>, de <strong>Dyscon - Empresa Constructora</strong>, en el sur del Gran Rosario. Con las obras en marcha, busca atraer especialmente a empresas alimenticias que necesitan expandirse fuera del tejido urbano. Para ello, ofrece infraestructura especializada, como agua potable, red cloacal, gas y capacidad eléctrica industrial.'],
+    descripcion: ['Con foco en la industria alimenticia y una apuesta fuerte a la infraestructura, un nuevo parque industrial busca abrirse camino en el cordón sur del Gran Rosario. Se trata de <strong>Nodo</strong>, un desarrollo privado impulsado por <strong>Grupo Nasini</strong> Inversiones junto a <strong>Mariano Schor</strong>, de la constructora <strong>Dyscon</strong>, que ya puso en marcha las obras y apunta a captar empresas que hoy operan “atrapadas” dentro del tejido urbano.<br>Según explicó <strong>Nasini</strong>, el foco en las alimenticias surgió tras detectar una demanda creciente de empresas que necesitan expandirse pero enfrentan limitaciones dentro de las ciudades.<br>“Hay muchas industrias alimenticias que quedaron atrapadas dentro del eje urbano, con problemas logísticos, de habilitaciones y de crecimiento”, señaló. “Muchas veces no se mudan porque los parques industriales no tienen los servicios específicos que necesitan”.<br>Por eso, Nodo incorporó infraestructura especialmente diseñada para ese segmento: planta potabilizadora de agua, red cloacal, acceso a gas y capacidad eléctrica industrial.'],
     carpeta:'parque_industrial',
     fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
   },
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora', estado: 'terminado', cliente: 'Municipalidad de Rosario.',
+    ubicacion: 'Rosario · Santa Fe',
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
     descripcion: ['<strong>Tecnoteca, Escuela de Tecnología y Oficios Digitales</strong><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con 4.000 mts2 distribuidos en dos plantas que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
@@ -82,18 +92,19 @@ const OBRAS = [
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {
-    id: 'rdz-1635', nombre: 'RDZ 1635 – Edificio residencial', categoria: 'Comunidad',
+    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
     portada:'rdz/00.jpg',
     carpeta:'rdz',
-    descripcion: [' El <strong>RDZ 1635</strong> es un desarrollo inmobiliario residencial impulsado por <strong>DyScon S.A.</strong>, empresa constructora de Rosario, Santa Fe. Ubicado en calle Rodríguez al 1600, el proyecto se caracteriza por su arquitectura contemporánea y una propuesta de viviendas que combina comodidad, funcionalidad y espacios comunes.<br><br>El edificio cuenta con aproximadamente <strong>2.000 m² cubiertos</strong>, distribuidos en planta baja, subsuelo y seis plantas destinadas a viviendas. Su propuesta incluye <strong>semipisos de dos y tres dormitorios</strong>, con superficies aproximadas de 91 m² y 114 m², respectivamente, además de cocheras con sistema de montacoches.<br><br>Entre sus espacios comunes se destaca un <strong>salón de usos múltiples (SUM) con parrillero y área de expansión</strong>, pensado para reuniones y actividades sociales de los residentes.<br><br> Su ubicación ofrece cercanía a importantes sectores urbanos de Rosario, como <strong>avenida Pellegrini, bulevar Oroño y el Parque Independencia</strong>, lo que favorece el acceso a servicios, comercios, gastronomía y espacios recreativos.<br><br> El RDZ 1635 representa una propuesta residencial orientada a integrar <strong>diseño, funcionalidad y ubicación estratégica</strong> dentro del entorno urbano rosarino.<br><br><strong>Fuente:</strong> La Capital — DyScon S.A. presenta su nuevo edificio RDZ 1635<br><small>12 de octubre de 2025.</small>'],
+    descripcion: [],
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg']
   },
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: 'DPVyU.',
+    ubicacion: 'Rosario · Santa Fe',
     mapa: '-32.9817997363948, -60.62924684936593',
     descripcion: [],
     fotos: ['tablada.jpg']
@@ -101,20 +112,23 @@ const OBRAS = [
   {
     id: 'unidad-penitenciaria', nombre: 'Unidad Penitenciaria N° 8 y 15', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
+    ubicacion: 'Piñero · Santa Fe',
     mapa: 'W633+3G Piñero, Santa Fe',
     descripcion: [],
     fotos: ['pineiro.jpg','up8.jpeg']
   },
   {
-    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio Público',
+    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio público',
     tipo: 'propia', estado: 'obra', cliente: '',
+    ubicacion: 'CABA · Buenos Aires',
     mapa: 'Constitución 2498, C1254AAN C1254AAN, Cdad. Autónoma de Buenos Aires',
     descripcion: [],
     fotos: ['plaza-san-cristobal.jpg']
   },
   {
-    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio Público',
+    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio público',
     tipo: 'propia', estado: 'obra', cliente: '',
+    ubicacion: 'Rosario · Santa Fe',
     mapa: 'Láinez 1-48, S2000 Rosario, Santa Fe',
     descripcion: [],
     fotos: ['parque_regional_sur.jpg']
@@ -122,6 +136,7 @@ const OBRAS = [
   {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
     tipo: 'propia', estado: 'terminado', cliente: '',
+    ubicacion: 'Rosario · Santa Fe',
     mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
     descripcion: [],
     portada:'monumento/01.jpg',
@@ -131,6 +146,7 @@ const OBRAS = [
   {
     id: 'hospital-samco', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
+    ubicacion: 'Funes · Santa Fe',
     mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
     descripcion: [],
     portada:'samco/00.jpg',
@@ -140,6 +156,7 @@ const OBRAS = [
   {
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Educación.',
+    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     mapa: 'X9JQ+CP2 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     fotos: ['eetp485.jpg']
@@ -147,6 +164,7 @@ const OBRAS = [
   {
     id: 'escuela-608', nombre: 'Escuela Secundaria N.° 608 - La Esperanza', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: '',
+    ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     mapa: 'Pje. Uboldi 630, S2124 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     carpeta:'jardin_608',
@@ -154,7 +172,8 @@ const OBRAS = [
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
-    tipo: 'colaboracion', con: '<strong>Del Sol/strong> - Empresa Constructora', estado: 'terminado', cliente: '',
+    tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
+    ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',
     descripcion: [],
     carpeta:'plaza_san_martin',

@@ -12,6 +12,13 @@
   }
 
   document.title = `${n.titulo} | DyScon S.A.`;
+
+  // Dirección canónica de esta novedad (para Google)
+  const canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = 'https://dysconsa.com.ar/novedad.html?id=' + n.id;
+  document.head.appendChild(canonical);
+  
   if (n.resumen) document.querySelector('meta[name="description"]').setAttribute('content', n.resumen);
 
   const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
