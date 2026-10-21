@@ -70,11 +70,20 @@
             <button type="button" class="filtro activo" data-grupo="categoria" data-filtro="todos">Todas</button>
             <!-- las demás categorías las agrega js/obras-lista.js desde los datos -->
           </div>
+
           <div class="filtros" role="group" aria-label="Filtrar por tipo de obra">
             <span class="filtros-rotulo">Tipo</span>
             <button type="button" class="filtro activo" data-grupo="tipo" data-filtro="todos">Todas</button>
             <button type="button" class="filtro" data-grupo="tipo" data-filtro="propia">Propias</button>
             <button type="button" class="filtro" data-grupo="tipo" data-filtro="colaboracion">En colaboración</button>
+          </div>
+
+          <div class="filtros" role="group" aria-label="Filtrar por estado de la obra">
+            <span class="filtros-rotulo">Estado</span>
+            <button type="button" class="filtro activo" data-grupo="estado" data-filtro="todos">Todas</button>
+            <button type="button" class="filtro" data-grupo="estado" data-filtro="inicio"><span class="punto punto--inicio punto--inline"></span> Iniciando</button>
+            <button type="button" class="filtro" data-grupo="estado" data-filtro="obra"><span class="punto punto--obra punto--inline"></span> En ejecución</button>
+            <button type="button" class="filtro" data-grupo="estado" data-filtro="terminado"><span class="punto punto--terminado punto--inline"></span> Terminadas</button>
           </div>
         </div>
 

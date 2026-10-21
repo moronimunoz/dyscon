@@ -26,7 +26,7 @@
       : '';
 
     return `
-      <article class="obra-card reveal" data-categoria="${slug(o.categoria)}" data-tipo="${o.tipo}">
+      <article class="obra-card reveal" data-categoria="${slug(o.categoria)}" data-tipo="${o.tipo}" data-estado="${o.estado}">
         <a href="obra.html?id=${o.id}">
           <div class="obra-img">
             ${estado}
