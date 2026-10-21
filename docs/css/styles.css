@@ -452,4 +452,4 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 600px) { .filtros-rotulo { flex-basis: 100%; } }
 
 /* Botones de filtro con puntito de color (filtro de estado) */
-.filtro .punto { display: inline-block; flex-shrink: 0; }
+.filtro .punto { display: inline-block; flex-shrink: 0; transform: translateY(4px); }
