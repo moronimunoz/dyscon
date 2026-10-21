@@ -262,7 +262,7 @@ button { font: inherit; cursor: pointer; }
 
 /* =========================================================
    NOSOTROS
-   ========================================================= */F
+   ========================================================= */
 .nosotros {
   display: grid; grid-template-columns: 1fr 1.25fr 1fr; align-items: center;
   background: var(--fondo);
@@ -454,4 +454,5 @@ button { font: inherit; cursor: pointer; }
 /* Botones de filtro con puntito de color (filtro de estado) */
 .filtro .punto { display: inline-block; flex-shrink: 0; transform: translateY(4px); }
 
+/* Da contraste al color azul y naranja para que no se pierdan y se vean mas en fondos de su mismo color */
 .obra-img .punto--inicio, .obra-img .punto--terminado { box-shadow: 0 1px 4px rgba(0, 0, 0, .35); }
