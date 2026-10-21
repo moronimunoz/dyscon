@@ -124,6 +124,7 @@ const OBRAS = [
   },
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Viviendas',
+    destacada: 2,
     tipo: 'propia', estado: 'obra', cliente: 'DPVyU.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '-32.9817997363948, -60.62924684936593',
@@ -166,6 +167,7 @@ const OBRAS = [
   },
   {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
+    destacada: 1,
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
@@ -176,6 +178,7 @@ const OBRAS = [
   },
   {
     id: 'samco-pavon-arriba', nombre: 'Nuevo SAMco de Pavón Arriba', categoria: 'Salud',
+    destacada: 3,
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Pavón Arriba · Santa Fe',
     mapa: '-33.310985234429445, -60.827243803116566',
@@ -214,6 +217,7 @@ const OBRAS = [
   },
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
+    destacada: 4,
     tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',

@@ -242,23 +242,29 @@ button { font: inherit; cursor: pointer; }
 .obra-card:hover .obra-flecha { transform: translateX(4px); }
 
 /* Indicador de obra en ejecución */
-.en-curso {
+/* Punto de estado de la obra (esquina de la tarjeta): naranja = iniciando, verde = en ejecución, azul = terminada */
+.punto, .en-curso {
   position: absolute; top: .8rem; left: .8rem; z-index: 2;
   width: 18px; height: 18px; border-radius: 50%;
   border: 2px solid #fff;
-  background: linear-gradient(90deg, #89d957, #c9e265);
-  animation: titilar 2s ease-in-out infinite;
 }
-.en-curso--inline { position: static; flex-shrink: 0; }
+.punto--inicio    { background: linear-gradient(90deg, #f59e2c, #fbc66a); }
+.punto--terminado { background: linear-gradient(90deg, #2f7fd0, #78b6ee); }
+.punto--obra, .en-curso {
+  background: linear-gradient(90deg, #89d957, #c9e265);
+  animation: titilar 2s ease-in-out infinite;        /* solo el verde titila: indica trabajo en curso */
+}
+.punto--inline, .en-curso--inline { position: static; flex-shrink: 0; }
 @keyframes titilar {
   0%, 100% { filter: brightness(1);    box-shadow: 0 0 0 0 rgba(201, 226, 101, 0); }
   50%      { filter: brightness(1.18); box-shadow: 0 0 4px 1px rgba(201, 226, 101, .45); }
 }
-.leyenda { display: flex; align-items: center; gap: .6rem; margin-bottom: 1.4rem; font-size: .8rem; color: var(--gris); }
+.leyenda { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.4rem; margin: 0 0 1.4rem; padding: 0; list-style: none; font-size: .8rem; color: var(--gris); }
+.leyenda li { display: flex; align-items: center; gap: .5rem; }
 
 /* =========================================================
    NOSOTROS
-   ========================================================= */
+   ========================================================= */F
 .nosotros {
   display: grid; grid-template-columns: 1fr 1.25fr 1fr; align-items: center;
   background: var(--fondo);
@@ -421,7 +427,7 @@ button { font: inherit; cursor: pointer; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
   .oculto { opacity: 1; transform: none; }
-  .en-curso { animation: none; }
+    .punto--obra, .en-curso { animation: none; }
 }
 
 /* Encabezado de página con foto de fondo (se usa con la clase page-hero--img) */
@@ -440,7 +446,9 @@ button { font: inherit; cursor: pointer; }
 .page-hero--img .migas { color: #d3e3e8; }
 .page-hero--img h1 { text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
 
-/* @media (max-width: 760px) {
-  .slides { background: var(--teal-900) url('../img/hero/poster.jpg') center / cover no-repeat; }
-  .slides video { display: none; }
-} */
+/* Filtros de obras: dos filas (categoría y tipo) */
+.filtros-bloque { margin-bottom: 1.2rem; }
+.filtros-bloque .filtros { margin-bottom: .8rem; }
+.filtros-rotulo { align-self: center; margin-right: .3rem; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gris); }
+.sin-resultados { padding: 2rem 0; text-align: center; color: var(--gris); }
+@media (max-width: 600px) { .filtros-rotulo { flex-basis: 100%; } }

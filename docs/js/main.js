@@ -75,18 +75,41 @@ if (secciones.length) {
 const anio = document.getElementById('anio');
 if (anio) anio.textContent = new Date().getFullYear();
 
-// ---------- 8. Filtros de obras y desarrollos ----------
+// ---------- 8. Filtros de obras y novedades ----------
+// Cada botón .filtro lleva data-filtro="valor" y, si hay más de una fila de filtros,
+// data-grupo="categoria" (sin grupo se usa "estado"). Cada tarjeta guarda su valor en
+// data-<grupo> (ej. data-categoria="salud"). Los grupos se combinan entre sí.
+// También se puede entrar con un filtro ya aplicado: obras.html?categoria=salud
 const botonesFiltro = document.querySelectorAll('.filtro');
-const tarjetas = document.querySelectorAll('[data-estado]');
 
 if (botonesFiltro.length) {
-  botonesFiltro.forEach(btn => btn.addEventListener('click', () => {
-    botonesFiltro.forEach(b => b.classList.toggle('activo', b === btn));
-    const filtro = btn.dataset.filtro;
-    tarjetas.forEach(t =>
-      t.classList.toggle('filtrada', filtro !== 'todos' && t.dataset.estado !== filtro)
-    );
+  const tarjetas = document.querySelectorAll('.grid .obra-card');
+  const vacio = document.getElementById('sin-resultados');
+  const grupoDe = b => b.dataset.grupo || 'estado';
+  const activos = {};                                  // grupo -> valor elegido
+
+  const aplicar = () => {
+    botonesFiltro.forEach(b => {
+      const activo = (activos[grupoDe(b)] || 'todos') === b.dataset.filtro;
+      b.classList.toggle('activo', activo);
+      b.setAttribute('aria-pressed', activo);
+    });
+    tarjetas.forEach(t => t.classList.toggle('filtrada',
+      Object.entries(activos).some(([g, v]) => v !== 'todos' && t.dataset[g] !== v)));
+    if (vacio) vacio.hidden = [...tarjetas].some(t => !t.classList.contains('filtrada'));
+  };
+
+  botonesFiltro.forEach(b => b.addEventListener('click', () => {
+    activos[grupoDe(b)] = b.dataset.filtro;
+    aplicar();
   }));
+
+  // Filtro que llega por la dirección (ej. obras.html?categoria=patrimonio)
+  const params = new URLSearchParams(location.search);
+  botonesFiltro.forEach(b => {
+    if (params.get(grupoDe(b)) === b.dataset.filtro) activos[grupoDe(b)] = b.dataset.filtro;
+  });
+  aplicar();
 }
 
 // ---------- 9. Portada: el texto se desvanece cuando la página lo va tapando ----------

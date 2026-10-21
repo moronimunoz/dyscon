@@ -63,18 +63,31 @@
     <section class="obras">
       <div class="contenedor">
 
-        <div class="filtros" role="group" aria-label="Filtrar por tipo de obra">
-          <button class="filtro activo" data-filtro="todos">Todas</button>
-          <button class="filtro" data-filtro="propia">Propias</button>
-          <button class="filtro" data-filtro="colaboracion">En colaboración</button>
+        <div class="filtros-bloque">
+          <div class="filtros" role="group" aria-label="Filtrar por categoría" id="filtros-categoria">
+            <span class="filtros-rotulo">Categoría</span>
+            <button type="button" class="filtro activo" data-grupo="categoria" data-filtro="todos">Todas</button>
+            <!-- las demás categorías las agrega js/obras-lista.js desde los datos -->
+          </div>
+          <div class="filtros" role="group" aria-label="Filtrar por tipo de obra">
+            <span class="filtros-rotulo">Tipo</span>
+            <button type="button" class="filtro activo" data-grupo="tipo" data-filtro="todos">Todas</button>
+            <button type="button" class="filtro" data-grupo="tipo" data-filtro="propia">Propias</button>
+            <button type="button" class="filtro" data-grupo="tipo" data-filtro="colaboracion">En colaboración</button>
+          </div>
         </div>
 
-        <p class="leyenda"><span class="en-curso en-curso--inline"></span> Obra en ejecución</p>
+        <ul class="leyenda" aria-label="Referencia de los puntos de color">
+          <li><span class="punto punto--inicio punto--inline"></span> Iniciando</li>
+          <li><span class="punto punto--obra punto--inline"></span> En ejecución</li>
+          <li><span class="punto punto--terminado punto--inline"></span> Terminada</li>
+        </ul>
 
         <!-- Las tarjetas se dibujan solas desde js/obras-data.js (js/obras-lista.js) -->
         <div class="grid" id="lista-obras">
           <noscript><p>Para ver el listado de obras necesitás tener JavaScript activado.</p></noscript>
         </div>
+        <p class="sin-resultados" id="sin-resultados" hidden>No hay obras con esa combinación de filtros. Probá con otra.</p>
       </div>
     </section>
 

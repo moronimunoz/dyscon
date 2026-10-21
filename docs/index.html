@@ -89,19 +89,19 @@
 
     <!-- FRANJA DE CATEGORÍAS -->
     <section class="categorias" aria-label="Áreas de trabajo">
-      <a href="#obras" class="cat reveal">
+      <a href="obras.html" class="cat reveal">                             <!-- Obras públicas y privadas --> 
         <svg class="icon icon--lg"><use href="#i-obras"/></svg>
         <span>Obras públicas<br>y privadas</span>
       </a>
-      <a href="#obras" class="cat reveal">
+      <a href="obras.html?categoria=espacio-publico" class="cat reveal">   <!-- Infraestructura -->
         <svg class="icon icon--lg"><use href="#i-puente"/></svg>
         <span>Infraestructura</span>
       </a>
-      <a href="#obras" class="cat reveal">
+      <a href="obras.html?categoria=comunidad" class="cat reveal">         <!-- Arquitectura -->
         <svg class="icon icon--lg"><use href="#i-edificio"/></svg>
         <span>Arquitectura</span>
       </a>
-      <a href="#obras" class="cat reveal">
+      <a href="obras.html?categoria=patrimonio" class="cat reveal">        <!-- Restauración y puesta en valor -->
         <svg class="icon icon--lg"><use href="#i-columna"/></svg>
         <span>Restauración y<br>puesta en valor</span>
       </a>
@@ -115,59 +115,10 @@
           <a href="obras.html" class="link-flecha">Ver todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a>
         </div>
 
-        <div class="grid">
-          <article class="obra-card reveal">
-            <a href="obra.html?id=monumento-bandera">
-              <div class="obra-img">
-                <img src="img/obras/monumento/00.jpg" alt="Monumento Nacional a la Bandera" loading="lazy">
-                <span class="tag">Patrimonio</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Monumento Nacional<br>a la Bandera</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-          <article class="obra-card reveal">
-            <a href="obra.html?id=viviendas-tablada">
-              <div class="obra-img">
-                <img src="img/obras/tablada.jpg" alt="64 Viviendas en Tablada" loading="lazy">
-                <span class="tag">Comunidad</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>64 Viviendas en Tablada</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-          <article class="obra-card reveal">
-            <a href="obra.html?id=hospital-samco">
-              <div class="obra-img">
-                <img src="img/obras/samco/00.jpg" alt="Hospital SAMCo Eva Perón" loading="lazy">
-                <span class="tag">Salud</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Hospital SAMCo<br>Eva Perón</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Funes · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
-
-          <article class="obra-card reveal">
-            <a href="obra.html?id=plaza-san-martin">
-              <div class="obra-img">
-                <img src="img/obras/plaza_san_martin/04.webp" alt="Plaza San Martín" loading="lazy">
-                <span class="tag">Espacio público</span>
-              </div>
-              <div class="obra-cuerpo">
-                <h3>Plaza San Martín</h3>
-                <p class="obra-lugar"><svg class="icon"><use href="#i-pin"/></svg> Rosario · Santa Fe <svg class="icon obra-flecha"><use href="#i-flecha"/></svg></p>
-              </div>
-            </a>
-          </article>
+        <div class="grid" id="obras-destacadas">
+          <noscript><p><a href="obras.html">Ver todas las obras</a></p></noscript>
         </div>
+        
       </div>
     </section>
 
@@ -256,6 +207,8 @@
     </div>
   </footer>
 
+  <script src="js/obras-data.js"></script>
+  <script src="js/obras-lista.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
