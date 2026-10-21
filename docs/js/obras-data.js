@@ -72,7 +72,7 @@ const OBRAS = [
     fotos: ['ricardone.jpg']
   },
   {
-    id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Vivienda',
+    id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Viviendas',
     tipo: 'propia', estado: 'terminado', cliente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'España 543, Rosario, Santa Fe',
@@ -113,7 +113,7 @@ const OBRAS = [
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   {
-    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Vivienda',
+    id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Viviendas',
     tipo: 'propia', estado: 'obra', cliente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',

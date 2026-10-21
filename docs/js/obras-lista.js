@@ -7,7 +7,7 @@
   if (typeof OBRAS === 'undefined') return;
 
   // Orden de los botones de categoría (las que no figuren acá van al final, por orden alfabético)
-  const ORDEN_CATEGORIAS = ['Educación', 'Salud', 'Patrimonio', 'Comunidad', 'Espacio público'];
+  const ORDEN_CATEGORIAS = ['Educación', 'Salud', 'Patrimonio', 'Viviendas', 'Comunidad', 'Espacio público'];
 
   // Texto del punto de color de la esquina, según el estado de la obra
   const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecución', terminado: 'Obra terminada' };
