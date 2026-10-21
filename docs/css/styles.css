@@ -453,3 +453,5 @@ button { font: inherit; cursor: pointer; }
 
 /* Botones de filtro con puntito de color (filtro de estado) */
 .filtro .punto { display: inline-block; flex-shrink: 0; transform: translateY(4px); }
+
+.obra-img .punto--inicio, .obra-img .punto--terminado { box-shadow: 0 1px 4px rgba(0, 0, 0, .35); }
