@@ -61,7 +61,7 @@
       </div>
     </section>
     <section class="contenedor ficha">
-      ${fila('Cliente', o.cliente && `<p>${o.cliente}</p>`)}
+      ${fila('Comitente', o.comitente && `<p>${o.comitente}</p>`)}
       ${fila('Estado', estados)}
       ${fila('Modalidad', modalidad)}
       ${fila('Descripción', o.descripcion && o.descripcion.map(p => `<p>${p}</p>`).join(''))}
