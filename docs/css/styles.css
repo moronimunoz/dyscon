@@ -459,7 +459,7 @@ button { font: inherit; cursor: pointer; }
 
 /* resaltado en obras */
 .resaltado {
-background: linear-gradient(90deg, rgba(70, 187, 193, 0.18), rgba(81, 124, 130, 0.18));
+background-color: rgba(70, 187, 193, 0.18);
 color: #123c4c;
 padding: 2px 5px;
 border-radius: 3px;
