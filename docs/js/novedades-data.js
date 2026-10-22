@@ -31,7 +31,7 @@ const NOVEDADES = [
     titulo: 'Participamos de Experiencia TIIC 2026',
     categoria: 'Eventos',
     fecha: '2026-10-20',
-    portada: '2026_10_20_tiic/00.jpg',
+    portada: '2026_10_20_tiic/poster.jpg',
     resumen: '',
     texto: ['🚀 Innovación que transforma la construcción.<br><br>Desde <d>Dyscon S.A.</d> participamos de <b>Experiencia TIIC 2026</b>, un encuentro organizado por <b>la Cámara Argentina de la Construcción en Buenos Aires.</b><br><br>Una jornada para conocer nuevas tecnologías, descubrir tendencias y conectar con ideas que están transformando el futuro de nuestra industria.<br><br>Seguimos apostando a la innovación, el aprendizaje y la evolución constante. 🏗️'],
     video: [{ src: 'novedades/tiic.mp4', poster: '2026_10_20_tiic/00.jpg' }, { src: 'novedades/tiic2.mp4', poster: '2026_10_20_tiic/00.jpg' }],
