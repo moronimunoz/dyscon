@@ -109,7 +109,7 @@ const OBRAS = [
     descripcion: [],
     carpeta:'pami',
     portada: 'pami/01.jpeg',
-    fotos: ['00.jpg','01.jpeg','02.jpg','03.jpeg','04.jpeg']
+    fotos: ['00.jpg','01.jpeg','02.jpg','03.jpeg','04.jpeg','05.jpeg','06.jpeg','07.jpeg','08.jpeg','09.jpeg','10.jpeg','11.jpeg','12.jpeg']
   },
   // PARQUE INDUSTRIAL
   {
