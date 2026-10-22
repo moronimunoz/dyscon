@@ -54,6 +54,7 @@
    ========================================================= */
    
 const OBRAS = [
+  // CASA M
   {
     id: 'casa-m', nombre: 'Casa M', categoria: 'Comunidad',
     tipo: 'propia', estado: 'inicio', cliente: '',
@@ -64,6 +65,7 @@ const OBRAS = [
     carpeta:'casa_m',
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg']
   },
+  // ESCUELA RICARDONE
   {
     id: 'escuela-ricardone', nombre: 'Escuela Secundaria Ricardone', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de economía, Unidad Ejecutora Provincial (UE).',
@@ -71,6 +73,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['ricardone.jpg']
   },
+  // ESPAÑA 543
   {
     id: 'restauracion-espana-543', nombre: 'Restauración de Dto. España 543', categoria: 'Viviendas',
     tipo: 'propia', estado: 'terminado', cliente: '',
@@ -80,6 +83,7 @@ const OBRAS = [
     carpeta:'espana',
     fotos: ['00.jpg','01.jpeg','02.jpeg','03.jpeg',]
   },
+  // PAMI
   {
     id: 'pami-ituzaingo', nombre: 'Hospital del Bicentenario PAMI Ituzaingó', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: 'PAMI.',
@@ -90,6 +94,7 @@ const OBRAS = [
     portada: 'pami/01.jpeg',
     fotos: ['00.jpg','01.jpeg','02.jpg','03.jpeg','04.jpeg']
   },
+  // PARQUE INDUSTRIAL
   {
     id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
     tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora',estado: 'obra', cliente: '',
@@ -101,6 +106,7 @@ const OBRAS = [
     video: { src: 'obras/nodo.mp4', poster: 'parque_industrial/poster.jpg' },   // archivo con portada
     fotos: ['00.jpeg','01.jpg','02.jpg','03.jpg']
   },
+  // TECNOTECA
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     tipo: 'colaboracion', con: '<strong>Del Sol</strong> - Empresa Constructora', estado: 'terminado', cliente: 'Municipalidad de Rosario.',
@@ -112,6 +118,7 @@ const OBRAS = [
     video: { src: 'obras/tecno.mp4', poster: 'tecnoteca/poster.jpg' },
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
+  //RDZ 1635
   {
     id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Viviendas',
     tipo: 'propia', estado: 'obra', cliente: 'Fideicomiso.',
@@ -122,6 +129,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg']
   },
+  // VIVIENDAS TABLADA
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Viviendas',
     destacada: 2,
@@ -131,6 +139,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['tablada.jpg']
   },
+  //UP15
   {
     id: 'unidad-penitenciaria-15', nombre: 'Unidad Penitenciaria N.º 15', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
@@ -142,6 +151,7 @@ const OBRAS = [
     video: 'obras/up.mp4', 
     fotos: ['02.jpeg','00.jpg','01.webp','03.jpeg']
   },
+  //UP8
   {
     id: 'unidad-penitenciaria-8', nombre: 'Unidad Penitenciaria N.º 8', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', cliente: '',
@@ -153,6 +163,7 @@ const OBRAS = [
     video: 'obras/up.mp4', 
     fotos: ['00.jpeg','01.jpeg','02.webp','03.jpg','04.jpeg','05.jpg','06.jpeg']
   },
+  //PLAZA SAN CRISTOBAL
   {
     id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio público',
     tipo: 'propia', estado: 'obra', cliente: '',
@@ -161,6 +172,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['plaza-san-cristobal.jpg']
   },
+  //PARQUE REGIONAL SUR
   {
     id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio público',
     tipo: 'propia', estado: 'obra', cliente: '',
@@ -169,6 +181,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['parque_regional_sur.jpg']
   },
+  //69 VIVIENDAS
   {
     id: '69-viviendas', nombre: 'Bloque de 69 viviendas — República de la Sexta', categoria: 'Viviendas',
     tipo: 'propia', estado: 'terminado', cliente: 'el Gobierno de Santa Fe, la Municipalidad de Rosario y la Universidad Nacional de Rosario (UNR)',
@@ -179,6 +192,7 @@ const OBRAS = [
     carpeta:'69-viviendas',
     fotos: ['02.webp','01.jpg','00.jpg']
   },
+  //MONUMENTO
   {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
     destacada: 1,
@@ -190,6 +204,7 @@ const OBRAS = [
     carpeta:'monumento',
     fotos: ['00.jpg','01.jpg','02.jpeg','03.jpg','04.jpg','05.jpg','06.jpg']
   },
+  //SAMCO PAVON ARRIBA
   {
     id: 'samco-pavon-arriba', nombre: 'Nuevo SAMco de Pavón Arriba', categoria: 'Salud',
     destacada: 3,
@@ -202,6 +217,7 @@ const OBRAS = [
     carpeta:'samco_pavon_arriba',
     fotos: ['02.jpg','00.jpg','01.jpg','03.jpg']
   },
+  //SAMCO FUNES
   {
     id: 'samco-funes', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
@@ -212,6 +228,7 @@ const OBRAS = [
     carpeta:'samco',
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg']
   },
+  //EETP 485
   {
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: 'Ministerio de Educación.',
@@ -220,6 +237,7 @@ const OBRAS = [
     descripcion: [],
     fotos: ['eetp485.jpg']
   },
+  //ESCUELA 608
   {
     id: 'escuela-608', nombre: 'Escuela Secundaria N.° 608 - La Esperanza', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', cliente: '',
@@ -229,6 +247,7 @@ const OBRAS = [
     carpeta:'jardin_608',
     fotos: ['01.jpg','00.jpg']
   },
+  //PLAZA SAN MARTIN
   {
     id: 'plaza-san-martin', nombre: 'Plaza San Martín', categoria: 'Espacio público',
     destacada: 4,
@@ -240,6 +259,7 @@ const OBRAS = [
     portada:'plaza_san_martin/00.jpg',
     fotos: ['04.webp','01.webp','02.webp','03.webp']
   },
+  //BARRIO MORTELARI
   {
     id: 'barrio-mortelari-1', nombre: 'Mejoramiento integral del barrio Mortelari I', categoria: 'Comunidad',
     tipo: 'propia', estado: 'terminado', cliente: '',
