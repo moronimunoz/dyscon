@@ -26,6 +26,18 @@
       ffmpeg -i nodo.mov -c:v libx264 -crf 26 -preset slow -vf "scale=-2:720" -c:a aac -b:a 128k -movflags +faststart nodo-web.mp4
    ========================================================= */
 const NOVEDADES = [
+    {
+    id: 'inauguracion_de_tecnoteca',
+    titulo: 'Inauguración de Tecnoteca',
+    categoria: 'Eventos',
+    fecha: '2026-10-20',
+    portada: '2026_10_20_tiic/00.jpg',
+    resumen: '',
+    texto: ['El intendente Pablo Javkin encabezó este miércoles 12 de noviembre la inauguración oficial de Tecnoteca Rosario, una nueva escuela de tecnología y oficios digitales que funcionará en el Galpón 13 (Estévez Boero 700), sobre la Rambla del Tricentenario. Este espacio educativo integra una de las obras del legado por los 300 años de la ciudad y se proyecta como polo de referencia para el crecimiento tecnológico y comunitario de las juventudes rosarinas.<br>Impulsada por la Municipalidad de Rosario, la Tecnoteca busca acercar a jóvenes al mundo de la tecnología, el trabajo y la creatividad digital. Su creación apunta a fortalecer el talento local y generar nuevas oportunidades para el desarrollo de conocimientos y habilidades tecnológicas. De esta manera, Rosario se consolida como una ciudad líder en innovación y creatividad, conectando talento local con oportunidades reales de formación y crecimiento.'
+    ],
+    video: [{ src: 'novedades/tiic.mp4', poster: '2026_10_20_tiic/00.jpg' }, { src: 'novedades/tiic2.mp4', poster: '2026_10_20_tiic/00.jpg' }],
+    fotos: ['2026_10_20_tiic/00.jpg','2026_10_20_tiic/01.jpg']
+  },
   {
     id: 'inauguracion_de_tecnoteca',
     titulo: 'Inauguración de Tecnoteca',
