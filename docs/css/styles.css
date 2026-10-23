@@ -1,13 +1,30 @@
 /* =========================================================
    DYSCON S.A. - Estilos
    ========================================================= */
-
 /* ---------- Variables (cambiás la paleta acá) ---------- */
 :root {
+  --marca: #588587;        /* color exacto del logo: para detalles (barras, líneas, íconos) */
+  --grad-logo: linear-gradient(90deg, #4f7c7e, #3f6a6c);   /* encabezado de "Nosotros" */
+  --teal-900: #1b3a3c;     /* fondos oscuros y footer */
+  --teal-700: #30585a;     /* botones oscuros, títulos */
+  --teal-500: #447274;     /* botón principal del hero */
+  --teal-100: #e9f1f1;
+  --tinta: #1c2a2c;
+  --gris: #58696a;
+  --fondo: #f3f6f6;
+  --linea: #dde4e4;
+  --blanco: #ffffff;
+  --ancho: 1200px;
+  --alto-header: 80px;
+  --fuente: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+/* ---------- Variables (cambiás la paleta acá) ---------- */
+ /* :root {
+ root: viejo
   --grad-logo: linear-gradient(90deg, #46bbc1, #517c82);
-  --teal-900: #0f3d4e;     /* fondos oscuros y footer */
-  --teal-700: #17566b;     /* botones oscuros, títulos */
-  --teal-500: #1f7186;     /* botón principal del hero */
+  --teal-900: #0f3d4e;     fondos oscuros y footer
+  --teal-700: #17566b;     botones oscuros, títulos
+  --teal-500: #1f7186;     botón principal del hero
   --teal-100: #e6f0f3;
   --tinta: #1d2b33;
   --gris: #5c6b74;
@@ -17,7 +34,7 @@
   --ancho: 1200px;
   --alto-header: 80px;
   --fuente: 'Poppins', 'Segoe UI', Arial, sans-serif;
-}
+} */
 
 /* ---------- Reset ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -318,8 +335,8 @@ button { font: inherit; cursor: pointer; }
 .footer { background: var(--teal-900); color: #d3e3e8; padding: 1.8rem 5% 1rem; font-size: .75rem; }
 .footer-fila { display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
 .footer-marca { display: flex; align-items: center; gap: .9rem; }
-.footer-marca img { height: 52px; width: 52px; border-radius: 50%; object-fit: cover; }
-.footer-marca strong { display: block; color: #fff; font-size: .95rem; }
+.footer-marca img { height: 44px; width: auto} /*.footer-marca img { height: 52px; width: 52px; border-radius: 50%; object-fit: cover; } */
+/* .footer-marca strong { display: block; color: #fff; font-size: .95rem; } saca dyscon y la frase*/ 
 .footer-nav { display: flex; gap: 1.4rem; flex-wrap: wrap; }
 .footer-nav a, .footer-datos a { transition: color .2s; }
 .footer-nav a:hover, .footer-datos a:hover { color: #fff; }
@@ -464,3 +481,5 @@ color: #123c4c;
 padding: 2px 5px;
 border-radius: 3px;
 } 
+
+.logo img { height: 46px; }
