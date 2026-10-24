@@ -63,7 +63,7 @@ const OBRAS = [
     id: 'escuela-ricardone', nombre: 'Escuela Secundaria EESO N.º 1548', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de economía, Unidad Ejecutora Provincial (UE).',
     ubicacion: 'Ricardone · Santa Fe',
-    datos:['plazo: Octubre 2024 - Finalizado.'],
+    datos:['Plazo: Octubre 2024 - Finalizado.'],
     mapa: '66G2+6Q Ricardone, Santa Fe',
     descripcion: ['DYSCON S.A. llevó adelante la construcción del nuevo edificio de la Escuela de Educación Secundaria Orientada N.º 1548 de <b>Ricardone</b>, una obra destinada a fortalecer la infraestructura educativa de la localidad y responder a la creciente demanda de espacios para la educación secundaria.<br><br>El proyecto comprendió la ejecución de un establecimiento educativo con ocho aulas, laboratorio, taller multipropósito, Centro de Recursos Multimediales y Salón de Usos Múltiples, además de sectores administrativos, sanitarios, depósitos y galerías de circulación.<br><br>La propuesta integra espacios destinados a la enseñanza, las actividades prácticas y el encuentro comunitario, mediante una infraestructura concebida para acompañar el desarrollo educativo de las nuevas generaciones.<br><br>Impulsada por el Gobierno de la Provincia de Santa Fe en el marco del programa Santa Fe + Conectada, la obra representa una contribución al crecimiento de Ricardone y al fortalecimiento de sus instalaciones educativas.<br><br>Entre los principales sectores previstos se encuentran:<br>• Ocho aulas para el dictado de clases.<br>• Taller multipropósito y laboratorio, destinados a actividades prácticas y experimentales.<br>• Centro de Recursos Multimediales, para apoyar las actividades pedagógicas.<br>• Salón de Usos Múltiples (SUM), con sanitarios y espacios complementarios.<br>• Hall de ingreso, galerías y circulaciones, para organizar el acceso y la conexión entre sectores.<br>• Área administrativa, con dirección, vicedirección, secretaría, preceptoría y sala de docentes.<br>• Servicios generales, incluidos sanitarios, depósitos y sala de máquinas.'],
     portada: 'ricardone/001.jpg',
@@ -86,7 +86,7 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', comitente: 'PAMI.',
     ubicacion: 'Ituzaingó · Buenos Aires',
     mapa: 'Cnel. Brandsen 2898, B1714LAH Ituzaingó, Provincia de Buenos Aires',
-    datos:['superficie: 21.770 m².','plazo: Febrero, 2022 - Finalizado.'],
+    datos:['superficie: 21.770 m².','Plazo: Febrero, 2022 - Finalizado.'],
     descripcion: [],
     carpeta:'pami',
     portada: 'pami/01.jpeg',
@@ -109,7 +109,7 @@ const OBRAS = [
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario · Santa Fe',
-    datos:['superficie: 4.000 m².','plazo: Septiembre, 2023 - Finalizado.'],
+    datos:['superficie: 4.000 m².','Plazo: Septiembre, 2023 - Finalizado.'],
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
     descripcion: ['<b>Tecnoteca, Escuela de Tecnología y Oficios Digitales</b><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con <mark class="resaltado">4.000 mts2 distribuidos en dos plantas</mark> que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
@@ -122,7 +122,7 @@ const OBRAS = [
     id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Viviendas',
     tipo: 'propia', estado: 'obra', comitente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
-    datos:['superficie: 2.000 m².','plazo: Julio, 2023 - Finalizado.'],
+    datos:['superficie: 2.000 m².','Plazo: Julio, 2023 - Finalizado.'],
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
     portada:'rdz/00.jpg',
     carpeta:'rdz',
@@ -135,7 +135,7 @@ const OBRAS = [
     destacada: 2,
     tipo: 'propia', estado: 'obra', comitente: 'DPVyU.',
     ubicacion: 'Rosario · Santa Fe',
-    datos:['plazo: Septiembre 2024 - Finalizado.'],
+    datos:['Plazo: Septiembre 2024 - Finalizado.'],
     mapa: '-32.9817997363948, -60.62924684936593',
     descripcion: [],
     fotos: ['tablada.jpg']
@@ -157,7 +157,7 @@ const OBRAS = [
     id: 'unidad-penitenciaria-8', nombre: 'Unidad Penitenciaria N.º 8', categoria: 'Comunidad',
     tipo: 'propia', estado: 'obra', comitente: 'Unidad Ejecutora de Infraestructura.',
     ubicacion: 'Piñero · Santa Fe',
-    datos:['plazo: Abril 2025 - Finalizado.'],
+    datos:['Plazo: Abril 2025 - Finalizado.'],
     mapa: 'W633+3G Piñero, Santa Fe',
     descripcion: ['<b>Infraestructura penitenciaria de alta seguridad</b><br><br>En el marco del programa de ampliación de la infraestructura penitenciaria de la provincia de Santa Fe, DYSCON S.A. participa en la construcción del Módulo D de la Unidad Penitenciaria N.º 8, integrada al complejo penitenciario de Piñero.<br><br>El proyecto forma parte de un establecimiento de alta seguridad que incorpora sistemas de alojamiento individual, estructuras de hormigón, circulaciones controladas y espacios complementarios destinados al funcionamiento penitenciario.<br><br>La intervención requiere una ejecución coordinada de los componentes arquitectónicos y constructivos, con especial atención a los requerimientos estructurales, funcionales y de seguridad propios de este tipo de infraestructura pública.<br><br>La obra se integra a un programa provincial orientado a ampliar la capacidad del sistema penitenciario y modernizar sus instalaciones.'],
     portada:'up8/00.jpeg',
@@ -200,7 +200,7 @@ const OBRAS = [
     destacada: 1,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Obras Públicas.',
     ubicacion: 'Rosario · Santa Fe',
-    datos: ['superficie: 10.000 m².', 'plazo: Marzo, 2023 - Finalizado.'],
+    datos: ['superficie: 10.000 m².', 'Plazo: Marzo, 2023 - Finalizado.'],
     mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
     descripcion: ['PUESTA EN VALOR DEL MONUMENTO NACIONAL A LA BANDERA - Etapa II'],
     portada:'monumento/01.jpg',
@@ -213,7 +213,7 @@ const OBRAS = [
     destacada: 3,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Pavón Arriba · Santa Fe',
-    datos:['superficie: 723 m².','plazo: Agosto, 2022 - Abril, 2025.'],
+    datos:['superficie: 723 m².','Plazo: Agosto, 2022 - Abril, 2025.'],
     mapa: '-33.310985234429445, -60.827243803116566',
     descripcion: ['Ubicado en la intersección de las calles Buenos Aires y Valerio Carreras, el nuevo SAMCo de Pavón Arriba constituye una intervención destinada a fortalecer la infraestructura sanitaria de la localidad y mejorar las condiciones de atención para la comunidad.<br><br>Impulsado por el <b>Gobierno de la Provincia de Santa Fe</b>, el proyecto contempló la construcción de nuevos espacios asistenciales y la refuncionalización de sectores del edificio existente, integrando soluciones arquitectónicas y técnicas orientadas a optimizar el funcionamiento del establecimiento.<br><br>La propuesta incluyó consultorios, sala de observación, sector de atención de urgencias, espacios de enfermería y áreas de internación con capacidad para cuatro camas. También contempló accesos diferenciados para el público y las ambulancias, circulación accesible e instalaciones específicas para el funcionamiento de un centro sanitario.<br><br>La intervención incorporó, además, sistemas de climatización, gases medicinales, iluminación LED y soluciones de aprovechamiento de energía solar, de acuerdo con las especificaciones del proyecto.<br><br>Con una superficie de intervención prevista de 723 m², la obra representa un aporte a la modernización de los servicios públicos de salud y al desarrollo de la infraestructura de la región.<br><br><b>DYSCON S.A. — Construcción de infraestructura para las necesidades de la comunidad.</b>'],
     portada:'samco_pavon_arriba/02.jpg',
@@ -226,7 +226,7 @@ const OBRAS = [
     id: 'samco-funes', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Funes · Santa Fe',
-    datos:['superficie: 1.000 m².','plazo: Noviembre, 2022 - En ejecución.'],
+    datos:['superficie: 1.000 m².','Plazo: Noviembre, 2022 - En ejecución.'],
     mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
     descripcion: [],
     portada:'samco/00.jpg',
@@ -238,7 +238,7 @@ const OBRAS = [
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Educación.',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
-    datos:['superficie: 2.588 m².','plazo: Agosto, 2017 - Octubre, 2019.'],
+    datos:['superficie: 2.588 m².','Plazo: Agosto, 2017 - Octubre, 2019.'],
     mapa: 'X9JQ+CP2 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     fotos: ['eetp485.jpg']
@@ -260,7 +260,7 @@ const OBRAS = [
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',
-    datos:['superficie: 14.000 m².','plazo: Noviembre, 2014 - Mayo, 2015.'],
+    datos:['superficie: 14.000 m².','Plazo: Noviembre, 2014 - Mayo, 2015.'],
     descripcion: [],
     carpeta:'plaza_san_martin',
     portada:'plaza_san_martin/00.jpg',
@@ -272,7 +272,7 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', comitente: 'Secretaría de Estado del Hábitat.',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     descripcion: [],
-    datos:['plazo: Agosto, 2017 - Octubre, 2020.'],
+    datos:['Plazo: Agosto, 2017 - Octubre, 2020.'],
     fotos: ['barrio_mortelari_1.jpg']
   },
   // Edifico Ricchieri
@@ -289,7 +289,7 @@ const OBRAS = [
   id: 'hospital-de-ninos-zona-norte', nombre: 'Hospital de Niños Zona Norte “Dr. Roberto M. Carra”', categoria: 'Salud',
   tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
   ubicacion: 'Rosario · Santa Fe',
-  datos: ['plazo: Enero 2025 - Finalizado.'],
+  datos: ['Plazo: Enero 2025 - Finalizado.'],
   mapa: 'Rosario, Santa Fe',
   descripcion: ['<b>Infraestructura sanitaria | Rosario, Santa Fe</b><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
   portada:'',
@@ -305,7 +305,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Agosto 2025 - Finalizado.',
+      'Plazo: Agosto 2025 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -319,7 +319,7 @@ const OBRAS = [
     comitente: 'Secretaría de Obras Públicas Municipal.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Junio, 2025 - Finalizado.',
+      'Plazo: Junio, 2025 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -333,7 +333,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril 2025 - Finalizado.',
+      'Plazo: Abril 2025 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -347,7 +347,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Funes.',
     datos: [
-      'plazo: Marzo, 2025 - Abril, 2025.',
+      'Plazo: Marzo, 2025 - Abril, 2025.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -361,7 +361,7 @@ const OBRAS = [
     comitente: 'S.U.M.A.R. Municipalidad de Rosario',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Febrero 2025 - Julio 2025.',
+      'Plazo: Febrero 2025 - Julio 2025.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -375,7 +375,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Diciembre 2024 - Finalizado.',
+      'Plazo: Diciembre 2024 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -389,7 +389,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Octubre, 2023 - Finalizado.',
+      'Plazo: Octubre, 2023 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -404,7 +404,7 @@ const OBRAS = [
     ubicacion: 'C.A.B.A.',
     datos: [
       'superficie: 3.000 m².',
-      'plazo: Julio, 2023 - Febrero, 2025.',
+      'Plazo: Julio, 2023 - Febrero, 2025.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -418,7 +418,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario.',
     datos: [
-      'plazo: Mayo, 2023 - Finalizado.',
+      'Plazo: Mayo, 2023 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -432,7 +432,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2023 - Finalizado.',
+      'Plazo: Abril, 2023 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -446,7 +446,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Diciembre, 2022 - Finalizado.',
+      'Plazo: Diciembre, 2022 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -461,7 +461,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 8.000 m².',
-      'plazo: Septiembre, 2022 - Mayo, 2023.',
+      'Plazo: Septiembre, 2022 - Mayo, 2023.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -475,7 +475,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas - DIPAI.',
     ubicacion: 'Rosario. Santa Fe.',
     datos: [
-      'plazo: Junio, 2022 - Mayo, 2023',
+      'Plazo: Junio, 2022 - Mayo, 2023',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -490,7 +490,7 @@ const OBRAS = [
     ubicacion: 'Funes - Rosario, Santa Fe.',
     datos: [
       'superficie: 1.000 m².',
-      'plazo: Abril, 2022 - Febrero, 2023.',
+      'Plazo: Abril, 2022 - Febrero, 2023.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -505,7 +505,7 @@ const OBRAS = [
     ubicacion: 'Pueblo Esther, Santa Fe.',
     datos: [
       'superficie: 3.500 m².',
-      'plazo: Febrero, 2022 - Enero, 2025.',
+      'Plazo: Febrero, 2022 - Enero, 2025.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -519,7 +519,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat.',
     ubicacion: 'Puerto Gaboto, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2021 - Finalizado.',
+      'Plazo: Noviembre, 2021 - Finalizado.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -534,7 +534,7 @@ const OBRAS = [
     ubicacion: 'Roldán, Santa Fe.',
     datos: [
       'superficie: 3.000 m².',
-      'plazo: Septiembre, 2021 - Septiembre, 2023.',
+      'Plazo: Septiembre, 2021 - Septiembre, 2023.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -549,7 +549,7 @@ const OBRAS = [
     ubicacion: 'Ibarlucea, Santa Fe.',
     datos: [
       'superficie: 600 m².',
-      'plazo: Agosto, 2021 - Mayo, 2023.',
+      'Plazo: Agosto, 2021 - Mayo, 2023.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -563,7 +563,7 @@ const OBRAS = [
     comitente: 'Universidad Nacional de Rafaela.',
     ubicacion: 'Rafaela, Santa Fe.',
     datos: [
-      'plazo: Febrero, 2021 - Agosto, 2021.',
+      'Plazo: Febrero, 2021 - Agosto, 2021.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -578,7 +578,7 @@ const OBRAS = [
     ubicacion: 'Provincia de Santa Fe',
     datos: [
       'superficie: 1.200 m².',
-      'plazo: Enero, 2020 - Septiembre, 2022.',
+      'Plazo: Enero, 2020 - Septiembre, 2022.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -593,7 +593,7 @@ const OBRAS = [
     ubicacion: 'C.A.B.A.',
     datos: [
       'superficie: 2.800 m².',
-      'plazo: Abril, 2019 - Febrero, 2021.',
+      'Plazo: Abril, 2019 - Febrero, 2021.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -607,7 +607,7 @@ const OBRAS = [
     comitente: 'Fundación de la UNR.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Septiembre, 2019 - Junio, 2020.',
+      'Plazo: Septiembre, 2019 - Junio, 2020.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -621,7 +621,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Mayo, 2019 - Enero, 2022.',
+      'Plazo: Mayo, 2019 - Enero, 2022.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -635,7 +635,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2019 - Febrero, 2019.',
+      'Plazo: Abril, 2019 - Febrero, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -653,7 +653,7 @@ const OBRAS = [
     ],
     datos: [
       'superficie: 700 m².',
-      'plazo: Septiembre, 2018 - Julio, 2019.',
+      'Plazo: Septiembre, 2018 - Julio, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -667,7 +667,7 @@ const OBRAS = [
     comitente: 'SUBTE - Buenos Aires Ciudad',
     ubicacion: 'CABA',
     datos: [
-      'plazo: Junio, 2018 - Agosto, 2019.',
+      'Plazo: Junio, 2018 - Agosto, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -682,7 +682,7 @@ const OBRAS = [
     ubicacion: 'CABA',
     datos: [
       'superficie: 1.100 m².',
-      'plazo: Junio, 2018 - Febrero 2022.',
+      'Plazo: Junio, 2018 - Febrero 2022.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -697,7 +697,7 @@ const OBRAS = [
     ubicacion: 'CABA',
     datos: [
       'superficie: 2.800 m².',
-      'plazo: Diciembre, 2018 - Septiembre, 2019.',
+      'Plazo: Diciembre, 2018 - Septiembre, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -712,7 +712,7 @@ const OBRAS = [
     ubicacion: 'Centro Universitario, Rosario. Santa Fe.',
     datos: [
       'superficie: 4.000 m².',
-      'plazo: Abril, 2018 - Febrero, 2022.',
+      'Plazo: Abril, 2018 - Febrero, 2022.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -727,7 +727,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 2.200 m².',
-      'plazo: Noviembre, 2017 - Agosto, 2019.',
+      'Plazo: Noviembre, 2017 - Agosto, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -742,7 +742,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 9.000 m².',
-      'plazo: Enero, 2017 - Septiembre, 2019.',
+      'Plazo: Enero, 2017 - Septiembre, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -757,7 +757,7 @@ const OBRAS = [
     ubicacion: 'Villa Gobernador Gálvez - Departamento Rosario, Santa Fe.',
     datos: [
       'superficie: 700 m².',
-      'plazo: Febrero, 2018 - Mayo, 2019.',
+      'Plazo: Febrero, 2018 - Mayo, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -771,7 +771,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario. Santa Fe.',
     datos: [
-      'plazo: Octubre, 2017 - Diciembre, 2019.',
+      'Plazo: Octubre, 2017 - Diciembre, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -786,7 +786,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 12.000 m².',
-      'plazo: Julio, 2017 - Febrero, 2020.',
+      'Plazo: Julio, 2017 - Febrero, 2020.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -801,7 +801,7 @@ const OBRAS = [
     ubicacion: 'San Lorenzo, Santa Fe.',
     datos: [
       'superficie: 1400 m².',
-      'plazo: Septiembre, 2017 - Agosto, 2019.',
+      'Plazo: Septiembre, 2017 - Agosto, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -815,7 +815,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2017 - Diciembre, 2019.',
+      'Plazo: Marzo, 2017 - Diciembre, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -829,7 +829,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura y Transporte.',
     ubicacion: 'Fray Luis Beltrán. Departamento de San Lorenzo, Santa Fe.',
     datos: [
-      'plazo: Febrero, 2017 - Octubre, 2017.',
+      'Plazo: Febrero, 2017 - Octubre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -843,7 +843,7 @@ const OBRAS = [
     comitente: 'Fideicomiso Inmobiliario Mitre 132.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Agosto, 2017 - Noviembre, 2017.',
+      'Plazo: Agosto, 2017 - Noviembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -857,7 +857,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2016 - Noviembre, 2017.',
+      'Plazo: Noviembre, 2016 - Noviembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -871,7 +871,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Junio, 2016 - Diciembre, 2019.',
+      'Plazo: Junio, 2016 - Diciembre, 2019.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -886,7 +886,7 @@ const OBRAS = [
     ubicacion: 'Ataliva, Santa Fe.',
     datos: [
       'superficie: 480 m².',
-      'plazo: Junio, 2016 - Agosto, 2017.',
+      'Plazo: Junio, 2016 - Agosto, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -901,7 +901,7 @@ const OBRAS = [
     ubicacion: 'San Cristobal, Santa Fe.',
     datos: [
       'superficie: 1.300 m².',
-      'plazo: Noviembre, 2015 - Marzo, 2017.',
+      'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -916,7 +916,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 600 m².',
-      'plazo: Enero, 2016 - Julio, 2017.',
+      'Plazo: Enero, 2016 - Julio, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -930,7 +930,7 @@ const OBRAS = [
     comitente: 'Dirección Provincial de Vivienda y Urbanismo - Santa Fe.',
     ubicacion: 'Carcarañá, Santa Fe.',
     datos: [
-      'plazo: Abril, 2016 - Diciembre, 2017.',
+      'Plazo: Abril, 2016 - Diciembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -945,7 +945,7 @@ const OBRAS = [
     ubicacion: 'Máximo Paz, Constitución, Santa Fe.',
     datos: [
       'superficie: 450 m².',
-      'plazo: Septiembre, 2015 - Octubre, 2017.',
+      'Plazo: Septiembre, 2015 - Octubre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -960,7 +960,7 @@ const OBRAS = [
     ubicacion: 'Acebal, Constitución, Santa Fe.',
     datos: [
       'superficie: 690 m².',
-      'plazo: Noviembre, 2015 - Marzo, 2017.',
+      'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -975,7 +975,7 @@ const OBRAS = [
     ubicacion: 'Angélica, Santa Fe.',
     datos: [
       'superficie: 480 m².',
-      'plazo: Octubre, 2015 - Noviembre, 2017.',
+      'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -990,7 +990,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 400 m².',
-      'plazo: Octubre, 2015 - Noviembre, 2017.',
+      'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1004,7 +1004,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Rosario y Villa Gobernador Gálvez, Santa Fe.',
     datos: [
-      'plazo: Septiembre, 2015 - Marzo, 2016.',
+      'Plazo: Septiembre, 2015 - Marzo, 2016.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1018,7 +1018,7 @@ const OBRAS = [
     comitente: 'Empresa Provincial de la Energía S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2015 - Octubre, 2015.',
+      'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1032,7 +1032,7 @@ const OBRAS = [
     comitente: 'Dirección Provincial de Vivienda y Urbanismo. Santa Fe',
     ubicacion: 'Arroyo Seco, Constitución, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2015 - Octubre, 2015.',
+      'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1047,7 +1047,7 @@ const OBRAS = [
     ubicacion: 'Villa Gobernador Gálvez, Santa Fe.',
     datos: [
       'superficie: 2.000 m².',
-      'plazo: Noviembre, 2014 - Marzo, 2016.',
+      'Plazo: Noviembre, 2014 - Marzo, 2016.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1062,7 +1062,7 @@ const OBRAS = [
     ubicacion: 'San Lorenzo, Santa Fe.',
     datos: [
       'superficie: 305 m².',
-      'plazo: Enero, 2015 - Septiembre, 2015.',
+      'Plazo: Enero, 2015 - Septiembre, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1076,7 +1076,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Las Rosas, Departamento Belgrano, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2015 - Marzo, 2016.',
+      'Plazo: Marzo, 2015 - Marzo, 2016.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1090,7 +1090,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Villa Constitución, Departamento Constitución, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2015 - Diciembre, 2017.',
+      'Plazo: Marzo, 2015 - Diciembre, 2017.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1105,7 +1105,7 @@ const OBRAS = [
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
       'superficie: 2.110 m².',
-      'plazo: Mayo, 2014 - Octubre, 2015.',
+      'Plazo: Mayo, 2014 - Octubre, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1119,7 +1119,7 @@ const OBRAS = [
     comitente: 'I.A.P.V.',
     ubicacion: 'Estación Sosa, Entre Ríos.',
     datos: [
-      'plazo: Junio, 2013 - Mayo, 2014.',
+      'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1133,7 +1133,7 @@ const OBRAS = [
     comitente: 'I.A.P.V.',
     ubicacion: 'Sauce Montrull, Entre Ríos.',
     datos: [
-      'plazo: Junio, 2013 - Mayo, 2014.',
+      'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1148,7 +1148,7 @@ const OBRAS = [
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
       'superficie: 750 m².',
-      'plazo: Mayo, 2013 - Febrero, 2016.',
+      'Plazo: Mayo, 2013 - Febrero, 2016.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1162,7 +1162,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Marzo, 2013 - Febrero, 2015.',
+      'Plazo: Marzo, 2013 - Febrero, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1177,7 +1177,7 @@ const OBRAS = [
     ubicacion: 'San Vicente, Departamento Castellanos, Santa Fe',
     datos: [
       'superficie: 305 m².',
-      'plazo: Agosto, 2012 - Mayo, 2015.',
+      'Plazo: Agosto, 2012 - Mayo, 2015.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1192,7 +1192,7 @@ const OBRAS = [
     ubicacion: 'Fray Luis Beltrán, Departamento San Lorenzo, Santa Fe.',
     datos: [
       'superficie: 928 m².',
-      'plazo: Junio, 2012 - Mayo, 2014.',
+      'Plazo: Junio, 2012 - Mayo, 2014.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1206,7 +1206,7 @@ const OBRAS = [
     comitente: 'Aguas Santafesinas S.A - D.P.V y U.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Julio, 2012 - Junio, 2013.',
+      'Plazo: Julio, 2012 - Junio, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1221,7 +1221,7 @@ const OBRAS = [
     ubicacion: 'Cañada de Gómez, Departamento Iriondo, Santa Fe.',
     datos: [
       'superficie: 375 m².',
-      'plazo: Noviembre, 2011 - Octubre, 2013.',
+      'Plazo: Noviembre, 2011 - Octubre, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1235,7 +1235,7 @@ const OBRAS = [
     comitente: 'Aguas Santafesinas S.A.',
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2011 - Agosto, 2013.',
+      'Plazo: Noviembre, 2011 - Agosto, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1250,7 +1250,7 @@ const OBRAS = [
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
       'superficie: 890 m².',
-      'plazo: Septiembre, 2011 - Octubre, 2012.',
+      'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1264,7 +1264,7 @@ const OBRAS = [
     comitente: 'Ministerio de Planificación Federal, Inversión Pública y Servicios.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Septiembre, 2011 - Octubre, 2012.',
+      'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1278,7 +1278,7 @@ const OBRAS = [
     comitente: 'Aguas Santafesinas S.A - D.P.V y U.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Septiembre, 2011 - Marzo, 2013.',
+      'Plazo: Septiembre, 2011 - Marzo, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1293,7 +1293,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 386 m².',
-      'plazo: Agosto, 2011 - Abril, 2013 / Diciembre, 2013.',
+      'Plazo: Agosto, 2011 - Abril, 2013 / Diciembre, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1308,7 +1308,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 1.356 m².',
-      'plazo: Febrero, 2011 - Diciembre, 2013.',
+      'Plazo: Febrero, 2011 - Diciembre, 2013.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1322,7 +1322,7 @@ const OBRAS = [
     comitente: 'Asociación Educativo Joan Miró.',
     ubicacion: 'Funes, Santa Fe.',
     datos: [
-      'plazo: Diciembre, 2010 - Marzo, 2011.',
+      'Plazo: Diciembre, 2010 - Marzo, 2011.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1337,7 +1337,7 @@ const OBRAS = [
     ubicacion: 'Lehmann y C. Aldeo - Departamento Castellanos, Santa Fe.',
     datos: [
       'superficie: 410 m².',
-      'plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
+      'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1352,7 +1352,7 @@ const OBRAS = [
     ubicacion: 'Clucellas y Ramona. Departamento Castellanos, Santa Fe.',
     datos: [
       'superficie: 410 m².',
-      'plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
+      'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1367,7 +1367,7 @@ const OBRAS = [
     ubicacion: 'Victoria y Paraná, Entre Ríos.',
     datos: [
       'superficie: 410 m².',
-      'plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
+      'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1382,7 +1382,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 650 m².',
-      'plazo: Enero, 2010 - Junio 2011 / Junio 2012.',
+      'Plazo: Enero, 2010 - Junio 2011 / Junio 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1397,7 +1397,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 2.048 m².',
-      'plazo: Septiembre, 2009 - Junio, 2010 / Junio, 2012.',
+      'Plazo: Septiembre, 2009 - Junio, 2010 / Junio, 2012.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1411,7 +1411,7 @@ const OBRAS = [
     comitente: 'Empresa Provincial de la Energía S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2008 - Enero, 2009.',
+      'Plazo: Noviembre, 2008 - Enero, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1425,7 +1425,7 @@ const OBRAS = [
     comitente: 'Laboratorio Wiemer S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Junio, 2008 - Diciembre, 2008.',
+      'Plazo: Junio, 2008 - Diciembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1439,7 +1439,7 @@ const OBRAS = [
     comitente: 'Dirección Provincial de Arquitectura e Ingeniería - Gobierno de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Enero, 2009 - Julio, 2009 / Julio, 2011.',
+      'Plazo: Enero, 2009 - Julio, 2009 / Julio, 2011.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1454,7 +1454,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 480 m².',
-      'plazo: Enero, 2009 - Julio, 2009.',
+      'Plazo: Enero, 2009 - Julio, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1468,7 +1468,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Diciembre, 2008 - Marzo, 2009.',
+      'Plazo: Diciembre, 2008 - Marzo, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1483,7 +1483,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 480 m².',
-      'plazo: Diciembre, 2008 - Abril, 2009.',
+      'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1497,7 +1497,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Diciembre, 2008 - Abril, 2009.',
+      'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1511,7 +1511,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Septiembre, 2008 - Junio, 2009 / Diciembre, 2010.',
+      'Plazo: Septiembre, 2008 - Junio, 2009 / Diciembre, 2010.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1525,7 +1525,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Mayo, 2008 - Julio, 2009 / Diciembre, 2010.',
+      'Plazo: Mayo, 2008 - Julio, 2009 / Diciembre, 2010.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1539,7 +1539,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2008 - Abril, 2008 / Diciembre, 2008.',
+      'Plazo: Abril, 2008 - Abril, 2008 / Diciembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1553,7 +1553,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
+      'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1567,7 +1567,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
+      'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1582,7 +1582,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 730 m².',
-      'plazo: Febrero, 2009 - Diciembre, 2009 / Junio, 2010.',
+      'Plazo: Febrero, 2009 - Diciembre, 2009 / Junio, 2010.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1596,7 +1596,7 @@ const OBRAS = [
     comitente: 'Dirección General de Cultura y Educación de la Provincia de BS.AS',
     ubicacion: 'B6435 Guaminí, Provincia de Buenos Aires',
     datos: [
-      'plazo: Octubre, 2007 - Enero, 2008.',
+      'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1610,7 +1610,7 @@ const OBRAS = [
     comitente: 'Dirección General de Cultura y Educación de la Provincia de BS.AS',
     ubicacion: 'Provincia de Buenos Aires',
     datos: [
-      'plazo: Octubre, 2007 - Enero, 2008.',
+      'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1625,7 +1625,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 300 m².',
-      'plazo: Diciembre, 2007 - Diciembre, 2008 / Diciembre, 2009.',
+      'Plazo: Diciembre, 2007 - Diciembre, 2008 / Diciembre, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1639,7 +1639,7 @@ const OBRAS = [
     comitente: 'Corsanot S.R.L.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Agosto, 2007 - Enero, 2008 / Julio, 2008.',
+      'Plazo: Agosto, 2007 - Enero, 2008 / Julio, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1653,7 +1653,7 @@ const OBRAS = [
     comitente: 'Pedro Balestrino e hijos S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Febrero, 2007 - Abril, 2007 / Julio, 2007.',
+      'Plazo: Febrero, 2007 - Abril, 2007 / Julio, 2007.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1667,7 +1667,7 @@ const OBRAS = [
     comitente: 'RIVA S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2006 - Enero, 2007 / Abril, 2008.',
+      'Plazo: Noviembre, 2006 - Enero, 2007 / Abril, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1681,7 +1681,7 @@ const OBRAS = [
     comitente: 'RIVA S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Octubre, 2006 - Diciembre, 2006 / Marzo, 2007.',
+      'Plazo: Octubre, 2006 - Diciembre, 2006 / Marzo, 2007.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1696,7 +1696,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 2.500 m².',
-      'plazo: Octubre, 2006 - Septiembre, 2007 / Junio, 2008.',
+      'Plazo: Octubre, 2006 - Septiembre, 2007 / Junio, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1710,7 +1710,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Villa Constitución.',
     ubicacion: 'Villa Conatitución, Santa Fe.',
     datos: [
-      'plazo: Agosto, 2006 - Febrero, 2007 / Agosto, 2007.',
+      'Plazo: Agosto, 2006 - Febrero, 2007 / Agosto, 2007.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1724,7 +1724,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2006 - Enero, 2007 / Enero, 2008.',
+      'Plazo: Noviembre, 2006 - Enero, 2007 / Enero, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1738,7 +1738,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2006 - Junio, 2007 / Junio, 2008.',
+      'Plazo: Noviembre, 2006 - Junio, 2007 / Junio, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1752,7 +1752,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
+      'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1766,7 +1766,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Granadero Baigorria, Santa Fe.',
     datos: [
-      'plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
+      'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1780,7 +1780,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
+      'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1794,7 +1794,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe. P.I.E.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
+      'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1809,7 +1809,7 @@ const OBRAS = [
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
       'superficie: 1540 m².',
-      'plazo: Mayo, 2007 - Mayo, 2009 / Noviembre, 2009.',
+      'Plazo: Mayo, 2007 - Mayo, 2009 / Noviembre, 2009.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1824,7 +1824,7 @@ const OBRAS = [
     ubicacion: 'San Nicolás, Provincia de Buenos Aires.',
     datos: [
       'superficie: 600 m².',
-      'plazo: Julio, 2007 - Agosto, 2009 / Febrero, 2010.',
+      'Plazo: Julio, 2007 - Agosto, 2009 / Febrero, 2010.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
@@ -1838,7 +1838,7 @@ const OBRAS = [
     comitente: 'María Laura Rodriguez.',
     ubicacion: 'Funes, Santa Fe.',
     datos: [
-      'plazo: Noviembre, 2006 - Noviembre, 2007 /Noviembre, 2008.',
+      'Plazo: Noviembre, 2006 - Noviembre, 2007 /Noviembre, 2008.',
     ],
     carpeta: '',
     fotos: [FOTO_PROVISORIA],
