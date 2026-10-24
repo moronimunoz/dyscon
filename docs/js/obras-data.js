@@ -312,6 +312,7 @@ const OBRAS = [
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
+  //Plaza Juramento
   {
     id: 'pasaje-juramento',
     nombre: 'Pasaje Juramento',
