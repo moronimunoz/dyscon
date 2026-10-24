@@ -114,7 +114,7 @@ const OBRAS = [
     descripcion: ['<b>Tecnoteca, Escuela de Tecnología y Oficios Digitales</b><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con <mark class="resaltado">4.000 mts2 distribuidos en dos plantas</mark> que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
     carpeta:'tecnoteca',
-    video: { src: 'obras/tecno.mp4', poster: 'tecnoteca/poster.jpg' },
+    video: { src: 'obras/tecno.mp4', poster: 'tecnoteca/poster.jpg', vertical: true },
     fotos: ['00.jpg','01.jpg','02.jpg','03.jpg',]
   },
   // RDZ 1635
