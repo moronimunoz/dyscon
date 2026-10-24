@@ -86,7 +86,7 @@ const OBRAS = [
     tipo: 'propia', estado: 'terminado', comitente: 'PAMI.',
     ubicacion: 'Ituzaingó · Buenos Aires',
     mapa: 'Cnel. Brandsen 2898, B1714LAH Ituzaingó, Provincia de Buenos Aires',
-    datos:['superficie: 21.770 m².','Plazo: Febrero, 2022 - Finalizado.'],
+    datos:['Superficie: 21.770 m².','Plazo: Febrero, 2022 - Finalizado.'],
     descripcion: [],
     carpeta:'pami',
     portada: 'pami/01.jpeg',
@@ -109,7 +109,7 @@ const OBRAS = [
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario · Santa Fe',
-    datos:['superficie: 4.000 m².','Plazo: Septiembre, 2023 - Finalizado.'],
+    datos:['Superficie: 4.000 m².','Plazo: Septiembre, 2023 - Finalizado.'],
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
     descripcion: ['<b>Tecnoteca, Escuela de Tecnología y Oficios Digitales</b><br>El propósito de Tecnoteca es funcionar como una Escuela de Tecnología y Oficios Digitales, donde se impulsen proyectos de aprendizaje tecnológicos vinculados a la ciencia, la comunicación y el arte. Está pensada para jóvenes entre 18 a 30 años, priorizando sobre todo a aquellas/os que no puedan acceder a oportunidades educativas similares.<br>Emplazada en el Galpón 13, cuenta con <mark class="resaltado">4.000 mts2 distribuidos en dos plantas</mark> que disponen de los recursos tecnológicos, profesionales y un ambiente confortable para alojar a los y las participantes. Los espacios, equipados en función de las especiﬁcidades técnicas, son: Cápsula Audiovisual; Coworking; FabLab; Laboratorios; Salas de capacitación. También está proyectado un lactario, el comedor y un espacio de cuidados para niños y niñas.'],
     portada:'tecnoteca/03.jpg',
@@ -122,7 +122,7 @@ const OBRAS = [
     id: 'rdz-1635', nombre: 'Proyecto: RDZ 1635', categoria: 'Viviendas',
     tipo: 'propia', estado: 'obra', comitente: 'Fideicomiso.',
     ubicacion: 'Rosario · Santa Fe',
-    datos:['superficie: 2.000 m².','Plazo: Julio, 2023 - Finalizado.'],
+    datos:['Superficie: 2.000 m².','Plazo: Julio, 2023 - Finalizado.'],
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
     portada:'rdz/00.jpg',
     carpeta:'rdz',
@@ -200,7 +200,7 @@ const OBRAS = [
     destacada: 1,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Obras Públicas.',
     ubicacion: 'Rosario · Santa Fe',
-    datos: ['superficie: 10.000 m².', 'Plazo: Marzo, 2023 - Finalizado.'],
+    datos: ['Superficie: 10.000 m².', 'Plazo: Marzo, 2023 - Finalizado.'],
     mapa: 'Sta Fe 581, S2000 Rosario, Santa Fe',
     descripcion: ['PUESTA EN VALOR DEL MONUMENTO NACIONAL A LA BANDERA - Etapa II'],
     portada:'monumento/01.jpg',
@@ -213,9 +213,9 @@ const OBRAS = [
     destacada: 3,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Pavón Arriba · Santa Fe',
-    datos:['superficie: 723 m².','Plazo: Agosto, 2022 - Abril, 2025.'],
+    datos:['Superficie: 723 m².','Plazo: Agosto, 2022 - Abril, 2025.'],
     mapa: '-33.310985234429445, -60.827243803116566',
-    descripcion: ['Ubicado en la intersección de las calles Buenos Aires y Valerio Carreras, el nuevo SAMCo de Pavón Arriba constituye una intervención destinada a fortalecer la infraestructura sanitaria de la localidad y mejorar las condiciones de atención para la comunidad.<br><br>Impulsado por el <b>Gobierno de la Provincia de Santa Fe</b>, el proyecto contempló la construcción de nuevos espacios asistenciales y la refuncionalización de sectores del edificio existente, integrando soluciones arquitectónicas y técnicas orientadas a optimizar el funcionamiento del establecimiento.<br><br>La propuesta incluyó consultorios, sala de observación, sector de atención de urgencias, espacios de enfermería y áreas de internación con capacidad para cuatro camas. También contempló accesos diferenciados para el público y las ambulancias, circulación accesible e instalaciones específicas para el funcionamiento de un centro sanitario.<br><br>La intervención incorporó, además, sistemas de climatización, gases medicinales, iluminación LED y soluciones de aprovechamiento de energía solar, de acuerdo con las especificaciones del proyecto.<br><br>Con una superficie de intervención prevista de 723 m², la obra representa un aporte a la modernización de los servicios públicos de salud y al desarrollo de la infraestructura de la región.<br><br><b>DYSCON S.A. — Construcción de infraestructura para las necesidades de la comunidad.</b>'],
+    descripcion: ['Ubicado en la intersección de las calles Buenos Aires y Valerio Carreras, el nuevo SAMCo de Pavón Arriba constituye una intervención destinada a fortalecer la infraestructura sanitaria de la localidad y mejorar las condiciones de atención para la comunidad.<br><br>Impulsado por el <b>Gobierno de la Provincia de Santa Fe</b>, el proyecto contempló la construcción de nuevos espacios asistenciales y la refuncionalización de sectores del edificio existente, integrando soluciones arquitectónicas y técnicas orientadas a optimizar el funcionamiento del establecimiento.<br><br>La propuesta incluyó consultorios, sala de observación, sector de atención de urgencias, espacios de enfermería y áreas de internación con capacidad para cuatro camas. También contempló accesos diferenciados para el público y las ambulancias, circulación accesible e instalaciones específicas para el funcionamiento de un centro sanitario.<br><br>La intervención incorporó, además, sistemas de climatización, gases medicinales, iluminación LED y soluciones de aprovechamiento de energía solar, de acuerdo con las especificaciones del proyecto.<br><br>Con una Superficie de intervención prevista de 723 m², la obra representa un aporte a la modernización de los servicios públicos de salud y al desarrollo de la infraestructura de la región.<br><br><b>DYSCON S.A. — Construcción de infraestructura para las necesidades de la comunidad.</b>'],
     portada:'samco_pavon_arriba/02.jpg',
     video: { src: 'obras/samco-pavon.mp4', poster: 'samco_pavon_arriba/poster.jpg' },
     carpeta:'samco_pavon_arriba',
@@ -226,7 +226,7 @@ const OBRAS = [
     id: 'samco-funes', nombre: 'Hospital SAMCo Eva Perón', categoria: 'Salud',
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Funes · Santa Fe',
-    datos:['superficie: 1.000 m².','Plazo: Noviembre, 2022 - En ejecución.'],
+    datos:['Superficie: 1.000 m².','Plazo: Noviembre, 2022 - En ejecución.'],
     mapa: 'Monteagudo 1582-1600, S2132 Funes, Santa Fe',
     descripcion: [],
     portada:'samco/00.jpg',
@@ -238,7 +238,7 @@ const OBRAS = [
     id: 'eetp-485', nombre: 'Ampliación Secundaria E.E.T.P. N° 485', categoria: 'Educación',
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Educación.',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
-    datos:['superficie: 2.588 m².','Plazo: Agosto, 2017 - Octubre, 2019.'],
+    datos:['Superficie: 2.588 m².','Plazo: Agosto, 2017 - Octubre, 2019.'],
     mapa: 'X9JQ+CP2 Villa Gdor. Gálvez, Santa Fe',
     descripcion: [],
     fotos: ['eetp485.jpg']
@@ -260,7 +260,7 @@ const OBRAS = [
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',
-    datos:['superficie: 14.000 m².','Plazo: Noviembre, 2014 - Mayo, 2015.'],
+    datos:['Superficie: 14.000 m².','Plazo: Noviembre, 2014 - Mayo, 2015.'],
     descripcion: [],
     carpeta:'plaza_san_martin',
     portada:'plaza_san_martin/00.jpg',
@@ -414,7 +414,7 @@ const OBRAS = [
     comitente: 'Gobierno de la ciudad de Buenos Aires.',
     ubicacion: 'C.A.B.A.',
     datos: [
-      'superficie: 3.000 m².',
+      'Superficie: 3.000 m².',
       'Plazo: Julio, 2023 - Febrero, 2025.',
     ],
     
@@ -475,7 +475,7 @@ const OBRAS = [
     comitente: 'Ente Autarquico Munícipal de la Municipalidad de Rosario - SUMAR.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 8.000 m².',
+      'Superficie: 8.000 m².',
       'Plazo: Septiembre, 2022 - Mayo, 2023.',
     ],
     
@@ -506,7 +506,7 @@ const OBRAS = [
     comitente: 'KT Design.',
     ubicacion: 'Funes - Rosario, Santa Fe.',
     datos: [
-      'superficie: 1.000 m².',
+      'Superficie: 1.000 m².',
       'Plazo: Abril, 2022 - Febrero, 2023.',
     ],
     
@@ -522,7 +522,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat.',
     ubicacion: 'Pueblo Esther, Santa Fe.',
     datos: [
-      'superficie: 3.500 m².',
+      'Superficie: 3.500 m².',
       'Plazo: Febrero, 2022 - Enero, 2025.',
     ],
     
@@ -553,7 +553,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Roldán, Santa Fe.',
     datos: [
-      'superficie: 3.000 m².',
+      'Superficie: 3.000 m².',
       'Plazo: Septiembre, 2021 - Septiembre, 2023.',
     ],
     
@@ -569,7 +569,7 @@ const OBRAS = [
     comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat.',
     ubicacion: 'Ibarlucea, Santa Fe.',
     datos: [
-      'superficie: 600 m².',
+      'Superficie: 600 m².',
       'Plazo: Agosto, 2021 - Mayo, 2023.',
     ],
     
@@ -600,7 +600,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Provincia de Santa Fe',
     datos: [
-      'superficie: 1.200 m².',
+      'Superficie: 1.200 m².',
       'Plazo: Enero, 2020 - Septiembre, 2022.',
     ],
     
@@ -616,7 +616,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación e Innovación.',
     ubicacion: 'C.A.B.A.',
     datos: [
-      'superficie: 2.800 m².',
+      'Superficie: 2.800 m².',
       'Plazo: Abril, 2019 - Febrero, 2021.',
     ],
     
@@ -680,7 +680,7 @@ const OBRAS = [
       'REHABILITACIÓN DE FACHADAS Y CUBIERTAS Y OBRAS COMPLEMENTARIO',
     ],
     datos: [
-      'superficie: 700 m².',
+      'Superficie: 700 m².',
       'Plazo: Septiembre, 2018 - Julio, 2019.',
     ],
     
@@ -711,7 +711,7 @@ const OBRAS = [
     comitente: 'SUBTE - Buenos Aires Ciudad.',
     ubicacion: 'CABA',
     datos: [
-      'superficie: 1.100 m².',
+      'Superficie: 1.100 m².',
       'Plazo: Junio, 2018 - Febrero 2022.',
     ],
     
@@ -727,7 +727,7 @@ const OBRAS = [
     comitente: 'Ministerio de Ambiente y Espacio Público.',
     ubicacion: 'CABA',
     datos: [
-      'superficie: 2.800 m².',
+      'Superficie: 2.800 m².',
       'Plazo: Diciembre, 2018 - Septiembre, 2019.',
     ],
     
@@ -743,7 +743,7 @@ const OBRAS = [
     comitente: 'Dirección Provincial de Vivienda y Urbanismo, Santa Fe.',
     ubicacion: 'Centro Universitario, Rosario. Santa Fe.',
     datos: [
-      'superficie: 4.000 m².',
+      'Superficie: 4.000 m².',
       'Plazo: Abril, 2018 - Febrero, 2022.',
     ],
     
@@ -759,7 +759,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas - UEPA.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 2.200 m².',
+      'Superficie: 2.200 m².',
       'Plazo: Noviembre, 2017 - Agosto, 2019.',
     ],
     
@@ -775,7 +775,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 9.000 m².',
+      'Superficie: 9.000 m².',
       'Plazo: Enero, 2017 - Septiembre, 2019.',
     ],
     
@@ -791,7 +791,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación.',
     ubicacion: 'Villa Gobernador Gálvez - Departamento Rosario, Santa Fe.',
     datos: [
-      'superficie: 700 m².',
+      'Superficie: 700 m².',
       'Plazo: Febrero, 2018 - Mayo, 2019.',
     ],
     
@@ -822,7 +822,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas - DIPAI.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 12.000 m².',
+      'Superficie: 12.000 m².',
       'Plazo: Julio, 2017 - Febrero, 2020.',
     ],
     
@@ -838,7 +838,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas - DIPAI.',
     ubicacion: 'San Lorenzo, Santa Fe.',
     datos: [
-      'superficie: 1400 m².',
+      'Superficie: 1400 m².',
       'Plazo: Septiembre, 2017 - Agosto, 2019.',
     ],
     
@@ -929,7 +929,7 @@ const OBRAS = [
     comitente: 'Comuna de Ataliva.',
     ubicacion: 'Ataliva, Santa Fe.',
     datos: [
-      'superficie: 480 m².',
+      'Superficie: 480 m².',
       'Plazo: Junio, 2016 - Agosto, 2017.',
     ],
     
@@ -945,7 +945,7 @@ const OBRAS = [
     comitente: 'Poder Judicial de la Provincia de Santa Fe.',
     ubicacion: 'San Cristobal, Santa Fe.',
     datos: [
-      'superficie: 1.300 m².',
+      'Superficie: 1.300 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
     
@@ -961,7 +961,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 600 m².',
+      'Superficie: 600 m².',
       'Plazo: Enero, 2016 - Julio, 2017.',
     ],
     
@@ -992,7 +992,7 @@ const OBRAS = [
     comitente: 'Comuna de Máximo Paz.',
     ubicacion: 'Máximo Paz, Constitución, Santa Fe.',
     datos: [
-      'superficie: 450 m².',
+      'Superficie: 450 m².',
       'Plazo: Septiembre, 2015 - Octubre, 2017.',
     ],
     
@@ -1008,7 +1008,7 @@ const OBRAS = [
     comitente: 'Comuna de Acebal.',
     ubicacion: 'Acebal, Constitución, Santa Fe.',
     datos: [
-      'superficie: 690 m².',
+      'Superficie: 690 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
     
@@ -1024,7 +1024,7 @@ const OBRAS = [
     comitente: 'Comuna de Angélica.',
     ubicacion: 'Angélica, Santa Fe.',
     datos: [
-      'superficie: 480 m².',
+      'Superficie: 480 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
     
@@ -1040,7 +1040,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 400 m².',
+      'Superficie: 400 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
     
@@ -1101,7 +1101,7 @@ const OBRAS = [
     comitente: 'Ministerio de Planificación Federal, Inversión Pública y Servicios.',
     ubicacion: 'Villa Gobernador Gálvez, Santa Fe.',
     datos: [
-      'superficie: 2.000 m².',
+      'Superficie: 2.000 m².',
       'Plazo: Noviembre, 2014 - Marzo, 2016.',
     ],
     
@@ -1117,7 +1117,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'San Lorenzo, Santa Fe.',
     datos: [
-      'superficie: 305 m².',
+      'Superficie: 305 m².',
       'Plazo: Enero, 2015 - Septiembre, 2015.',
     ],
     
@@ -1163,7 +1163,7 @@ const OBRAS = [
     comitente: 'Municipalidad de Rafaela.',
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
-      'superficie: 2.110 m².',
+      'Superficie: 2.110 m².',
       'Plazo: Mayo, 2014 - Octubre, 2015.',
     ],
     
@@ -1209,7 +1209,7 @@ const OBRAS = [
     comitente: 'Ministerio de Obras Públicas y Vivienda',
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
-      'superficie: 750 m².',
+      'Superficie: 750 m².',
       'Plazo: Mayo, 2013 - Febrero, 2016.',
     ],
     
@@ -1240,7 +1240,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'San Vicente, Departamento Castellanos, Santa Fe',
     datos: [
-      'superficie: 305 m².',
+      'Superficie: 305 m².',
       'Plazo: Agosto, 2012 - Mayo, 2015.',
     ],
     
@@ -1256,7 +1256,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Fray Luis Beltrán, Departamento San Lorenzo, Santa Fe.',
     datos: [
-      'superficie: 928 m².',
+      'Superficie: 928 m².',
       'Plazo: Junio, 2012 - Mayo, 2014.',
     ],
     
@@ -1287,7 +1287,7 @@ const OBRAS = [
     comitente: 'Aguas Santafesinas S.A.',
     ubicacion: 'Cañada de Gómez, Departamento Iriondo, Santa Fe.',
     datos: [
-      'superficie: 375 m².',
+      'Superficie: 375 m².',
       'Plazo: Noviembre, 2011 - Octubre, 2013.',
     ],
     
@@ -1318,7 +1318,7 @@ const OBRAS = [
     comitente: 'Universidad Tecnológica Nacional',
     ubicacion: 'Rafaela, Departamento Castellanos, Santa Fe.',
     datos: [
-      'superficie: 890 m².',
+      'Superficie: 890 m².',
       'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
     
@@ -1364,7 +1364,7 @@ const OBRAS = [
     comitente: 'Empresa Provincial de la Energía S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 386 m².',
+      'Superficie: 386 m².',
       'Plazo: Agosto, 2011 - Abril, 2013 / Diciembre, 2013.',
     ],
     
@@ -1380,7 +1380,7 @@ const OBRAS = [
     comitente: 'Fideicomiso TRIBECA II.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 1.356 m².',
+      'Superficie: 1.356 m².',
       'Plazo: Febrero, 2011 - Diciembre, 2013.',
     ],
     
@@ -1411,7 +1411,7 @@ const OBRAS = [
     comitente: 'Ministerio de Planificación Federal, Inversión Pública y Servicios.',
     ubicacion: 'Lehmann y C. Aldeo - Departamento Castellanos, Santa Fe.',
     datos: [
-      'superficie: 410 m².',
+      'Superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     
@@ -1427,7 +1427,7 @@ const OBRAS = [
     comitente: 'Ministerio de Planificación Federal, Inversión Pública y Servicios.',
     ubicacion: 'Clucellas y Ramona. Departamento Castellanos, Santa Fe.',
     datos: [
-      'superficie: 410 m².',
+      'Superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     
@@ -1443,7 +1443,7 @@ const OBRAS = [
     comitente: 'Ministerio de Planificación Federal, Inversión Pública y Servicios.',
     ubicacion: 'Victoria y Paraná, Entre Ríos.',
     datos: [
-      'superficie: 410 m².',
+      'Superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
     
@@ -1459,7 +1459,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 650 m².',
+      'Superficie: 650 m².',
       'Plazo: Enero, 2010 - Junio 2011 / Junio 2012.',
     ],
     
@@ -1475,7 +1475,7 @@ const OBRAS = [
     comitente: 'Instituto de Agrobiotecnología Rosario S.A.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 2.048 m².',
+      'Superficie: 2.048 m².',
       'Plazo: Septiembre, 2009 - Junio, 2010 / Junio, 2012.',
     ],
     
@@ -1536,7 +1536,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 480 m².',
+      'Superficie: 480 m².',
       'Plazo: Enero, 2009 - Julio, 2009.',
     ],
     
@@ -1567,7 +1567,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 480 m².',
+      'Superficie: 480 m².',
       'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
     
@@ -1673,7 +1673,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 730 m².',
+      'Superficie: 730 m².',
       'Plazo: Febrero, 2009 - Diciembre, 2009 / Junio, 2010.',
     ],
     
@@ -1719,7 +1719,7 @@ const OBRAS = [
     comitente: 'Ministerio de Educación de la Provincia de Santa Fe.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 300 m².',
+      'Superficie: 300 m².',
       'Plazo: Diciembre, 2007 - Diciembre, 2008 / Diciembre, 2009.',
     ],
     
@@ -1795,7 +1795,7 @@ const OBRAS = [
     comitente: 'ESPRECO S.R.L.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 2.500 m².',
+      'Superficie: 2.500 m².',
       'Plazo: Octubre, 2006 - Septiembre, 2007 / Junio, 2008.',
     ],
     
@@ -1916,7 +1916,7 @@ const OBRAS = [
     comitente: 'Fideicomiso Tribeca I.',
     ubicacion: 'Rosario, Santa Fe.',
     datos: [
-      'superficie: 1540 m².',
+      'Superficie: 1540 m².',
       'Plazo: Mayo, 2007 - Mayo, 2009 / Noviembre, 2009.',
     ],
     
@@ -1932,7 +1932,7 @@ const OBRAS = [
     comitente: 'RUANA S.A.',
     ubicacion: 'San Nicolás, Provincia de Buenos Aires.',
     datos: [
-      'superficie: 600 m².',
+      'Superficie: 600 m².',
       'Plazo: Julio, 2007 - Agosto, 2009 / Febrero, 2010.',
     ],
     
