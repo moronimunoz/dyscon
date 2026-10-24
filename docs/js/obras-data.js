@@ -94,7 +94,7 @@ const OBRAS = [
   },
   // PARQUE INDUSTRIAL
   {
-    id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio público',
+    id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio Público',
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora',estado: 'obra', comitente: '',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     miniatura: '01.jpg',
@@ -167,7 +167,7 @@ const OBRAS = [
   },
   // PLAZA SAN CRISTOBAL
   {
-    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio público',
+    id: 'plaza-san-cristobal', nombre: 'Plaza San Cristóbal', categoria: 'Espacio Público',
     tipo: 'propia', estado: 'obra', comitente: '',
     ubicacion: 'CABA · Buenos Aires',
     mapa: 'Constitución 2498, C1254AAN C1254AAN, Cdad. Autónoma de Buenos Aires',
@@ -176,7 +176,7 @@ const OBRAS = [
   },
   //PARQUE REGIONAL SUR
   {
-    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio público',
+    id: 'parque-regional-sur', nombre: 'Parque Regional Sur', categoria: 'Espacio Público',
     tipo: 'propia', estado: 'obra', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: 'Láinez 1-48, S2000 Rosario, Santa Fe',
@@ -255,7 +255,7 @@ const OBRAS = [
   },
   // PLAZA SAN MARTIN
   {
-    id: 'plaza-san-martin', nombre: 'Remodelación Plaza San Martín', categoria: 'Espacio público',
+    id: 'plaza-san-martin', nombre: 'Remodelación Plaza San Martín', categoria: 'Espacio Público',
     destacada: 4,
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
@@ -277,7 +277,7 @@ const OBRAS = [
   },
   // Edifico Ricchieri
   {
-  id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Vivienda',
+  id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Viviendas',
   tipo: 'propia', estado: 'inicio', comitente: '',
   ubicacion: 'Rosario · Santa Fe',
   descripcion: [],
@@ -705,7 +705,7 @@ const OBRAS = [
   {
     id: '69-viviendas-habitacionales-en-ph-30-cocheras-centro-univers-rosario',
     nombre: '69 Viviendas Habitacionales en PH, 30 Cocheras - Centro Univers. Rosario',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'Dirección Provincial de Vivienda y Urbanismo, Santa Fe.',
@@ -924,7 +924,7 @@ const OBRAS = [
   {
     id: 'd-p-v-y-u-14-viviendas-carcarana',
     nombre: 'D.P.V. y U. - 14 Viviendas - Carcarañá',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'Dirección Provincial de Vivienda y Urbanismo - Santa Fe.',
@@ -1113,7 +1113,7 @@ const OBRAS = [
   {
     id: 'estacion-sosa-10-viviendas-entre-rios',
     nombre: 'Estación Sosa 10 Viviendas - Entre Ríos',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'I.A.P.V.',
@@ -1127,7 +1127,7 @@ const OBRAS = [
   {
     id: 'sauce-montrull-10-viviendas-entre-rios',
     nombre: 'Sauce Montrull 10 Viviendas - Entre Ríos',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'I.A.P.V.',
@@ -1301,7 +1301,7 @@ const OBRAS = [
   {
     id: 'edificio-de-propiedad-horizontal-tribeca-ii',
     nombre: 'Edificio de Propiedad Horizontal Tribeca II',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'Fideicomiso TRIBECA II.',
@@ -1633,7 +1633,7 @@ const OBRAS = [
   {
     id: 'edificio-de-propiedad-horizontal-mailen-iii',
     nombre: 'Edificio de Propiedad Horizontal Mailen III',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'Corsanot S.R.L.',
@@ -1802,7 +1802,7 @@ const OBRAS = [
   {
     id: 'edificio-tribeca-i',
     nombre: 'Edificio Tribeca I',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'Fideicomiso Tribeca I.',
@@ -1817,7 +1817,7 @@ const OBRAS = [
   {
     id: 'complejo-habitacional-francia-y-guruciaga',
     nombre: 'Complejo Habitacional Francia y Guruciaga',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'RUANA S.A.',
@@ -1832,7 +1832,7 @@ const OBRAS = [
   {
     id: 'vivienda-unifamiliar-lote-279',
     nombre: 'Vivienda Unifamiliar - Lote 279',
-    categoria: 'Vivienda',
+    categoria: 'Viviendas',
     tipo: 'propia',
     estado: 'terminado',
     comitente: 'María Laura Rodriguez.',
