@@ -328,6 +328,7 @@ const OBRAS = [
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
+  //ODA 2025
   {
     id: 'oda-2025',
     nombre: 'Obras de Arquitectura 2025',
