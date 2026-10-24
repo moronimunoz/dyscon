@@ -12,7 +12,7 @@
                             'Infraestructura', 'Industrial', 'Comercial', 'Institucional'];
 
   // Texto del punto de color de la esquina, según el estado de la obra
-  const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecución', terminado: 'Obra terminada' };
+  const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en obra', terminado: 'Obra terminada' };
 
   // Evita que comillas o símbolos en un texto rompan el HTML de un atributo
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
