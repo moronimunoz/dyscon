@@ -45,6 +45,7 @@
     } 
    ========================================================= */
 
+const PORTADA_PROVISORIA = 'publicacion-en-obra-portada.png';
 const FOTO_PROVISORIA = 'publicacion-en-obra.png';
 const OBRAS = [
   // CASA M
@@ -292,9 +293,9 @@ const OBRAS = [
   datos: ['Plazo: Enero 2025 - Finalizado.'],
   mapa: 'Rosario, Santa Fe',
   descripcion: ['<b>Infraestructura sanitaria | Rosario, Santa Fe</b><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
-  portada:'',
-  carpeta: '',
-  fotos: [FOTO_PROVISORIA],
+  portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'plazas-de-la-cercania-2025',
@@ -307,8 +308,9 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto 2025 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'pasaje-juramento',
@@ -321,8 +323,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2025 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'oda-2025',
@@ -335,8 +338,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril 2025 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'entubamiento-y-darsena-escuela-primaria-n1397',
@@ -349,8 +353,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2025 - Abril, 2025.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'puesta-en-valor-de-dos-plazas',
@@ -363,8 +368,9 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero 2025 - Julio 2025.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'plazas-de-la-cercania',
@@ -377,8 +383,9 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre 2024 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'oda-2023',
@@ -391,8 +398,9 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2023 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'nuevo-edificio-consultorios-externos-hospital-general-de-agudos-p-pinero',
@@ -406,8 +414,9 @@ const OBRAS = [
       'superficie: 3.000 m².',
       'Plazo: Julio, 2023 - Febrero, 2025.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'puesta-en-valor-de-paseos-comerciales-a-cielo-abierto-en-distritos-de-la-ciudad-de-rosario',
@@ -420,8 +429,9 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2023 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-escuela-primaria-barrio-nuevo-alberdi',
@@ -434,8 +444,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2023 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'senderos-veredas-y-espacios-publicos-ut',
@@ -448,8 +459,9 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2022 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'plaza-grupo-a-plaza-de-la-infancia-y-plaza-lopez',
@@ -463,8 +475,9 @@ const OBRAS = [
       'superficie: 8.000 m².',
       'Plazo: Septiembre, 2022 - Mayo, 2023.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'rehabilitacion-grupo-escultorico-cuadriga-sede-de-gobierno-rosario',
@@ -477,8 +490,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2022 - Mayo, 2023',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'local-kt-design',
@@ -492,8 +506,9 @@ const OBRAS = [
       'superficie: 1.000 m².',
       'Plazo: Abril, 2022 - Febrero, 2023.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-primaria-modelo-postpandemia-en-pueblo-esther',
@@ -507,8 +522,9 @@ const OBRAS = [
       'superficie: 3.500 m².',
       'Plazo: Febrero, 2022 - Enero, 2025.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'sistema-de-provision-de-agua-potable-localidad-puerto-gaboto',
@@ -521,8 +537,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2021 - Finalizado.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-secundaria-modelo-postpandemia-en-roldan',
@@ -536,8 +553,9 @@ const OBRAS = [
       'superficie: 3.000 m².',
       'Plazo: Septiembre, 2021 - Septiembre, 2023.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'nuevo-samco-ibarlucea',
@@ -551,8 +569,9 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Agosto, 2021 - Mayo, 2023.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'frente-ingreso-al-campus-de-la-universidad-nacional-de-rafaela',
@@ -565,8 +584,9 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2021 - Agosto, 2021.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'terminaciones-de-jardines-varios',
@@ -580,8 +600,9 @@ const OBRAS = [
       'superficie: 1.200 m².',
       'Plazo: Enero, 2020 - Septiembre, 2022.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-primaria-de-creacion-d-e-20-polo-piedrabuena',
@@ -595,8 +616,9 @@ const OBRAS = [
       'superficie: 2.800 m².',
       'Plazo: Abril, 2019 - Febrero, 2021.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'facultad-de-humanidades-y-arte-unr',
@@ -609,8 +631,9 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2019 - Junio, 2020.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'oda-2da-etapa',
@@ -623,8 +646,9 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2019 - Enero, 2022.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'climatizacion-central-ala-santa-fe-sede-de-gobierno-rosario',
@@ -637,8 +661,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2019 - Febrero, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'hospital-granaderos-a-caballos',
@@ -655,8 +680,9 @@ const OBRAS = [
       'superficie: 700 m².',
       'Plazo: Septiembre, 2018 - Julio, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-de-locales-comerciales-en-estacion-facultad-de-derecho',
@@ -669,8 +695,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2018 - Agosto, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'linea-e-taller-lacarra-caba',
@@ -684,8 +711,9 @@ const OBRAS = [
       'superficie: 1.100 m².',
       'Plazo: Junio, 2018 - Febrero 2022.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'puesta-en-valor-entorno-hospital-gutierrez',
@@ -699,8 +727,9 @@ const OBRAS = [
       'superficie: 2.800 m².',
       'Plazo: Diciembre, 2018 - Septiembre, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: '69-viviendas-habitacionales-en-ph-30-cocheras-centro-univers-rosario',
@@ -714,8 +743,9 @@ const OBRAS = [
       'superficie: 4.000 m².',
       'Plazo: Abril, 2018 - Febrero, 2022.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-de-educacion-secundaria-zona-cero',
@@ -729,8 +759,9 @@ const OBRAS = [
       'superficie: 2.200 m².',
       'Plazo: Noviembre, 2017 - Agosto, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'entorno-ribera-central-ut',
@@ -744,8 +775,9 @@ const OBRAS = [
       'superficie: 9.000 m².',
       'Plazo: Enero, 2017 - Septiembre, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-de-infantes-n-290',
@@ -759,8 +791,9 @@ const OBRAS = [
       'superficie: 700 m².',
       'Plazo: Febrero, 2018 - Mayo, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-presupuesto-participativo',
@@ -773,8 +806,9 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2017 - Diciembre, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'restauracion-fachada-sede-de-gobierno-rosario',
@@ -788,8 +822,9 @@ const OBRAS = [
       'superficie: 12.000 m².',
       'Plazo: Julio, 2017 - Febrero, 2020.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'hospital-granaderos-a-caballo-ut-participacion',
@@ -803,8 +838,9 @@ const OBRAS = [
       'superficie: 1400 m².',
       'Plazo: Septiembre, 2017 - Agosto, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-de-arquitectura-ut',
@@ -817,8 +853,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2017 - Diciembre, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'readecuacion-de-la-estacion-de-bomberos-n1',
@@ -831,8 +868,9 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2017 - Octubre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'parque-de-las-colectividades-sector-norte-rosario',
@@ -845,8 +883,9 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2017 - Noviembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'mansardas-en-casa-de-gobierno-santa-fe-ut-participacion',
@@ -859,8 +898,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2016 - Noviembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'revitalizacion-de-la-zona-historica-de-la-ciudad-de-rosario-1-etapa',
@@ -873,8 +913,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2016 - Diciembre, 2019.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-maternal-comuna-de-ataliva',
@@ -888,8 +929,9 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Junio, 2016 - Agosto, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'poder-judicial-de-la-provincia-de-santa-fe-san-cristobal-2da-etapa',
@@ -903,8 +945,9 @@ const OBRAS = [
       'superficie: 1.300 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'remodelacion-de-la-defensoria-del-pueblo-en-la-ciudad-de-rosario',
@@ -918,8 +961,9 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Enero, 2016 - Julio, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'd-p-v-y-u-14-viviendas-carcarana',
@@ -932,8 +976,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2016 - Diciembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-maternal-comuna-de-maximo-paz',
@@ -947,8 +992,9 @@ const OBRAS = [
       'superficie: 450 m².',
       'Plazo: Septiembre, 2015 - Octubre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-maternal-comuna-de-acebal',
@@ -962,8 +1008,9 @@ const OBRAS = [
       'superficie: 690 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-maternal-comuna-de-angelica',
@@ -977,8 +1024,9 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-eet-n-346',
@@ -992,8 +1040,9 @@ const OBRAS = [
       'superficie: 400 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'remodelacion-de-comisarias-11-25-29-de-rosario-y-vgg',
@@ -1006,8 +1055,9 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2015 - Marzo, 2016.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obra-civil-nuevo-centro-de-distribucion-catamarca',
@@ -1020,8 +1070,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: '30-loteos-e-infraestructura-en-arroyo-seco',
@@ -1034,8 +1085,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-nro-a-crear-villa-gobernador-galvez',
@@ -1049,8 +1101,9 @@ const OBRAS = [
       'superficie: 2.000 m².',
       'Plazo: Noviembre, 2014 - Marzo, 2016.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-n-237-san-lorenzo',
@@ -1064,8 +1117,9 @@ const OBRAS = [
       'superficie: 305 m².',
       'Plazo: Enero, 2015 - Septiembre, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-pista-de-atletismo-las-rosas',
@@ -1078,8 +1132,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Marzo, 2016.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-pista-de-atletismo-villa-constitucion',
@@ -1092,8 +1147,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Diciembre, 2017.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-de-musica-rafaela',
@@ -1107,8 +1163,9 @@ const OBRAS = [
       'superficie: 2.110 m².',
       'Plazo: Mayo, 2014 - Octubre, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'estacion-sosa-10-viviendas-entre-rios',
@@ -1121,8 +1178,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'sauce-montrull-10-viviendas-entre-rios',
@@ -1135,8 +1193,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'guardia-hospital-dr-ferre-rafaela',
@@ -1150,8 +1209,9 @@ const OBRAS = [
       'superficie: 750 m².',
       'Plazo: Mayo, 2013 - Febrero, 2016.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'e-e-m-n-128-rosario',
@@ -1164,8 +1224,9 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2013 - Febrero, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'e-e-t-n-292-san-vicente',
@@ -1179,8 +1240,9 @@ const OBRAS = [
       'superficie: 305 m².',
       'Plazo: Agosto, 2012 - Mayo, 2015.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'i-s-p-n-22-fray-luis-beltran',
@@ -1194,8 +1256,9 @@ const OBRAS = [
       'superficie: 928 m².',
       'Plazo: Junio, 2012 - Mayo, 2014.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-complementarias-en-planta-de-osmosis-inversa-assa-zona-cero',
@@ -1208,8 +1271,9 @@ const OBRAS = [
     datos: [
       'Plazo: Julio, 2012 - Junio, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-complementarias-en-planta-de-osmosis-inversa-assa-canada-de-gomez',
@@ -1223,8 +1287,9 @@ const OBRAS = [
       'superficie: 375 m².',
       'Plazo: Noviembre, 2011 - Octubre, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-complementarias-en-planta-de-osmosis-inversa-assa-rafaela',
@@ -1237,8 +1302,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2011 - Agosto, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-ala-este-edificio-facultad-regional-rafaela',
@@ -1252,8 +1318,9 @@ const OBRAS = [
       'superficie: 890 m².',
       'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'ministerio-de-planificacion-federal-lic-011-11-prov-de-santa-fe',
@@ -1266,8 +1333,9 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obras-complementarias-en-planta-de-osmosis-inversa-assa-barrio-godoy-rosario',
@@ -1280,8 +1348,9 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2011 - Marzo, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obra-civil-nuevo-centro-de-distribucion',
@@ -1295,8 +1364,9 @@ const OBRAS = [
       'superficie: 386 m².',
       'Plazo: Agosto, 2011 - Abril, 2013 / Diciembre, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'edificio-de-propiedad-horizontal-tribeca-ii',
@@ -1310,8 +1380,9 @@ const OBRAS = [
       'superficie: 1.356 m².',
       'Plazo: Febrero, 2011 - Diciembre, 2013.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-joan-miro',
@@ -1324,8 +1395,9 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2010 - Marzo, 2011.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'lic-134-09-construccion-jardin-n-267-lehmann-y-jardin-n-167-c-aldeo-depto-castellanos-provincia-de-santa-fe',
@@ -1339,8 +1411,9 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'lic-133-09-construccion-jardin-clucellas-y-ramona-provincia-santa-fe',
@@ -1354,8 +1427,9 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'lic-116-09-construccion-jardin-en-escuela-n06-florentino-ameghino-y-jardin-zona-sur-este-parana-entre-rios',
@@ -1369,8 +1443,9 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-de-talleres-y-sanitarios-e-e-t-n-468',
@@ -1384,8 +1459,9 @@ const OBRAS = [
       'superficie: 650 m².',
       'Plazo: Enero, 2010 - Junio 2011 / Junio 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'ampliacion-y-mejora-de-capacidades-edilicias',
@@ -1399,8 +1475,9 @@ const OBRAS = [
       'superficie: 2.048 m².',
       'Plazo: Septiembre, 2009 - Junio, 2010 / Junio, 2012.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'galpon-empresa-provincial-de-la-energia',
@@ -1413,8 +1490,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2008 - Enero, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'laboratorio-wiemer-s-a',
@@ -1427,8 +1505,9 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2008 - Diciembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-del-cerco-perimetral-de-hormigon-armado',
@@ -1441,8 +1520,9 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2009 - Julio, 2009 / Julio, 2011.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'construccion-de-aulas-y-galerias-en-e-e-m-n243',
@@ -1456,8 +1536,9 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Enero, 2009 - Julio, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'promse-grupo-n16-e-e-m-n240',
@@ -1470,8 +1551,9 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2008 - Marzo, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'promse-grupo-n16-e-e-m-n243',
@@ -1485,8 +1567,9 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'promse-grupo-n16-e-e-m-n347',
@@ -1499,8 +1582,9 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'grupo-15-escuela-n-6086',
@@ -1513,8 +1597,9 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2008 - Junio, 2009 / Diciembre, 2010.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'jardin-de-infantes-n-200',
@@ -1527,8 +1612,9 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2008 - Julio, 2009 / Diciembre, 2010.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'grupo-9-escuela-n-1162-y-n-114',
@@ -1541,8 +1627,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2008 - Abril, 2008 / Diciembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'grupo-10-escuela-n-1346-y-n299',
@@ -1555,8 +1642,9 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'grupo-14-escuela-n-518-y-n-1172',
@@ -1569,8 +1657,9 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'grupo-8-promse-e-e-m-n-350-y-e-e-m-n360',
@@ -1584,8 +1673,9 @@ const OBRAS = [
       'superficie: 730 m².',
       'Plazo: Febrero, 2009 - Diciembre, 2009 / Junio, 2010.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'asociacion-cooperadora-escuela-media-n203',
@@ -1598,8 +1688,9 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'asociacion-cooperadora-escuela-media-n208',
@@ -1612,8 +1703,9 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n-1188-j-b-bustos',
@@ -1627,8 +1719,9 @@ const OBRAS = [
       'superficie: 300 m².',
       'Plazo: Diciembre, 2007 - Diciembre, 2008 / Diciembre, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'edificio-de-propiedad-horizontal-mailen-iii',
@@ -1641,8 +1734,9 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2007 - Enero, 2008 / Julio, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'remodelacion-autoservicio-mayorista',
@@ -1655,8 +1749,9 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2007 - Abril, 2007 / Julio, 2007.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'edificio-corporativo-cafe-la-virginia-albanileria',
@@ -1669,8 +1764,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Enero, 2007 / Abril, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'obrador-central-casino-rosario',
@@ -1683,8 +1779,9 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2006 - Diciembre, 2006 / Marzo, 2007.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'e-e-t-n-465-estructura-de-hormigon-armado-visto',
@@ -1698,8 +1795,9 @@ const OBRAS = [
       'superficie: 2.500 m².',
       'Plazo: Octubre, 2006 - Septiembre, 2007 / Junio, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'parque-industrial-villa-constitucion',
@@ -1712,8 +1810,9 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2006 - Febrero, 2007 / Agosto, 2007.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n-1102-sargento-cabral-camino-viejo-a-soldini-3023',
@@ -1726,8 +1825,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Enero, 2007 / Enero, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n560-provincia-de-jujuy-bv-orono-5635',
@@ -1740,8 +1840,9 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Junio, 2007 / Junio, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n1293-lisandro-paganini-las-heras-705',
@@ -1754,8 +1855,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n9020-juan-domingo-peron-av-san-martin-2051-g-baigorria',
@@ -1768,8 +1870,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n1358-macacha-guemes-teniente-agneta-2100',
@@ -1782,8 +1885,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'escuela-n1331-vicente-lopez-y-planes-casacuberta-9650',
@@ -1796,8 +1900,9 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'edificio-tribeca-i',
@@ -1811,8 +1916,9 @@ const OBRAS = [
       'superficie: 1540 m².',
       'Plazo: Mayo, 2007 - Mayo, 2009 / Noviembre, 2009.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'complejo-habitacional-francia-y-guruciaga',
@@ -1826,8 +1932,9 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Julio, 2007 - Agosto, 2009 / Febrero, 2010.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   },
   {
     id: 'vivienda-unifamiliar-lote-279',
@@ -1840,7 +1947,8 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Noviembre, 2007 /Noviembre, 2008.',
     ],
-    carpeta: '',
-    fotos: [FOTO_PROVISORIA],
+    portada:'provisorio/publicacion-en-obra-portada.png',
+    carpeta: 'provisorio',
+    fotos: [FOTO_PROVISORIA]
   }
 ];
