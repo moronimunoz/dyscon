@@ -28,7 +28,7 @@
   ).join('');
 
   // Videos: uno o varios; de YouTube o archivos propios, con portada opcional (js/video.js)
-  const videos = [].concat(n.video || []).map(v => crearVideo(v, n.titulo, 'img/novedades/')).join('');
+  const videos = crearVideos(n.video, n.titulo, 'img/novedades/');
 
   main.innerHTML = `
     <section class="page-hero page-hero--img">
