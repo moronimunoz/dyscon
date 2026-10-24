@@ -6,8 +6,10 @@
 (function () {
   if (typeof OBRAS === 'undefined') return;
 
-  // Orden de los botones de categoría (las que no figuren acá van al final, por orden alfabético)
-  const ORDEN_CATEGORIAS = ['Educación', 'Salud', 'Patrimonio', 'Viviendas', 'Comunidad', 'Espacio público'];
+  // Orden de las categorías en el desplegable (las que no figuren acá van al final, por orden alfabético).
+  // No importa si se escriben con mayúsculas o tildes distintas: se compara sin esas diferencias.
+  const ORDEN_CATEGORIAS = ['Educación', 'Salud', 'Patrimonio', 'Viviendas', 'Comunidad', 'Espacio público',
+                            'Infraestructura', 'Industrial', 'Comercial', 'Institucional'];
 
   // Texto del punto de color de la esquina, según el estado de la obra
   const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecución', terminado: 'Obra terminada' };
@@ -42,18 +44,20 @@
       </article>`;
   };
 
-  // ---------- obras.html: listado completo + botones de categoría ----------
+  // ---------- obras.html: listado completo + opciones del desplegable de categoría ----------
   const lista = document.getElementById('lista-obras');
   if (lista) {
     lista.innerHTML = OBRAS.map(tarjeta).join('');
 
-    const filtros = document.getElementById('filtros-categoria');
-    if (filtros) {
-      const lugar = c => { const i = ORDEN_CATEGORIAS.indexOf(c); return i < 0 ? 999 : i; };
-      [...new Set(OBRAS.map(o => o.categoria))]
+    const selector = document.getElementById('filtro-categoria');
+    if (selector) {
+      const lugar = c => { const i = ORDEN_CATEGORIAS.findIndex(o => slug(o) === slug(c)); return i < 0 ? 999 : i; };
+      // Una opción por categoría, aunque en los datos esté escrita con mayúsculas o tildes distintas
+      const categorias = new Map();
+      OBRAS.forEach(o => { if (!categorias.has(slug(o.categoria))) categorias.set(slug(o.categoria), o.categoria); });
+      [...categorias.values()]
         .sort((a, b) => lugar(a) - lugar(b) || a.localeCompare(b, 'es'))
-        .forEach(c => filtros.insertAdjacentHTML('beforeend',
-          `<button type="button" class="filtro" data-grupo="categoria" data-filtro="${slug(c)}">${c}</button>`));
+        .forEach(c => selector.insertAdjacentHTML('beforeend', `<option value="${slug(c)}">${c}</option>`));
     }
   }
 

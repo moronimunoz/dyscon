@@ -63,28 +63,40 @@
     <!-- LISTADO CON FILTROS -->
     <section class="obras">
       <div class="contenedor">
-
-        <div class="filtros-bloque">
-          <div class="filtros" role="group" aria-label="Filtrar por categoría" id="filtros-categoria">
-            <span class="filtros-rotulo">Categoría</span>
-            <button type="button" class="filtro activo" data-grupo="categoria" data-filtro="todos">Todas</button>
-            <!-- las demás categorías las agrega js/obras-lista.js desde los datos -->
+        
+        <div class="barra-filtros">
+          <div class="campo-filtro">
+            <label class="filtros-rotulo" for="filtro-categoria">Categoría</label>
+            <select id="filtro-categoria" class="filtro-select" data-grupo="categoria">
+              <option value="todos">Todas las categorías</option>
+              <!-- las categorías las agrega js/obras-lista.js desde los datos -->
+            </select>
           </div>
 
-          <div class="filtros" role="group" aria-label="Filtrar por tipo de obra">
-            <span class="filtros-rotulo">Tipo</span>
-            <button type="button" class="filtro activo" data-grupo="tipo" data-filtro="todos">Todas</button>
-            <button type="button" class="filtro" data-grupo="tipo" data-filtro="propia">Propias</button>
-            <button type="button" class="filtro" data-grupo="tipo" data-filtro="colaboracion">En colaboración</button>
+          <div class="campo-filtro">
+            <span class="filtros-rotulo" id="rotulo-tipo">Tipo</span>
+            <div class="segmentado" role="group" aria-labelledby="rotulo-tipo">
+              <button type="button" class="filtro activo" data-grupo="tipo" data-filtro="todos">Todas</button>
+              <button type="button" class="filtro" data-grupo="tipo" data-filtro="propia">Propias</button>
+              <button type="button" class="filtro" data-grupo="tipo" data-filtro="colaboracion">En colaboración</button>
+            </div>
           </div>
 
-          <div class="filtros" role="group" aria-label="Filtrar por estado de la obra">
-            <span class="filtros-rotulo">Estado</span>
-            <button type="button" class="filtro activo" data-grupo="estado" data-filtro="todos">Todas</button>
-            <button type="button" class="filtro" data-grupo="estado" data-filtro="inicio"><span class="punto punto--inicio punto--inline"></span> Iniciando</button>
-            <button type="button" class="filtro" data-grupo="estado" data-filtro="obra"><span class="punto punto--obra punto--inline"></span> En ejecución</button>
-            <button type="button" class="filtro" data-grupo="estado" data-filtro="terminado"><span class="punto punto--terminado punto--inline"></span> Terminadas</button>
+          <div class="campo-filtro">
+            <span class="filtros-rotulo" id="rotulo-estado">Estado</span>
+            <div class="segmentado" role="group" aria-labelledby="rotulo-estado">
+              <button type="button" class="filtro activo" data-grupo="estado" data-filtro="todos">Todas</button>
+              <button type="button" class="filtro" data-grupo="estado" data-filtro="inicio"><span class="punto punto--inicio punto--inline"></span> Iniciando</button>
+              <button type="button" class="filtro" data-grupo="estado" data-filtro="obra"><span class="punto punto--obra punto--inline"></span> En ejecución</button>
+              <button type="button" class="filtro" data-grupo="estado" data-filtro="terminado"><span class="punto punto--terminado punto--inline"></span> Terminadas</button>
+            </div>
           </div>
+        </div>
+
+        <div class="resultados-filtro">
+          <p class="contador-obras" id="contador-obras" aria-live="polite"></p>
+          <ul class="filtros-activos" id="filtros-activos" aria-label="Filtros aplicados"></ul>
+          <button type="button" class="borrar-filtros" id="borrar-filtros" hidden>Borrar filtros</button>
         </div>
 
         <!-- Las tarjetas se dibujan solas desde js/obras-data.js (js/obras-lista.js) -->

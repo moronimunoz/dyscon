@@ -76,17 +76,30 @@ const anio = document.getElementById('anio');
 if (anio) anio.textContent = new Date().getFullYear();
 
 // ---------- 8. Filtros de obras y novedades ----------
-// Cada botón .filtro lleva data-filtro="valor" y, si hay más de una fila de filtros,
-// data-grupo="categoria" (sin grupo se usa "estado"). Cada tarjeta guarda su valor en
-// data-<grupo> (ej. data-categoria="salud"). Los grupos se combinan entre sí.
+// Controles que filtran: botones .filtro (data-filtro="valor") y desplegables .filtro-select.
+// Cada uno lleva data-grupo="categoria" (sin grupo se usa "estado") y cada tarjeta guarda su valor
+// en data-<grupo> (ej. data-categoria="salud"). Los grupos se combinan entre sí.
 // También se puede entrar con un filtro ya aplicado: obras.html?categoria=salud
 const botonesFiltro = document.querySelectorAll('.filtro');
+const selectsFiltro = document.querySelectorAll('.filtro-select');
 
-if (botonesFiltro.length) {
+if (botonesFiltro.length || selectsFiltro.length) {
   const tarjetas = document.querySelectorAll('.grid .obra-card');
   const vacio = document.getElementById('sin-resultados');
-  const grupoDe = b => b.dataset.grupo || 'estado';
-  const activos = {};                                  // grupo -> valor elegido
+  const contador = document.getElementById('contador-obras');       // opcional: "17 obras"
+  const etiquetas = document.getElementById('filtros-activos');     // opcional: filtros aplicados
+  const borrar = document.getElementById('borrar-filtros');          // opcional: botón "Borrar filtros"
+  const grupoDe = el => el.dataset.grupo || 'estado';
+  const activos = {};                                                // grupo -> valor elegido
+
+  // Texto (y punto de color, si lo tiene) del filtro elegido, para mostrarlo como etiqueta
+  const datosDe = (g, v) => {
+    const b = [...botonesFiltro].find(x => grupoDe(x) === g && x.dataset.filtro === v);
+    if (b) return { texto: b.textContent.trim(), punto: b.querySelector('.punto') };
+    const s = [...selectsFiltro].find(x => grupoDe(x) === g);
+    const o = s && [...s.options].find(x => x.value === v);
+    return { texto: o ? o.textContent.trim() : v, punto: null };
+  };
 
   const aplicar = () => {
     botonesFiltro.forEach(b => {
@@ -94,20 +107,61 @@ if (botonesFiltro.length) {
       b.classList.toggle('activo', activo);
       b.setAttribute('aria-pressed', activo);
     });
-    tarjetas.forEach(t => t.classList.toggle('filtrada',
-      Object.entries(activos).some(([g, v]) => v !== 'todos' && t.dataset[g] !== v)));
-    if (vacio) vacio.hidden = [...tarjetas].some(t => !t.classList.contains('filtrada'));
+    selectsFiltro.forEach(s => { s.value = activos[grupoDe(s)] || 'todos'; });
+
+    let visibles = 0;
+    tarjetas.forEach(t => {
+      const oculta = Object.entries(activos).some(([g, v]) => v !== 'todos' && t.dataset[g] !== v);
+      t.classList.toggle('filtrada', oculta);
+      if (!oculta) visibles++;
+    });
+    if (vacio) vacio.hidden = visibles > 0;
+    if (contador) contador.textContent = visibles === 1 ? '1 obra' : visibles + ' obras';
+
+    const elegidos = Object.entries(activos).filter(([, v]) => v !== 'todos');
+    if (borrar) borrar.hidden = !elegidos.length;
+    if (etiquetas) {
+      etiquetas.replaceChildren(...elegidos.map(([g, v]) => {
+        const { texto, punto } = datosDe(g, v);
+        const li = document.createElement('li');
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'etiqueta-filtro';
+        b.setAttribute('aria-label', 'Quitar filtro: ' + texto);
+        if (punto) b.appendChild(punto.cloneNode());
+        b.append(texto + ' ');
+        const x = document.createElement('span');
+        x.setAttribute('aria-hidden', 'true');
+        x.textContent = '✕';
+        b.appendChild(x);
+        b.addEventListener('click', () => { activos[g] = 'todos'; aplicar(); });   // quita solo este filtro
+        li.appendChild(b);
+        return li;
+      }));
+    }
   };
 
   botonesFiltro.forEach(b => b.addEventListener('click', () => {
     activos[grupoDe(b)] = b.dataset.filtro;
     aplicar();
   }));
+  selectsFiltro.forEach(s => s.addEventListener('change', () => {
+    activos[grupoDe(s)] = s.value;
+    aplicar();
+  }));
+  if (borrar) borrar.addEventListener('click', () => {
+    Object.keys(activos).forEach(g => { activos[g] = 'todos'; });
+    aplicar();
+  });
 
   // Filtro que llega por la dirección (ej. obras.html?categoria=patrimonio)
   const params = new URLSearchParams(location.search);
   botonesFiltro.forEach(b => {
     if (params.get(grupoDe(b)) === b.dataset.filtro) activos[grupoDe(b)] = b.dataset.filtro;
+  });
+  selectsFiltro.forEach(s => {
+    const v = params.get(grupoDe(s));
+    if (v && [...s.options].some(o => o.value === v)) activos[grupoDe(s)] = v;
   });
   aplicar();
 }

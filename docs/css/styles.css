@@ -483,3 +483,38 @@ border-radius: 3px;
 } 
 
 .logo img { height: 46px; }
+
+/* ---------- Barra de filtros de Obras: desplegable + controles segmentados ---------- */
+.barra-filtros { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1rem 1.6rem; margin-bottom: 1rem; }
+.campo-filtro { display: grid; gap: .35rem; }
+.campo-filtro .filtros-rotulo { margin: 0; }
+
+.filtro-select {
+  min-width: 15rem; padding: .6rem 2.4rem .6rem 1rem;
+  border: 1.5px solid var(--linea); border-radius: 8px;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2330585a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right .8rem center / 14px;
+  font: inherit; font-size: .82rem; font-weight: 600; color: var(--teal-700);
+  appearance: none; -webkit-appearance: none; cursor: pointer;
+  transition: border-color .3s;
+}
+.filtro-select:hover { border-color: var(--teal-500); }
+
+.segmentado { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border: 1.5px solid var(--linea); border-radius: 8px; background: #fff; }
+.segmentado .filtro { padding: .4rem .9rem; border: 0; border-radius: 6px; background: transparent; }
+.segmentado .filtro:hover { background: var(--teal-100); }
+.segmentado .filtro.activo { background: var(--teal-700); color: #fff; }
+
+.resultados-filtro { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; min-height: 2rem; margin-bottom: 1.4rem; }
+.contador-obras { margin: 0; font-size: .85rem; font-weight: 700; color: var(--tinta); }
+.filtros-activos { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.etiqueta-filtro { display: inline-flex; align-items: center; gap: .45rem; padding: .3rem .8rem; border: 0; border-radius: 50px; background: var(--teal-100); color: var(--teal-700); font-size: .8rem; font-weight: 600; cursor: pointer; transition: background .3s, color .3s; }
+.etiqueta-filtro:hover { background: var(--teal-700); color: #fff; }
+.etiqueta-filtro .punto { width: 12px; height: 12px; border-width: 1.5px; }
+.borrar-filtros { padding: 0; border: 0; background: none; color: var(--gris); font-size: .8rem; text-decoration: underline; cursor: pointer; }
+.borrar-filtros:hover { color: var(--teal-700); }
+
+@media (max-width: 600px) {
+  .campo-filtro, .filtro-select { width: 100%; }
+  .segmentado { display: flex; }
+  .segmentado .filtro { flex: 1 1 auto; justify-content: center; padding: .4rem .5rem; }
+}
