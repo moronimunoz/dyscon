@@ -295,7 +295,8 @@ const OBRAS = [
   
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
-  },
+  }
+  ,
   {
     id: 'plazas-de-la-cercania-2025',
     nombre: 'Plazas de la Cercanía 2025',
@@ -357,7 +358,8 @@ const OBRAS = [
     
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
-  },
+  }
+  /*,
   {
     id: 'puesta-en-valor-de-dos-plazas',
     nombre: 'Puesta en Valor de Dos Plazas',
@@ -1951,5 +1953,5 @@ const OBRAS = [
     
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
-  }
+  }*/
 ];
