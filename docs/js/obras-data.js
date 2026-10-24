@@ -45,8 +45,7 @@
     } 
    ========================================================= */
 
-const PORTADA_PROVISORIA = 'publicacion-en-obra-portada.png';
-const FOTO_PROVISORIA = 'publicacion-en-obra.png';
+const FOTO_PROVISORIA = 'prov-front.png';
 const OBRAS = [
   // CASA M
   {
@@ -293,7 +292,7 @@ const OBRAS = [
   datos: ['Plazo: Enero 2025 - Finalizado.'],
   mapa: 'Rosario, Santa Fe',
   descripcion: ['<b>Infraestructura sanitaria | Rosario, Santa Fe</b><br><br>La intervención en el Hospital de Niños Zona Norte contempló la refuncionalización y adecuación de espacios destinados a los servicios de tomografía, odontología y cardiología, con el objetivo de optimizar las instalaciones y mejorar las condiciones de atención del establecimiento.<br><br>El proyecto incluyó trabajos complementarios en áreas técnicas y de servicio, adecuaciones de instalaciones eléctricas, incorporación de un generador de energía, mejoras en sectores del subsuelo y acondicionamiento de accesos y circulaciones.<br><br>La obra formó parte de un programa de modernización de la infraestructura sanitaria pública de la provincia de Santa Fe, orientado a responder a las necesidades operativas del hospital y fortalecer sus servicios especializados de atención pediátrica.'],
-  portada:'provisorio/publicacion-en-obra-portada.png',
+  
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -308,7 +307,7 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto 2025 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -324,7 +323,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2025 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -340,7 +339,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril 2025 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -355,7 +354,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2025 - Abril, 2025.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -370,7 +369,7 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero 2025 - Julio 2025.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -385,7 +384,7 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre 2024 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -400,7 +399,7 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2023 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -416,7 +415,7 @@ const OBRAS = [
       'superficie: 3.000 m².',
       'Plazo: Julio, 2023 - Febrero, 2025.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -431,7 +430,7 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2023 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -446,7 +445,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2023 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -461,7 +460,7 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2022 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -477,7 +476,7 @@ const OBRAS = [
       'superficie: 8.000 m².',
       'Plazo: Septiembre, 2022 - Mayo, 2023.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -492,7 +491,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2022 - Mayo, 2023',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -508,7 +507,7 @@ const OBRAS = [
       'superficie: 1.000 m².',
       'Plazo: Abril, 2022 - Febrero, 2023.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -524,7 +523,7 @@ const OBRAS = [
       'superficie: 3.500 m².',
       'Plazo: Febrero, 2022 - Enero, 2025.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -539,7 +538,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2021 - Finalizado.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -555,7 +554,7 @@ const OBRAS = [
       'superficie: 3.000 m².',
       'Plazo: Septiembre, 2021 - Septiembre, 2023.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -571,7 +570,7 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Agosto, 2021 - Mayo, 2023.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -586,7 +585,7 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2021 - Agosto, 2021.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -602,7 +601,7 @@ const OBRAS = [
       'superficie: 1.200 m².',
       'Plazo: Enero, 2020 - Septiembre, 2022.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -618,7 +617,7 @@ const OBRAS = [
       'superficie: 2.800 m².',
       'Plazo: Abril, 2019 - Febrero, 2021.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -633,7 +632,7 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2019 - Junio, 2020.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -648,7 +647,7 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2019 - Enero, 2022.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -663,7 +662,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2019 - Febrero, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -682,7 +681,7 @@ const OBRAS = [
       'superficie: 700 m².',
       'Plazo: Septiembre, 2018 - Julio, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -697,7 +696,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2018 - Agosto, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -713,7 +712,7 @@ const OBRAS = [
       'superficie: 1.100 m².',
       'Plazo: Junio, 2018 - Febrero 2022.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -729,7 +728,7 @@ const OBRAS = [
       'superficie: 2.800 m².',
       'Plazo: Diciembre, 2018 - Septiembre, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -745,7 +744,7 @@ const OBRAS = [
       'superficie: 4.000 m².',
       'Plazo: Abril, 2018 - Febrero, 2022.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -761,7 +760,7 @@ const OBRAS = [
       'superficie: 2.200 m².',
       'Plazo: Noviembre, 2017 - Agosto, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -777,7 +776,7 @@ const OBRAS = [
       'superficie: 9.000 m².',
       'Plazo: Enero, 2017 - Septiembre, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -793,7 +792,7 @@ const OBRAS = [
       'superficie: 700 m².',
       'Plazo: Febrero, 2018 - Mayo, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -808,7 +807,7 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2017 - Diciembre, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -824,7 +823,7 @@ const OBRAS = [
       'superficie: 12.000 m².',
       'Plazo: Julio, 2017 - Febrero, 2020.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -840,7 +839,7 @@ const OBRAS = [
       'superficie: 1400 m².',
       'Plazo: Septiembre, 2017 - Agosto, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -855,7 +854,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2017 - Diciembre, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -870,7 +869,7 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2017 - Octubre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -885,7 +884,7 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2017 - Noviembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -900,7 +899,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2016 - Noviembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -915,7 +914,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2016 - Diciembre, 2019.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -931,7 +930,7 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Junio, 2016 - Agosto, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -947,7 +946,7 @@ const OBRAS = [
       'superficie: 1.300 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -963,7 +962,7 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Enero, 2016 - Julio, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -978,7 +977,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2016 - Diciembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -994,7 +993,7 @@ const OBRAS = [
       'superficie: 450 m².',
       'Plazo: Septiembre, 2015 - Octubre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1010,7 +1009,7 @@ const OBRAS = [
       'superficie: 690 m².',
       'Plazo: Noviembre, 2015 - Marzo, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1026,7 +1025,7 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1042,7 +1041,7 @@ const OBRAS = [
       'superficie: 400 m².',
       'Plazo: Octubre, 2015 - Noviembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1057,7 +1056,7 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2015 - Marzo, 2016.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1072,7 +1071,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1087,7 +1086,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Octubre, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1103,7 +1102,7 @@ const OBRAS = [
       'superficie: 2.000 m².',
       'Plazo: Noviembre, 2014 - Marzo, 2016.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1119,7 +1118,7 @@ const OBRAS = [
       'superficie: 305 m².',
       'Plazo: Enero, 2015 - Septiembre, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1134,7 +1133,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Marzo, 2016.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1149,7 +1148,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2015 - Diciembre, 2017.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1165,7 +1164,7 @@ const OBRAS = [
       'superficie: 2.110 m².',
       'Plazo: Mayo, 2014 - Octubre, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1180,7 +1179,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1195,7 +1194,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2013 - Mayo, 2014.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1211,7 +1210,7 @@ const OBRAS = [
       'superficie: 750 m².',
       'Plazo: Mayo, 2013 - Febrero, 2016.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1226,7 +1225,7 @@ const OBRAS = [
     datos: [
       'Plazo: Marzo, 2013 - Febrero, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1242,7 +1241,7 @@ const OBRAS = [
       'superficie: 305 m².',
       'Plazo: Agosto, 2012 - Mayo, 2015.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1258,7 +1257,7 @@ const OBRAS = [
       'superficie: 928 m².',
       'Plazo: Junio, 2012 - Mayo, 2014.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1273,7 +1272,7 @@ const OBRAS = [
     datos: [
       'Plazo: Julio, 2012 - Junio, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1289,7 +1288,7 @@ const OBRAS = [
       'superficie: 375 m².',
       'Plazo: Noviembre, 2011 - Octubre, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1304,7 +1303,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2011 - Agosto, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1320,7 +1319,7 @@ const OBRAS = [
       'superficie: 890 m².',
       'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1335,7 +1334,7 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2011 - Octubre, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1350,7 +1349,7 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2011 - Marzo, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1366,7 +1365,7 @@ const OBRAS = [
       'superficie: 386 m².',
       'Plazo: Agosto, 2011 - Abril, 2013 / Diciembre, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1382,7 +1381,7 @@ const OBRAS = [
       'superficie: 1.356 m².',
       'Plazo: Febrero, 2011 - Diciembre, 2013.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1397,7 +1396,7 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2010 - Marzo, 2011.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1413,7 +1412,7 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1429,7 +1428,7 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1445,7 +1444,7 @@ const OBRAS = [
       'superficie: 410 m².',
       'Plazo: Agosto, 2010 - Julio, 2011 / Julio, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1461,7 +1460,7 @@ const OBRAS = [
       'superficie: 650 m².',
       'Plazo: Enero, 2010 - Junio 2011 / Junio 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1477,7 +1476,7 @@ const OBRAS = [
       'superficie: 2.048 m².',
       'Plazo: Septiembre, 2009 - Junio, 2010 / Junio, 2012.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1492,7 +1491,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2008 - Enero, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1507,7 +1506,7 @@ const OBRAS = [
     datos: [
       'Plazo: Junio, 2008 - Diciembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1522,7 +1521,7 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2009 - Julio, 2009 / Julio, 2011.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1538,7 +1537,7 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Enero, 2009 - Julio, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1553,7 +1552,7 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2008 - Marzo, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1569,7 +1568,7 @@ const OBRAS = [
       'superficie: 480 m².',
       'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1584,7 +1583,7 @@ const OBRAS = [
     datos: [
       'Plazo: Diciembre, 2008 - Abril, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1599,7 +1598,7 @@ const OBRAS = [
     datos: [
       'Plazo: Septiembre, 2008 - Junio, 2009 / Diciembre, 2010.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1614,7 +1613,7 @@ const OBRAS = [
     datos: [
       'Plazo: Mayo, 2008 - Julio, 2009 / Diciembre, 2010.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1629,7 +1628,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2008 - Abril, 2008 / Diciembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1644,7 +1643,7 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1659,7 +1658,7 @@ const OBRAS = [
     datos: [
       'Plazo: Enero, 2008 - Agosto, 2008 / Diciembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1675,7 +1674,7 @@ const OBRAS = [
       'superficie: 730 m².',
       'Plazo: Febrero, 2009 - Diciembre, 2009 / Junio, 2010.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1690,7 +1689,7 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1705,7 +1704,7 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2007 - Enero, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1721,7 +1720,7 @@ const OBRAS = [
       'superficie: 300 m².',
       'Plazo: Diciembre, 2007 - Diciembre, 2008 / Diciembre, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1736,7 +1735,7 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2007 - Enero, 2008 / Julio, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1751,7 +1750,7 @@ const OBRAS = [
     datos: [
       'Plazo: Febrero, 2007 - Abril, 2007 / Julio, 2007.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1766,7 +1765,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Enero, 2007 / Abril, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1781,7 +1780,7 @@ const OBRAS = [
     datos: [
       'Plazo: Octubre, 2006 - Diciembre, 2006 / Marzo, 2007.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1797,7 +1796,7 @@ const OBRAS = [
       'superficie: 2.500 m².',
       'Plazo: Octubre, 2006 - Septiembre, 2007 / Junio, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1812,7 +1811,7 @@ const OBRAS = [
     datos: [
       'Plazo: Agosto, 2006 - Febrero, 2007 / Agosto, 2007.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1827,7 +1826,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Enero, 2007 / Enero, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1842,7 +1841,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Junio, 2007 / Junio, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1857,7 +1856,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1872,7 +1871,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1887,7 +1886,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Julio, 2007 / Julio, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1902,7 +1901,7 @@ const OBRAS = [
     datos: [
       'Plazo: Abril, 2007 - Septiembre, 2007 / Septiembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1918,7 +1917,7 @@ const OBRAS = [
       'superficie: 1540 m².',
       'Plazo: Mayo, 2007 - Mayo, 2009 / Noviembre, 2009.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1934,7 +1933,7 @@ const OBRAS = [
       'superficie: 600 m².',
       'Plazo: Julio, 2007 - Agosto, 2009 / Febrero, 2010.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   },
@@ -1949,7 +1948,7 @@ const OBRAS = [
     datos: [
       'Plazo: Noviembre, 2006 - Noviembre, 2007 /Noviembre, 2008.',
     ],
-    portada:'provisorio/publicacion-en-obra-portada.png',
+    
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   }
