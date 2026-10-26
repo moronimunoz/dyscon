@@ -275,6 +275,7 @@ const OBRAS = [
     datos:['Plazo: Agosto, 2017 - Octubre, 2020.'],
     fotos: ['barrio_mortelari_1.jpg']
   },
+  /*
   // Edifico Ricchieri
   {
   id: 'edificio-ricchieri', nombre: 'Edificio Ricchieri', categoria: 'Viviendas',
@@ -359,7 +360,7 @@ const OBRAS = [
     carpeta: 'provisorio',
     fotos: [FOTO_PROVISORIA]
   }
-  /*,
+  ,
   {
     id: 'puesta-en-valor-de-dos-plazas',
     nombre: 'Puesta en Valor de Dos Plazas',
