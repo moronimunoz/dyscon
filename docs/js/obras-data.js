@@ -94,7 +94,8 @@ const OBRAS = [
   },
   // PARQUE INDUSTRIAL
   {
-    id: 'parque-industrial', nombre: 'Parque Industrial', categoria: 'Espacio Público',
+    id: 'parque-industrial', nombre: 'Parque Industrial - Nodo', categoria: 'Espacio Público',
+    destacada: 1,
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora',estado: 'obra', comitente: '',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     miniatura: '01.jpg',
@@ -107,6 +108,7 @@ const OBRAS = [
   // TECNOTECA
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
+    destacada: 4,
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario · Santa Fe',
     datos:['Superficie: 4.000 m².','Plazo: Septiembre, 2023 - Finalizado.'],
@@ -132,7 +134,6 @@ const OBRAS = [
   // VIVIENDAS TABLADA
   {
     id: 'viviendas-tablada', nombre: '64 Viviendas en Tablada', categoria: 'Viviendas',
-    destacada: 2,
     tipo: 'propia', estado: 'obra', comitente: 'DPVyU.',
     ubicacion: 'Rosario · Santa Fe',
     datos:['Plazo: Septiembre 2024 - Finalizado.'],
@@ -143,6 +144,7 @@ const OBRAS = [
   // UP15
   {
     id: 'unidad-penitenciaria-15', nombre: 'Unidad Penitenciaria N.º 15', categoria: 'Comunidad',
+    destacada: 2,
     tipo: 'propia', estado: 'obra', comitente: '',
     ubicacion: 'Piñero · Santa Fe',
     mapa: 'W633+3G Piñero, Santa Fe',
@@ -197,7 +199,7 @@ const OBRAS = [
   // MONUMENTO
   {
     id: 'monumento-bandera', nombre: 'Monumento Nacional a la Bandera', categoria: 'Patrimonio',
-    destacada: 1,
+    destacada: 3,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Obras Públicas.',
     ubicacion: 'Rosario · Santa Fe',
     datos: ['Superficie: 10.000 m².', 'Plazo: Marzo, 2023 - Finalizado.'],
@@ -210,7 +212,6 @@ const OBRAS = [
   // SAMCO PAVON ARRIBA
   {
     id: 'samco-pavon-arriba', nombre: 'Nuevo SAMco de Pavón Arriba', categoria: 'Salud',
-    destacada: 3,
     tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Infraestructura, Servicios Públicos y Hábitat - DIPAI.',
     ubicacion: 'Pavón Arriba · Santa Fe',
     datos:['Superficie: 723 m².','Plazo: Agosto, 2022 - Abril, 2025.'],
@@ -256,7 +257,6 @@ const OBRAS = [
   // PLAZA SAN MARTIN
   {
     id: 'plaza-san-martin', nombre: 'Remodelación Plaza San Martín', categoria: 'Espacio Público',
-    destacada: 4,
     tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',
