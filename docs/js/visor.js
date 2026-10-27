@@ -34,3 +34,28 @@ function iniciarVisor(botones) {
   // Con una sola foto no hacen falta las flechas ni el contador (la X sí queda)
   visor.classList.toggle('visor--una', fotos.length < 2);
 }
+
+/* Arma la galería de fotos de una ficha (obra o novedad). El diseño depende de cuántas fotos hay:
+     1 foto  -> ocupa todo el ancho
+     2 fotos -> mitad y mitad
+     3 fotos -> una grande (mitad izquierda) y dos apiladas a la derecha
+     4 fotos -> dos grandes y dos apiladas en el último tercio
+     5 fotos -> una grande a la izquierda y cuatro chicas (2 x 2)
+     6 o más -> igual que 5, pero la quinta se oscurece y dice "+N" (las fotos que faltan)
+   Todas las fotos se abren en el visor, también las que no se ven en la grilla.
+   El diseño lo dibuja el CSS (clases galeria--1 a galeria--5 en obra.css). */
+function crearGaleria(fotos, base, titulo) {
+  const lista = fotos || [];
+  if (!lista.length) return '';
+  const total = lista.length;
+  const resto = total - 5;
+  const t = String(titulo).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+
+  const botones = lista.map((f, i) => {
+    const ultima = i === 4 && resto > 0;             // la quinta foto, cuando hay más de cinco
+    const etiqueta = ultima ? `Ver las ${total} fotos` : `Ampliar foto ${i + 1}`;
+    return `<button type="button" data-src="${base}${f}" aria-label="${etiqueta}"><img src="${base}${f}" alt="${t} - foto ${i + 1}" loading="lazy">${ultima ? `<span class="galeria-mas" aria-hidden="true">+${resto}</span>` : ''}</button>`;
+  }).join('');
+
+  return `<div class="galeria galeria--${Math.min(total, 5)}">${botones}</div>`;
+}

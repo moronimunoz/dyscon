@@ -23,9 +23,7 @@
 
   const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
 
-  const fotos = (n.fotos || []).map((f, i) =>
-    `<button type="button" data-src="img/novedades/${f}" aria-label="Ampliar foto ${i + 1}"><img src="img/novedades/${f}" alt="${n.titulo} - foto ${i + 1}" loading="lazy"></button>`
-  ).join('');
+  const fotos = crearGaleria(n.fotos, 'img/novedades/', n.titulo);
 
   // Videos: uno o varios; de YouTube o archivos propios, con portada opcional (js/video.js)
   const videos = crearVideos(n.video, n.titulo, 'img/novedades/');
@@ -43,7 +41,7 @@
     <section class="contenedor ficha nota">
       ${(n.texto || []).map(p => `<p>${p}</p>`).join('')}
       ${videos}
-      ${fotos ? `<div class="galeria">${fotos}</div>` : ''}
+      ${fotos}
       <p class="ficha-volver"><a href="novedades.html" class="link-flecha">Volver a todas las novedades <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
 

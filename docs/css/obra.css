@@ -1,12 +1,13 @@
 /* =========================================================
    DETALLE DE OBRA (se usa solo en obra.html)
    ========================================================= */
-.chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1rem; align-items: center;}
 .chip {
   padding: .15rem .9rem; border-radius: 20px;
   background: #fff; color: var(--teal-700);
   font-size: .72rem; font-weight: 600;
 }
+.chip--ut { width: 1.9rem; height: 1.9rem; display: grid; place-items: center; padding: 0; border-radius: 50%; font-weight: 700; }
 
 .ficha { padding-top: 2rem; padding-bottom: 4rem; }
 .ficha-fila {
@@ -92,3 +93,22 @@
 .visor-contador { min-width: 4.4rem; padding: .35rem .8rem; border-radius: 999px; background: rgba(19, 38, 39, .65); color: #fff; font-size: .85rem; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
 
 .visor--una .visor-controles { display: none; }   /* con una sola foto no hay flechas ni contador */
+
+/* Galería: el diseño depende de cuántas fotos hay (lo arma crearGaleria en js/visor.js) */
+.galeria--1 { grid-template-columns: 1fr; grid-template-rows: 1fr; aspect-ratio: 16 / 9; }
+.galeria--2 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; aspect-ratio: 2 / 1; }
+.galeria--3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; aspect-ratio: 2 / 1; }
+.galeria--4, .galeria--5 { grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; aspect-ratio: 2 / 1; }
+.galeria--3 button:first-child, .galeria--4 button:nth-child(-n+2), .galeria--5 button:first-child { grid-row: 1 / 3; }
+
+.galeria button { position: relative; width: 100%; height: 100%; min-width: 0; min-height: 0; aspect-ratio: auto; }
+.galeria button:nth-child(n+6) { display: none; }   /* de la sexta en adelante: solo en el visor */
+.galeria-mas {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  background: rgba(19, 38, 39, .62); color: #fff;
+  font-size: clamp(1.4rem, 3.4vw, 2.1rem); font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .galeria--2, .galeria--3, .galeria--4, .galeria--5 { aspect-ratio: 4 / 3; }
+}

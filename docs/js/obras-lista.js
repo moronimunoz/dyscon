@@ -12,7 +12,7 @@
                             'Infraestructura', 'Industrial', 'Comercial', 'Institucional'];
 
   // Texto del punto de color de la esquina, según el estado de la obra
-  const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecucion', terminado: 'Obra terminada' };
+  const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecución', terminado: 'Obra terminada' };
 
   // Evita que comillas o símbolos en un texto rompan el HTML de un atributo
   const esc = t => String(t).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -33,8 +33,10 @@
           <div class="obra-img">
             ${estado}
             <img src="${foto}" alt="${esc(o.nombre)}" loading="lazy">
-            ${o.tipo === 'ut' ? '<span class="tag-ut">UT</span>' : ''}
-            <span class="tag">${o.categoria}</span>
+            <div class="obra-etiquetas">
+              <span class="tag">${o.categoria}</span>
+              ${o.tipo === 'colaboracion' ? '<span class="tag-ut" title="Unión Transitoria" aria-label="Unión Transitoria">UT</span>' : ''}
+            </div>
           </div>
           <div class="obra-cuerpo">
             <h3>${o.nombre}</h3>

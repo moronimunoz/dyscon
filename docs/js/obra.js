@@ -37,14 +37,12 @@
     `<span class="${k === o.estado ? 'activo' : ''}">${k === 'obra' && o.estado === 'obra' ? '<i class="en-curso en-curso--inline"></i>' : ''}${t}</span>`
   ).join('')}</div>`;
 
-  const modalidad = o.tipo === 'ut'
-    ? `<p>Unidad Transitoria${o.con ? ' con ' + o.con : ''}.</p>`
-    : '<p>Ejecutada por DyScon S.A.</p>';
+  const modalidad = o.tipo === 'colaboracion'
+    ? `<p>Unión Transitoria${o.con ? ' con: ' + o.con : ' (UT)'}</p>`
+    : '<p>Obra propia.</p>';
 
   const base = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
-  const fotos = (o.fotos || []).map((f, i) =>
-    `<button type="button" data-src="${base}${f}" aria-label="Ampliar foto ${i + 1}"><img src="${base}${f}" alt="${o.nombre} - foto ${i + 1}" loading="lazy"></button>`
-  ).join('');
+  const fotos = crearGaleria(o.fotos, base, o.nombre);
 
   // El número es el zoom: 14 muestra el barrio, 16 la cuadra y 18 casi el edificio
   const mapa = `https://www.google.com/maps?q=${encodeURIComponent(o.mapa || o.ubicacion)}&z=16&output=embed`;
@@ -55,7 +53,7 @@
     <section class="page-hero">
       <div class="contenedor">
         <p class="migas"><a href="index.html">Inicio</a> / <a href="obras.html">Obras</a> / ${o.nombre}</p>
-        <div class="chips"><span class="chip">${o.categoria}</span>${o.tipo === 'ut' ? '<span class="chip">En colaboración</span>' : ''}</div>
+        <div class="chips"><span class="chip">${o.categoria}</span>${o.tipo === 'colaboracion' ? '<span class="chip chip--ut" title="Unión Transitoria" aria-label="Unión Transitoria">UT</span>' : ''}</div>
         <h1>${o.nombre}</h1>
         ${o.ubicacion ? `<p>${o.ubicacion}</p>` : ''}
       </div>
@@ -66,7 +64,7 @@
       ${fila('Modalidad', modalidad)}
       ${fila('Descripción', o.descripcion && o.descripcion.map(p => `<p>${p}</p>`).join(''))}
       ${fila('Objetivos y datos', o.datos && `<ul class="ficha-datos">${o.datos.map(d => `<li>${d}</li>`).join('')}</ul>`)}
-      ${fila('Galería de fotos', fotos && `<div class="galeria">${fotos}</div>`)}
+      ${fila('Galería de fotos', fotos)}
       ${fila([].concat(o.video || []).length > 1 ? 'Videos' : 'Video', videos)}
       ${fila('Ubicación', (o.mapa || o.ubicacion) && `<div class="mapa"><iframe src="${mapa}" title="Mapa: ${o.nombre}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>`)}
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
