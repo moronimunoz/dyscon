@@ -254,6 +254,19 @@ const OBRAS = [
     carpeta:'jardin_608',
     fotos: ['01.jpg','00.jpg']
   },
+  // ESCUELA PRIMARIA 1408
+  {
+    id: 'escuela-primaria-1408', nombre: 'Escuela Primaria N.° 1408', categoria: 'Educación',
+    tipo: 'propia', estado: 'terminado', comitente: 'Ministerio de Obras Públicas.',
+    ubicacion: 'Rosario · Santa Fe',
+    datos: ['Superficie: 1.700 m² aprox.', 'Capacidad: 200 alumnos/as por turno'],
+    ubicacion: 'Rosario · Santa Fe',
+    mapa: 'Av. Joaquín Suárez 2900 & Dr. José Julián Pérez, S2005 Rosario, Santa Fe',
+    descripcion: ['La Escuela Primaria Nuevo Alberdi está ubicada en el barrio Nuevo Alberdi, zona norte de la ciudad de Rosario, Santa Fe. Se desarrolla en un solo nivel compuesto por 8 aulas agrupables, un salón de usos múltiples, una cantina y espacio para cocinar y un gran patio semicubierto.'],
+    portada:'nuevo_alberdi/00.jpg',
+    carpeta:'nuevo_alberdi',
+    fotos: ['00.jpg','01.jpeg','02.jpeg']
+  },
   // PLAZA SAN MARTIN
   {
     id: 'plaza-san-martin', nombre: 'Remodelación Plaza San Martín', categoria: 'Espacio Público',
