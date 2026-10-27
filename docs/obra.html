@@ -43,12 +43,13 @@
     <main id="detalle"></main>
 
     <!-- Visor de fotos ampliadas -->
-    <dialog class="visor" id="visor">
-      <img alt="">
-      <div class="visor-controles">
-        <div class="visor-dots" aria-label="Fotos"></div>
-        <div class="visor-flechas">
+    <dialog class="visor" id="visor" aria-label="Galería de fotos">
+      <div class="visor-marco">
+        <img alt="">
+        <button type="button" class="visor-cerrar" aria-label="Cerrar"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        <div class="visor-controles">
           <button type="button" class="visor-prev" aria-label="Foto anterior"><svg class="icon" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <span class="visor-contador" aria-live="polite"></span>
           <button type="button" class="visor-next" aria-label="Foto siguiente"><svg class="icon" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
         </div>
       </div>

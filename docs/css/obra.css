@@ -47,11 +47,6 @@
 /* Mapa */
 .mapa iframe { width: 100%; height: 340px; border: 0; border-radius: 6px; }
 
-/* Visor de foto ampliada */
-.visor { border: 0; background: transparent; margin: auto; max-width: 92vw; max-height: 92vh; }
-.visor::backdrop { background: rgba(9, 38, 49, .88); }
-.visor img { max-width: 92vw; max-height: 88vh; border-radius: 6px; }
-
 .ficha-volver { padding-top: 1.5rem; border-top: 1px solid var(--linea); }
 
 @media (max-width: 760px) {
@@ -77,27 +72,23 @@
 /* Para que los textos largos en obras sean lejibles */
 .ficha-fila p { max-width: 70ch; line-height: 1.7; }
 
-/* Visor: puntos y flechas, siempre en la misma posición (abajo al centro de la pantalla) */
-.visor-controles {
-  position: fixed; left: 0; right: 0; bottom: 5vh; z-index: 2;
-  display: flex; flex-direction: column; align-items: center; gap: .9rem;
-  pointer-events: none;                 /* solo los botones reciben clics */
-}
-.visor-controles button { pointer-events: auto; }
+/* Visor de foto ampliada */
+.visor { padding: 0; border: 0; background: transparent; margin: auto; max-width: 92vw; max-height: 92vh; }
+.visor::backdrop { background: rgba(19, 38, 39, .9); }
 
-.visor-dots { display: flex; gap: .45rem; padding: .5rem .8rem; border-radius: 999px; background: rgba(9, 38, 49, .55); }
-.visor-dots button {
-  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
-  background: rgba(255, 255, 255, .55); transition: width .3s, background .3s;
-}
-.visor-dots button.activo { width: 22px; border-radius: 8px; background: #fff; }
+/* El marco se ajusta al tamaño real de la foto: la X y los controles quedan siempre sobre ella */
+.visor-marco { position: relative; width: fit-content; max-width: 92vw; }
+.visor-marco img { display: block; max-width: 92vw; max-height: 88vh; border-radius: 6px; }
 
-.visor-flechas { display: flex; gap: .6rem; }
-.visor-flechas button {
-  width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, .85); background: rgba(9, 38, 49, .55); color: #fff;
+.visor-cerrar, .visor-controles button {
+  width: 38px; height: 38px; display: grid; place-items: center; padding: 0;
+  border: 0; border-radius: 50%; background: rgba(19, 38, 39, .65); color: #fff; cursor: pointer;
   transition: background .3s, color .3s;
 }
-.visor-flechas button:hover { background: #fff; color: var(--teal-900); }
+.visor-cerrar:hover, .visor-controles button:hover { background: #fff; color: var(--teal-900); }
+.visor-cerrar { position: absolute; top: .7rem; right: .7rem; }
 
-.visor--una .visor-controles { display: none; }   /* con una sola foto no se muestran */
+.visor-controles { position: absolute; left: 50%; bottom: .9rem; transform: translateX(-50%); display: flex; align-items: center; gap: .6rem; }
+.visor-contador { min-width: 4.4rem; padding: .35rem .8rem; border-radius: 999px; background: rgba(19, 38, 39, .65); color: #fff; font-size: .85rem; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
+
+.visor--una .visor-controles { display: none; }   /* con una sola foto no hay flechas ni contador */
