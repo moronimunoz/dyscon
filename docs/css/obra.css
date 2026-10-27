@@ -7,7 +7,12 @@
   background: #fff; color: var(--teal-700);
   font-size: .72rem; font-weight: 600;
 }
-.chip--ut { width: 1.9rem; height: 1.9rem; display: grid; place-items: center; padding: 0; border-radius: 50%; font-weight: 700; }
+.chip--ut {
+  position: static; display: block; width: auto; height: auto;
+  padding: .15rem .8rem; border-radius: 20px;
+  background: #fff; color: var(--teal-700);
+  font-size: .72rem; font-weight: 600;
+}
 
 .ficha { padding-top: 2rem; padding-bottom: 4rem; }
 .ficha-fila {
