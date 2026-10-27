@@ -264,7 +264,7 @@ const OBRAS = [
     descripcion: [],
     carpeta:'plaza_san_martin',
     portada:'plaza_san_martin/00.jpg',
-    fotos: ['04.webp','01.webp','02.webp','03.webp']
+    fotos: ['04.webp','01.webp','02.webp','03.webp','00.jpg','05.jpg']
   },
   // BARRIO MORTELARI
   {
