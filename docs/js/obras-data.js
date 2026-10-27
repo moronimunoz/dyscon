@@ -174,7 +174,7 @@ const OBRAS = [
     ubicacion: 'CABA · Buenos Aires',
     mapa: 'Constitución 2498, C1254AAN C1254AAN, Cdad. Autónoma de Buenos Aires',
     descripcion: [],
-    fotos: ['plaza-san-cristobal.jpg']
+    fotos: ['plaza-san-cristobal.webp']
   },
   //PARQUE REGIONAL SUR
   {
