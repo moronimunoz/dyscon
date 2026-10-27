@@ -2,7 +2,7 @@
    DATOS DE LAS OBRAS - un bloque por obra (mismo orden que obras.html)
    Lo que dejes vacío ('' o []) no se muestra en la página.
    - estado: 'inicio' | 'obra' | 'terminado'
-   - tipo:   'propia' | 'colaboracion'  (con: empresa con la que se colaboró)
+   - tipo:   'propia' | 'ut'  (con: empresa con la que se colaboró)
    - fotos:  nombres dentro de img/obras/ (la primera es la principal)
    -  video disponible a usar: //La primera foto es lo que va a ser la portada en Obra.
       video: 'Hg_EGB0ZTkc',                                   // YouTube, como hoy
@@ -96,7 +96,7 @@ const OBRAS = [
   {
     id: 'parque-industrial', nombre: 'Parque Industrial - Nodo', categoria: 'Espacio Público',
     destacada: 1,
-    tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora',estado: 'obra', comitente: '',
+    tipo: 'ut', con: '<b>Del Sol</b> - Empresa Constructora',estado: 'obra', comitente: '',
     ubicacion: 'Villa Gobernador Gálvez · Santa Fe',
     miniatura: '01.jpg',
     mapa: 'X98V+JHG Villa Gdor. Gálvez, Santa Fe',
@@ -109,7 +109,7 @@ const OBRAS = [
   {
     id: 'tecnoteca', nombre: 'Tecnoteca', categoria: 'Comunidad',
     destacada: 4,
-    tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: 'Municipalidad de Rosario.',
+    tipo: 'ut', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario · Santa Fe',
     datos:['Superficie: 4.000 m².','Plazo: Septiembre, 2023 - Finalizado.'],
     mapa: 'Estévez Boero 740, S2000 Rosario, Santa Fe',
@@ -257,7 +257,7 @@ const OBRAS = [
   // PLAZA SAN MARTIN
   {
     id: 'plaza-san-martin', nombre: 'Remodelación Plaza San Martín', categoria: 'Espacio Público',
-    tipo: 'colaboracion', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
+    tipo: 'ut', con: '<b>Del Sol</b> - Empresa Constructora', estado: 'terminado', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     mapa: '3942+G4 Rosario, Santa Fe',
     datos:['Superficie: 14.000 m².','Plazo: Noviembre, 2014 - Mayo, 2015.'],
@@ -456,7 +456,7 @@ const OBRAS = [
     id: 'senderos-veredas-y-espacios-publicos-ut',
     nombre: 'Senderos, Veredas y Espacios Públicos - UT',
     categoria: 'Espacio Público',
-    tipo: 'colaboracion',
+    tipo: 'ut',
     estado: 'terminado',
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
@@ -643,7 +643,7 @@ const OBRAS = [
     id: 'oda-2da-etapa',
     nombre: 'Obras de Arquitectura - 2da Etapa',
     categoria: 'Institucional',
-    tipo: 'colaboracion',
+    tipo: 'ut',
     estado: 'terminado',
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
@@ -834,7 +834,7 @@ const OBRAS = [
     id: 'hospital-granaderos-a-caballo-ut-participacion',
     nombre: 'Hospital Granaderos a Caballo - UT - Participación',
     categoria: 'Salud',
-    tipo: 'colaboracion',
+    tipo: 'ut',
     estado: 'terminado',
     comitente: 'Ministerio de Obras Públicas - DIPAI.',
     ubicacion: 'San Lorenzo, Santa Fe.',
@@ -850,7 +850,7 @@ const OBRAS = [
     id: 'obras-de-arquitectura-ut',
     nombre: 'Obras de Arquitectura - UT',
     categoria: 'Institucional',
-    tipo: 'colaboracion',
+    tipo: 'ut',
     estado: 'terminado',
     comitente: 'Municipalidad de Rosario.',
     ubicacion: 'Rosario, Santa Fe.',
@@ -895,7 +895,7 @@ const OBRAS = [
     id: 'mansardas-en-casa-de-gobierno-santa-fe-ut-participacion',
     nombre: 'Mansardas en Casa de Gobierno - Santa Fe - UT Participación.',
     categoria: 'Institucional',
-    tipo: 'colaboracion',
+    tipo: 'ut',
     estado: 'terminado',
     comitente: 'Ministerio de Obras Públicas y Vivienda.',
     ubicacion: 'Santa Fe.',

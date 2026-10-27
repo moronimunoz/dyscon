@@ -37,9 +37,9 @@
     `<span class="${k === o.estado ? 'activo' : ''}">${k === 'obra' && o.estado === 'obra' ? '<i class="en-curso en-curso--inline"></i>' : ''}${t}</span>`
   ).join('')}</div>`;
 
-  const modalidad = o.tipo === 'colaboracion'
-    ? `<p>Obra en colaboración${o.con ? ' con ' + o.con : ''}.</p>`
-    : '<p>Obra propia.</p>';
+  const modalidad = o.tipo === 'ut'
+    ? `<p>Unidad Transitoria${o.con ? ' con ' + o.con : ''}.</p>`
+    : '<p>Ejecutada por DyScon S.A.</p>';
 
   const base = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
   const fotos = (o.fotos || []).map((f, i) =>
@@ -55,7 +55,7 @@
     <section class="page-hero">
       <div class="contenedor">
         <p class="migas"><a href="index.html">Inicio</a> / <a href="obras.html">Obras</a> / ${o.nombre}</p>
-        <div class="chips"><span class="chip">${o.categoria}</span>${o.tipo === 'colaboracion' ? '<span class="chip">En colaboración</span>' : ''}</div>
+        <div class="chips"><span class="chip">${o.categoria}</span>${o.tipo === 'ut' ? '<span class="chip">En colaboración</span>' : ''}</div>
         <h1>${o.nombre}</h1>
         ${o.ubicacion ? `<p>${o.ubicacion}</p>` : ''}
       </div>

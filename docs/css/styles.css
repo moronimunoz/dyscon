@@ -246,10 +246,10 @@ button { font: inherit; cursor: pointer; }
   background: #fff; color: var(--teal-700);
   font-size: .72rem; font-weight: 600;
 }
-.tag-colab {
+.tag-ut {
   position: absolute; top: .8rem; right: .8rem;
   padding: .15rem .8rem; border-radius: 20px;
-  background: var(--teal-900); color: #fff;
+  background: #fff; color: var(--teal-700);
   font-size: .72rem; font-weight: 600;
 }
 .obra-cuerpo { padding: 1rem 1rem 1.1rem; }

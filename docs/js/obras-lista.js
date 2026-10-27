@@ -33,7 +33,7 @@
           <div class="obra-img">
             ${estado}
             <img src="${foto}" alt="${esc(o.nombre)}" loading="lazy">
-            ${o.tipo === 'colaboracion' ? '<span class="tag-colab">En colaboración</span>' : ''}
+            ${o.tipo === 'ut' ? '<span class="tag-ut">UT</span>' : ''}
             <span class="tag">${o.categoria}</span>
           </div>
           <div class="obra-cuerpo">
