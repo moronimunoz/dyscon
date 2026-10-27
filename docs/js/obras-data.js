@@ -126,10 +126,10 @@ const OBRAS = [
     ubicacion: 'Rosario · Santa Fe',
     datos:['Superficie: 2.000 m².','Plazo: Julio, 2023 - Finalizado.'],
     mapa: 'Rodríguez 1635, Rosario, Santa Fe',
-    portada:'rdz/00.jpg',
+    portada:'rdz/03.jpeg',
     carpeta:'rdz',
     descripcion: [],
-    fotos: ['00.jpg','01.jpg','02.jpg','03.jpg']
+    fotos: ['00.jpg','01.jpg','02.jpg','03.jpeg','04.jpeg','05.jpeg','06.jpeg','07.jpeg','08.jpg']
   },
   // VIVIENDAS TABLADA
   {
