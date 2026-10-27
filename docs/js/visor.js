@@ -45,7 +45,8 @@ function iniciarVisor(botones) {
    Todas las fotos se abren en el visor, también las que no se ven en la grilla.
    El diseño lo dibuja el CSS (clases galeria--1 a galeria--5 en obra.css). */
 function crearGaleria(fotos, base, titulo) {
-  const lista = fotos || [];
+  // Se ignoran los lugares vacíos (por ejemplo una coma doble) y los nombres repetidos, para no contar de más
+  const lista = [...new Set(Array.from(fotos || []).filter(Boolean))];
   if (!lista.length) return '';
   const total = lista.length;
   const resto = total - 5;
