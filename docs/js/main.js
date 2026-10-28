@@ -167,8 +167,19 @@ if (botonesFiltro.length || selectsFiltro.length) {
 }
 
 // ---------- 9. Portada: el texto se desvanece cuando la página lo va tapando ----------
-const heroSec = document.querySelector('.hero');
-const heroTxt = document.querySelector('.hero-contenido');
+// Sirve para la portada del inicio (.hero) y para las franjas con foto de las demás páginas (.page-hero--img)
+const heroSec = document.querySelector('.hero, .page-hero--img');
+const heroTxt = document.querySelector('.hero-contenido, .page-hero--img > .contenedor');
+
+// Franjas con foto: la foto es fija; acá se le da la posición y el alto exactos de la franja
+if (heroSec && heroSec.classList.contains('page-hero--img')) {
+  const calzarFoto = () => {
+    heroSec.style.setProperty('--arriba-hero', (heroSec.getBoundingClientRect().top + window.scrollY) + 'px');
+    heroSec.style.setProperty('--alto-hero', heroSec.offsetHeight + 'px');
+  };
+  new ResizeObserver(calzarFoto).observe(heroSec);
+  calzarFoto();
+}
 
 if (heroSec && heroTxt) {
   let esperando = false;
@@ -198,7 +209,7 @@ if (videoPortada) {
     videoPortada.pause();
   } else if (heroSec) {
     new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) videoPortada.play().catch(() => {});
+      if (e.isIntersecting) videoPortada.play().catch(() => { });
       else videoPortada.pause();
     }).observe(heroSec);
   }
