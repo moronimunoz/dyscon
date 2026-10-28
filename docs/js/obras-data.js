@@ -49,14 +49,14 @@ const FOTO_PROVISORIA = 'prov-front.png';
 const OBRAS = [
   // CASA M
   {
-    id: 'casa-m', nombre: 'Fran te manda un saludo', categoria: 'Comunidad',
+    id: 'casa-m', nombre: 'casa M', categoria: 'Comunidad',
     tipo: 'propia', estado: 'inicio', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     miniatura: '01.jpg',
     mapa: 'Arturo Illia 1690, S2000 Rosario, Santa Fe',
     descripcion: [],
     carpeta: 'casa_m',
-    fotos: ['fran.jpg', '00.jpg', '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg']
+    fotos: ['00.jpg', '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg']
   },
   // ESCUELA RICARDONE
   {
