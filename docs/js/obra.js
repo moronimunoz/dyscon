@@ -43,7 +43,7 @@
 
   const modalidad = o.tipo === 'colaboracion'
     ? `<p>Unión Transitoria${o.con ? ' con: ' + o.con : ' (UT)'}</p>`
-    : '<p>Obra propia.</p>';
+    : '<p>Ejecutada por DyScon S.A.</p>';
 
   const base = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
   const fotos = crearGaleria(o.fotos, base, o.nombre);

@@ -15,18 +15,18 @@
   // A qué correo llega cada tipo de mensaje cuando NO se usa Formspree.
   // Cuando tengan los mails de la empresa, cambiá solo estas direcciones.
   const CORREOS = {
-    consulta:  'moronimunoz123@gmail.com',   // después: 'info@dysconsa.com.ar'
+    consulta: 'moronimunoz123@gmail.com',   // después: 'info@dysconsa.com.ar'
     proveedor: 'moronimunoz123@gmail.com',   // después: 'proveedores@dysconsa.com.ar'
-    trabajo:   'moronimunoz123@gmail.com',   // después: 'rrhh@dysconsa.com.ar'
-    otro:      'moronimunoz123@gmail.com'
+    trabajo: 'moronimunoz123@gmail.com',   // después: 'rrhh@dysconsa.com.ar'
+    otro: 'moronimunoz123@gmail.com'
   };
 
   // Textos de cada motivo: prefijo del asunto, pregunta y ayuda del campo de mensaje.
   const MOTIVOS = {
-    consulta:  { prefijo: 'Consulta',    pregunta: '¿En qué podemos ayudarte?', ayuda: 'Escribí tu consulta' },
-    proveedor: { prefijo: 'Proveedor',   pregunta: 'Contanos qué ofrecés',      ayuda: 'Describí tus productos o servicios y tu experiencia en obra' },
-    trabajo:   { prefijo: 'Postulación', pregunta: 'Contanos sobre vos',        ayuda: 'Tu experiencia, estudios y disponibilidad' },
-    otro:      { prefijo: 'Contacto',    pregunta: '¿En qué podemos ayudarte?', ayuda: 'Escribí tu mensaje' }
+    consulta: { prefijo: 'Consulta', pregunta: '¿En qué podemos ayudarte?', ayuda: 'Escribí tu consulta' },
+    proveedor: { prefijo: 'Proveedor', pregunta: 'Contanos qué ofrecés', ayuda: 'Describí tus productos o servicios y tu experiencia en obra' },
+    trabajo: { prefijo: 'Postulación', pregunta: 'Contanos sobre vos', ayuda: 'Tu experiencia, estudios y disponibilidad' },
+    otro: { prefijo: 'Contacto', pregunta: '¿En qué podemos ayudarte?', ayuda: 'Escribí tu mensaje' }
   };
 
   // Campos que se agregan al cuerpo del mail (en este orden), con su nombre legible.
