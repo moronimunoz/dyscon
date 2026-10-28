@@ -49,7 +49,7 @@ const FOTO_PROVISORIA = 'prov-front.png';
 const OBRAS = [
   // CASA M
   {
-    id: 'casa-m', nombre: 'casa M', categoria: 'Comunidad',
+    id: 'casa-m', nombre: 'Casa M', categoria: 'Comunidad',
     tipo: 'propia', estado: 'inicio', comitente: '',
     ubicacion: 'Rosario · Santa Fe',
     miniatura: '01.jpg',
