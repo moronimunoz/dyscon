@@ -12,7 +12,7 @@
     .sort((a, b) => b.fecha.localeCompare(a.fecha))
     .map(n => `
       <article class="obra-card reveal" data-estado="${clave(n.categoria)}">
-        <a href="novedad.html?id=${n.id}">
+        <a href="novedad-${n.id}.html">
           <div class="obra-img">
             <img src="img/novedades/${n.portada}" alt="${n.titulo}" loading="lazy">
             <span class="tag">${n.categoria}</span>

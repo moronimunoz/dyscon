@@ -2,7 +2,8 @@
    Se usa así: obra.html?id=casa-m */
 (function () {
   const main = document.getElementById('detalle');
-  const id = new URLSearchParams(location.search).get('id');
+  // En las páginas generadas por build.js el id viene en <body data-id>; en obra.html?id=... viene de la dirección
+  const id = document.body.dataset.id || new URLSearchParams(location.search).get('id');
   const o = OBRAS.find(x => x.id === id);
 
   if (!o) {
@@ -12,11 +13,14 @@
   }
 
   document.title = `${o.nombre} | DyScon S.A.`;
-  
-  const canonical = document.createElement('link');
-  canonical.rel = 'canonical';
-  canonical.href = 'https://dysconsa.com.ar/obra.html?id=' + o.id;
-  document.head.appendChild(canonical);
+
+  // Las páginas generadas por build.js ya traen su canonical; solo se agrega si falta (obra.html?id=...)
+  if (!document.querySelector('link[rel="canonical"]')) {
+    const canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    canonical.href = 'https://dysconsa.com.ar/obra.html?id=' + o.id;
+    document.head.appendChild(canonical);
+  }
 
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
@@ -28,7 +32,7 @@
         : `${o.categoria}${o.ubicacion ? ' en ' + o.ubicacion : ''}. Obra de DyScon S.A.`;
     metaDesc.setAttribute('content', `${o.nombre}: ${resumen}`.slice(0, 155));
   }
-  
+
   // Una fila "título | contenido". Si no hay contenido, no se muestra.
   const fila = (titulo, html) => html ? `<div class="ficha-fila"><h2>${titulo}</h2><div>${html}</div></div>` : '';
 
@@ -70,7 +74,7 @@
       <p class="ficha-volver"><a href="obras.html" class="link-flecha">Volver a todas las obras <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
 
-    // El orden de las elementos se definen dentro de este section de arriba
+  // El orden de las elementos se definen dentro de este section de arriba
   // Foto de fondo en la franja del título (portada, o si no la primera foto de la galería)
   const hero = main.querySelector('.page-hero');
   const primera = main.querySelector('.galeria button');
@@ -79,7 +83,7 @@
     hero.classList.add('page-hero--img');
     hero.insertAdjacentHTML('afterbegin', `<div class="hero-fondo" style="background-image:url('${portada}')"></div>`);
   }
-  
-   //Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
-   iniciarVisor(main.querySelectorAll('.galeria button'));
+
+  //Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
+  iniciarVisor(main.querySelectorAll('.galeria button'));
 })();

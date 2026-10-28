@@ -9,7 +9,7 @@
   // Orden de las categorías en el desplegable (las que no figuren acá van al final, por orden alfabético).
   // No importa si se escriben con mayúsculas o tildes distintas: se compara sin esas diferencias.
   const ORDEN_CATEGORIAS = ['Educación', 'Salud', 'Patrimonio', 'Viviendas', 'Comunidad', 'Espacio público',
-                            'Infraestructura', 'Industrial', 'Comercial', 'Institucional'];
+    'Infraestructura', 'Industrial', 'Comercial', 'Institucional'];
 
   // Texto del punto de color de la esquina, según el estado de la obra
   const ESTADOS = { inicio: 'Obra iniciando', obra: 'Obra en ejecución', terminado: 'Obra terminada' };
@@ -29,7 +29,7 @@
 
     return `
       <article class="obra-card reveal" data-categoria="${slug(o.categoria)}" data-tipo="${o.tipo}" data-estado="${o.estado}">
-        <a href="obra.html?id=${o.id}">
+        <a href="obra-${o.id}.html">
           <div class="obra-img">
             ${estado}
             <img src="${foto}" alt="${esc(o.nombre)}" loading="lazy">

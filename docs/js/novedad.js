@@ -2,7 +2,8 @@
    Se usa así: novedad.html?id=avance-obra-ejemplo */
 (function () {
   const main = document.getElementById('detalle');
-  const id = new URLSearchParams(location.search).get('id');
+  // En las páginas generadas por build.js el id viene en <body data-id>; en novedad.html?id=... viene de la dirección
+  const id = document.body.dataset.id || new URLSearchParams(location.search).get('id');
   const n = NOVEDADES.find(x => x.id === id);
 
   if (!n) {
@@ -14,12 +15,16 @@
   document.title = `${n.titulo} | DyScon S.A.`;
 
   // Dirección canónica de esta novedad (para Google)
-  const canonical = document.createElement('link');
-  canonical.rel = 'canonical';
-  canonical.href = 'https://dysconsa.com.ar/novedad.html?id=' + n.id;
-  document.head.appendChild(canonical);
+  if (!document.querySelector('link[rel="canonical"]')) {
+    const canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    canonical.href = 'https://dysconsa.com.ar/novedad.html?id=' + n.id;
+    document.head.appendChild(canonical);
+  }
 
-  if (n.resumen) document.querySelector('meta[name="description"]').setAttribute('content', n.resumen);
+  // Solo en novedad.html?id=...: las páginas generadas ya traen su descripción
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (n.resumen && metaDesc && !document.body.dataset.id) metaDesc.setAttribute('content', n.resumen);
 
   const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
 
