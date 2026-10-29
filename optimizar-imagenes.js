@@ -28,6 +28,9 @@ const ORIGINAL = /\.(jpe?g|png|webp)$/i;
 const DERIVADA = /-(sm|lg|og)\.(webp|jpg)$/i;          // lo que genera este script: no se vuelve a procesar
 const variante = (ruta, t) => ruta.replace(ORIGINAL, t === 'og' ? '-og.jpg' : `-${t}.webp`);
 
+/* Cambiar en "lg: img" el width a 2200 y el quality a 84 a cada foto ampliada
+   pesaría entre un 50 y un 80 % más, pero se vería mejor en pantallas grandes.
+   Después correr "node optimizar-imagenes.js --forzar" para rehacer todas las versiones.*/
 const TAMANOS = {
   sm: img => img.resize({ width: 640, withoutEnlargement: true }).webp({ quality: 76 }),
   lg: img => img.resize({ width: 1600, withoutEnlargement: true }).webp({ quality: 80 }),
