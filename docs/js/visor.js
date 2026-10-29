@@ -1,6 +1,19 @@
 /* Visor de fotos ampliadas, con flechas, contador ("3 / 10"), botón X y teclado.
    Lo usan obra.js y novedad.js:  iniciarVisor(main.querySelectorAll('.galeria button'))
    Cada botón de la galería tiene data-src con la ruta de la foto. */
+/* "casa/01.jpg" -> "casa/01-sm.webp" (640 px), "-lg.webp" (1600 px). Las crea optimizar-imagenes.js */
+function variante(ruta, tam) { return ruta.replace(/\.(jpe?g|png|webp)$/i, `-${tam}.webp`); }
+
+/* Pone una foto de fondo en un elemento (encabezados). Usa la versión grande y, si todavía no existe, la original */
+function ponerFondo(el, ruta) {
+  if (!el) return;
+  const grande = variante(ruta, 'lg');
+  const probar = new Image();
+  probar.onload = () => { el.style.backgroundImage = `url('${grande}')`; };
+  probar.onerror = () => { el.style.backgroundImage = `url('${ruta}')`; };
+  probar.src = grande;
+}
+
 function iniciarVisor(botones) {
   const visor = document.getElementById('visor');
   if (!visor || !botones.length) return;
@@ -12,6 +25,7 @@ function iniciarVisor(botones) {
 
   const mostrar = n => {
     actual = (n + fotos.length) % fotos.length;       // da la vuelta al llegar al final
+    img.onerror = () => { img.onerror = null; img.src = botones[actual].dataset.orig; };   // si falta la versión grande, la original
     img.src = fotos[actual];
     img.alt = `Foto ${actual + 1} de ${fotos.length}`;
     contador.textContent = `${actual + 1} / ${fotos.length}`;
@@ -52,10 +66,14 @@ function crearGaleria(fotos, base, titulo) {
   const resto = total - 5;
   const t = String(titulo).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 
+  // La grilla usa la versión chica (o la grande si la pantalla la necesita); el visor, la grande.
+  // Si falta alguna versión (foto nueva sin procesar), cae a la original.
+  const tamanos = total === 1 ? '(max-width: 1100px) 100vw, 1100px' : '(max-width: 700px) 50vw, 550px';
   const botones = lista.map((f, i) => {
     const ultima = i === 4 && resto > 0;             // la quinta foto, cuando hay más de cinco
     const etiqueta = ultima ? `Ver las ${total} fotos` : `Ampliar foto ${i + 1}`;
-    return `<button type="button" data-src="${base}${f}" aria-label="${etiqueta}"><img src="${base}${f}" alt="${t} - foto ${i + 1}" loading="lazy">${ultima ? `<span class="galeria-mas" aria-hidden="true">+${resto}</span>` : ''}</button>`;
+    const original = base + f, chica = variante(original, 'sm'), grande = variante(original, 'lg');
+    return `<button type="button" data-src="${grande}" data-orig="${original}" aria-label="${etiqueta}"><img src="${chica}" srcset="${chica} 640w, ${grande} 1600w" sizes="${tamanos}" alt="${t} - foto ${i + 1}" loading="lazy" decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='${original}'">${ultima ? `<span class="galeria-mas" aria-hidden="true">+${resto}</span>` : ''}</button>`;
   }).join('');
 
   return `<div class="galeria galeria--${Math.min(total, 5)}">${botones}</div>`;

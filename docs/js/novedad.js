@@ -35,7 +35,7 @@
 
   main.innerHTML = `
     <section class="page-hero page-hero--img">
-      <div class="hero-fondo" style="background-image:url('img/novedades/${n.portada}')"></div>
+      <div class="hero-fondo"></div>
       <div class="contenedor">
         <p class="migas"><a href="index.html">Inicio</a> / <a href="novedades.html">Novedades</a> / ${n.titulo}</p>
         <div class="chips"><span class="chip">${n.categoria}</span></div>
@@ -49,6 +49,8 @@
       ${fotos}
       <p class="ficha-volver"><a href="novedades.html" class="link-flecha">Volver a todas las novedades <svg class="icon"><use href="#i-flecha"/></svg></a></p>
     </section>`;
+
+  ponerFondo(main.querySelector('.hero-fondo'), 'img/novedades/' + n.portada);   // js/visor.js: versión grande, o la original si falta
 
   // Visor de fotos ampliadas (con flechas y puntos: js/visor.js)
   iniciarVisor(main.querySelectorAll('.galeria button'));

@@ -8,13 +8,16 @@
   // "Institucional" -> "institucional" (es el valor que usan los botones de filtro)
   const clave = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
+  // "2026_03_21_nodo/poster.jpg" -> "2026_03_21_nodo/poster-sm.webp" (la crea optimizar-imagenes.js)
+  const chica = ruta => ruta.replace(/\.(jpe?g|png|webp)$/i, '-sm.webp');
+
   grid.innerHTML = [...NOVEDADES]
     .sort((a, b) => b.fecha.localeCompare(a.fecha))
-    .map(n => `
+    .map((n, i) => `
       <article class="obra-card reveal" data-estado="${clave(n.categoria)}">
         <a href="novedad-${n.id}.html">
           <div class="obra-img">
-            <img src="img/novedades/${n.portada}" alt="${n.titulo}" loading="lazy">
+            <img src="img/novedades/${chica(n.portada)}" alt="${n.titulo}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async" onerror="this.onerror=null;this.src='img/novedades/${n.portada}'">
             <span class="tag">${n.categoria}</span>
           </div>
           <div class="obra-cuerpo">

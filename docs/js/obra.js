@@ -43,7 +43,7 @@
 
   const modalidad = o.tipo === 'colaboracion'
     ? `<p>Unión Transitoria${o.con ? ' con: ' + o.con : ' (UT)'}</p>`
-    : '<p>Ejecutada por DyScon S.A.</p>';
+    : '<p>Obra propia.</p>';
 
   const base = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
   const fotos = crearGaleria(o.fotos, base, o.nombre);
@@ -78,10 +78,11 @@
   // Foto de fondo en la franja del título (portada, o si no la primera foto de la galería)
   const hero = main.querySelector('.page-hero');
   const primera = main.querySelector('.galeria button');
-  const portada = o.portada ? `img/obras/${o.portada}` : (primera && primera.dataset.src);
+  const portada = o.portada ? `img/obras/${o.portada}` : (primera && primera.dataset.orig);
   if (hero && portada) {
     hero.classList.add('page-hero--img');
-    hero.insertAdjacentHTML('afterbegin', `<div class="hero-fondo" style="background-image:url('${portada}')"></div>`);
+    hero.insertAdjacentHTML('afterbegin', '<div class="hero-fondo"></div>');
+    ponerFondo(hero.querySelector('.hero-fondo'), portada);   // js/visor.js: versión grande, o la original si falta
   }
 
   //Visor de fotos ampliadas (con flechas y puntos: js/visor.js)

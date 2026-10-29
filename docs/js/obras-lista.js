@@ -20,7 +20,11 @@
   // "Espacio público" -> "espacio-publico" (valor que usan los filtros y los vínculos ?categoria=...)
   const slug = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-');
 
-  const tarjeta = o => {
+  // "casa/01.jpg" -> "casa/01-sm.webp" (la crea optimizar-imagenes.js)
+  const chica = ruta => ruta.replace(/\.(jpe?g|png|webp)$/i, '-sm.webp');
+
+  // i = posición en la lista: las primeras se cargan enseguida, el resto a medida que se baja
+  const tarjeta = (o, i) => {
     const carpeta = 'img/obras/' + (o.carpeta ? o.carpeta + '/' : '');
     const foto = carpeta + (o.miniatura || (o.fotos && o.fotos[0]) || '');
     const estado = ESTADOS[o.estado]
@@ -32,7 +36,7 @@
         <a href="obra-${o.id}.html">
           <div class="obra-img">
             ${estado}
-            <img src="${foto}" alt="${esc(o.nombre)}" loading="lazy">
+            <img src="${chica(foto)}" alt="${esc(o.nombre)}" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async" onerror="this.onerror=null;this.src='${esc(foto)}'">
             <div class="obra-etiquetas">
               <span class="tag">${o.categoria}</span>
               ${o.tipo === 'colaboracion' ? '<span class="tag-ut" title="Unión Transitoria" aria-label="Unión Transitoria">UT</span>' : ''}

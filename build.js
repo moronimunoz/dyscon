@@ -36,6 +36,12 @@ const urlAbs = ruta => /^https?:\/\//.test(ruta) ? ruta : `${SITE}/${ruta.split(
 const fechaLarga = f => new Date(f + 'T12:00:00').toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
 const idValido = id => /^[A-Za-z0-9_-]+$/.test(id);
 
+// Foto para compartir: la versión "-og.jpg" (1200 x 630, la crea optimizar-imagenes.js) si existe; si no, la original
+const fotoParaCompartir = ruta => {
+  const og = ruta.replace(/\.(jpe?g|png|webp)$/i, '-og.jpg');
+  return og !== ruta && fs.existsSync(path.join(DOCS, og)) ? og : ruta;
+};
+
 /* ---------- Genera una página a partir de la plantilla ---------- */
 function crearPagina(plantilla, p) {
   const url = `${SITE}/${p.archivo}`;
@@ -91,7 +97,7 @@ if (fs.existsSync(path.join(DOCS, 'obra.html'))) {
     const foto = o.portada ? 'img/obras/' + o.portada : (o.fotos && o.fotos[0]) ? base + o.fotos[0] : IMAGEN_POR_DEFECTO;
     const resumen = o.resumen ? limpiar(o.resumen)
       : (o.descripcion && o.descripcion[0]) ? limpiar(o.descripcion[0])
-      : `${o.categoria}${o.ubicacion ? ' en ' + o.ubicacion : ''}. Obra de ${EMPRESA}.`;
+        : `${o.categoria}${o.ubicacion ? ' en ' + o.ubicacion : ''}. Obra de ${EMPRESA}.`;
     const descripcion = recortar(`${o.nombre}: ${resumen}`);
     const archivo = `obra-${o.id}.html`;
 
@@ -101,7 +107,7 @@ if (fs.existsSync(path.join(DOCS, 'obra.html'))) {
       + `<p><a href="obras.html">Volver a Obras</a></p></section>`;
 
     fs.writeFileSync(path.join(DOCS, archivo), crearPagina(plantilla, {
-      id: o.id, archivo, titulo: o.nombre, descripcion, imagen: foto, og: 'article', respaldo,
+      id: o.id, archivo, titulo: o.nombre, descripcion, imagen: fotoParaCompartir(foto), og: 'article', respaldo,
       jsonld: migas([['Inicio', ''], ['Obras', 'obras.html'], [o.nombre, archivo]])
     }));
     urls.push({ loc: archivo });
@@ -128,10 +134,10 @@ if (fs.existsSync(path.join(DOCS, 'novedad.html'))) {
       + `<p><a href="novedades.html">Volver a Novedades</a></p></section>`;
 
     fs.writeFileSync(path.join(DOCS, archivo), crearPagina(plantilla, {
-      id: n.id, archivo, titulo: n.titulo, descripcion, imagen: foto, og: 'article', respaldo,
+      id: n.id, archivo, titulo: n.titulo, descripcion, imagen: fotoParaCompartir(foto), og: 'article', respaldo,
       jsonld: {
         '@context': 'https://schema.org', '@type': 'NewsArticle',
-        headline: n.titulo, datePublished: n.fecha, image: [urlAbs(foto)], description: descripcion,
+        headline: n.titulo, datePublished: n.fecha, image: [urlAbs(fotoParaCompartir(foto))], description: descripcion,
         author: { '@type': 'Organization', name: EMPRESA }, publisher: { '@type': 'Organization', name: EMPRESA },
         mainEntityOfPage: `${SITE}/${archivo}`
       }
