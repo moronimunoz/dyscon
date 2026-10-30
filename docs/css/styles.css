@@ -1547,3 +1547,103 @@ button {
   margin: 0;
   scroll-snap-align: start;
 }
+
+/* =========================================================
+   DESCARGA DEL CATÁLOGO DE OBRAS
+   ========================================================= */
+
+.page-hero--img {
+  position: relative;
+}
+
+.obras-descarga {
+  position: absolute;
+  z-index: 3;
+  right: 5%;
+  bottom: 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.obras-descarga-texto {
+  display: inline-block;
+}
+
+.obras-descarga-icono {
+  display: block;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+
+  transition: transform 0.25s ease;
+}
+
+.obras-descarga:hover {
+  opacity: 0.85;
+}
+
+.obras-descarga:hover .obras-descarga-icono {
+  transform: translateY(3px);
+}
+
+.obras-descarga:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
+/* Adaptación para tabletas y celulares */
+@media (max-width: 760px) {
+  .obras-descarga {
+    right: 5%;
+    bottom: 1.25rem;
+    left: 5%;
+
+    justify-content: flex-start;
+    gap: 0.8rem;
+
+    font-size: 0.9rem;
+  }
+
+  .obras-descarga-icono {
+    width: 30px;
+    height: 30px;
+  }
+
+  .page-hero--img {
+    padding-bottom: 5rem;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 380px) {
+  .obras-descarga {
+    font-size: 0.82rem;
+  }
+
+  .obras-descarga-icono {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* Respeta las preferencias de movimiento del usuario */
+@media (prefers-reduced-motion: reduce) {
+
+  .obras-descarga,
+  .obras-descarga-icono {
+    transition: none;
+  }
+}

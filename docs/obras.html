@@ -70,13 +70,38 @@
 
     <!-- ENCABEZADO DE LA PÁGINA -->
     <section class="page-hero page-hero--img">
-      <div class="hero-fondo" style="background-image:url('img/obras/plaza-san-cristobal.webp')"></div>
-      <div class="contenedor">
-        <p class="migas"><a href="index.html">Inicio</a> / Obras</p>
-        <h1>Obras</h1>
-        <p>Proyectos que están iniciando, que están en obra, que ejecutamos por cuenta propia y en colaboración con
-          otras empresas constructoras.</p>
+      <div class="hero-fondo" style="background-image:url('img/obras/plaza-san-cristobal.webp')" aria-hidden="true">
       </div>
+
+      <div class="contenedor">
+        <p class="migas">
+          <a href="index.html">Inicio</a> / Obras
+        </p>
+
+        <h1>Obras</h1>
+
+        <p>
+          Proyectos que están iniciando, que están en obra, que ejecutamos
+          por cuenta propia y en colaboración con otras empresas constructoras.
+        </p>
+      </div>
+
+      <!-- Descarga del catálogo completo de obras -->
+      <a class="obras-descarga" href="pdf/catalogo-obras.pdf" download="Catalogo-de-obras-DyScon.pdf"
+        aria-label="Descargar catálogo completo de obras de DyScon en PDF">
+
+        <span class="obras-descarga-texto">
+          Mirá todas nuestras obras
+        </span>
+
+        <svg class="obras-descarga-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <path d="m7 10 5 5 5-5" />
+          <path d="M12 15V3" />
+        </svg>
+      </a>
     </section>
 
     <!-- LISTADO CON FILTROS -->
